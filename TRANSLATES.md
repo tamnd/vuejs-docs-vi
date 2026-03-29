@@ -50,7 +50,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/v-model.md`
 - [x] `src/guide/extras/animation.md`
 - [x] `src/guide/extras/composition-api-faq.md`
-- [ ] `src/guide/extras/reactivity-in-depth.md`
+- [x] `src/guide/extras/reactivity-in-depth.md`
 - [x] `src/guide/extras/reactivity-transform.md`
 - [ ] `src/guide/extras/render-function.md`
 - [x] `src/guide/extras/rendering-mechanism.md`
@@ -127,7 +127,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/essentials/watchers.md`
 - [x] `src/guide/extras/animation.md`
 - [x] `src/guide/extras/composition-api-faq.md`
-- [ ] `src/guide/extras/reactivity-in-depth.md`
+- [x] `src/guide/extras/reactivity-in-depth.md`
 - [x] `src/guide/extras/reactivity-transform.md`
 - [ ] `src/guide/extras/render-function.md`
 - [x] `src/guide/extras/rendering-mechanism.md`
