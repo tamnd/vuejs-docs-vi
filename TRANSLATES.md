@@ -40,7 +40,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/built-in-directives.md`
 - [x] `src/api/built-in-special-attributes.md`
 - [x] `src/api/built-in-special-elements.md`
-- [ ] `src/api/compile-time-flags.md`
+- [x] `src/api/compile-time-flags.md`
 - [ ] `src/api/component-instance.md`
 - [ ] `src/api/composition-api-dependency-injection.md`
 - [ ] `src/api/composition-api-helpers.md`
@@ -155,7 +155,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/built-in-directives.md`
 - [x] `src/api/built-in-special-attributes.md`
 - [x] `src/api/built-in-special-elements.md`
-- [ ] `src/api/compile-time-flags.md`
+- [x] `src/api/compile-time-flags.md`
 - [ ] `src/api/component-instance.md`
 - [ ] `src/api/composition-api-dependency-injection.md`
 - [ ] `src/api/composition-api-helpers.md`
