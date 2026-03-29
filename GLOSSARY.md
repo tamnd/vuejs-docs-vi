@@ -79,6 +79,13 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | Options API | Options API | |
 | guide | hướng dẫn | |
 | tutorial | hướng dẫn tương tác | Dùng cho phần tutorial chính |
+| accessibility | khả năng tiếp cận | Có thể ghi thêm a11y khi cần |
+| skip link | liên kết bỏ qua nội dung lặp | |
+| landmark | landmark | Giữ nguyên tên gọi ARIA quen thuộc |
+| assistive technology | công nghệ hỗ trợ | |
+| accessible name | tên truy cập được | |
+| semantic forms | form ngữ nghĩa | |
+| screen reader | screen reader | Giữ nguyên tên gọi quen thuộc |
 | quick start | bắt đầu nhanh | |
 | glossary | thuật ngữ | Khi dùng cho mục điều hướng |
 | error reference | tra cứu lỗi | Khi dùng cho mục điều hướng |
