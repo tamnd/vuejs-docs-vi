@@ -48,7 +48,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/registration.md`
 - [ ] `src/guide/components/slots.md`
 - [ ] `src/guide/components/v-model.md`
-- [ ] `src/guide/extras/animation.md`
+- [x] `src/guide/extras/animation.md`
 - [ ] `src/guide/extras/composition-api-faq.md`
 - [ ] `src/guide/extras/reactivity-in-depth.md`
 - [ ] `src/guide/extras/reactivity-transform.md`
@@ -125,7 +125,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/essentials/template-refs.md`
 - [x] `src/guide/essentials/template-syntax.md`
 - [x] `src/guide/essentials/watchers.md`
-- [ ] `src/guide/extras/animation.md`
+- [x] `src/guide/extras/animation.md`
 - [ ] `src/guide/extras/composition-api-faq.md`
 - [ ] `src/guide/extras/reactivity-in-depth.md`
 - [ ] `src/guide/extras/reactivity-transform.md`
