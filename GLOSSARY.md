@@ -29,6 +29,7 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | mount | mount | Giữ nguyên khi nói về `.mount()` |
 | render | render | Dùng "render" khi nói về thao tác, "kết xuất" khi giải thích khái niệm |
 | declarative rendering | kết xuất khai báo | |
+| conditional rendering | kết xuất có điều kiện | |
 | reactivity | tính phản ứng | |
 | reactive state | state phản ứng | |
 | reactive dependency | dependency phản ứng | |
@@ -45,6 +46,8 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | getter | getter | |
 | setter | setter | |
 | cache | cache | |
+| toggle | chuyển trạng thái | Tùy ngữ cảnh có thể dùng "bật/tắt" |
+| lazy | lazy | Giữ nguyên khi nói về chiến lược render/tính toán |
 | fallthrough attributes | thuộc tính kế thừa | |
 | Single-File Component | Single-File Component | Giữ nguyên tên chuẩn, có thể viết tắt SFC |
 | Composition API | Composition API | |
