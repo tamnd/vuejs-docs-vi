@@ -45,6 +45,11 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | custom directives | directive tùy chỉnh | |
 | prop / props | prop / props | Giữ nguyên tên gọi quen thuộc trong hệ sinh thái Vue |
 | custom event | custom event | |
+| watcher | watcher | Giữ nguyên tên gọi quen thuộc trong Vue |
+| deep watcher | deep watcher | |
+| eager watcher | eager watcher | |
+| side effect | side effect | |
+| flush timing | thời điểm flush | |
 | event handling | xử lý sự kiện | |
 | event handler | event handler | |
 | inline handler | inline handler | |

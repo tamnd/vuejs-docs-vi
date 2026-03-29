@@ -91,7 +91,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/essentials/reactivity-fundamentals.md`
 - [x] `src/guide/essentials/template-refs.md`
 - [x] `src/guide/essentials/template-syntax.md`
-- [ ] `src/guide/essentials/watchers.md`
+- [x] `src/guide/essentials/watchers.md`
 - [ ] `src/guide/extras/animation.md`
 - [ ] `src/guide/extras/composition-api-faq.md`
 - [ ] `src/guide/extras/reactivity-in-depth.md`
