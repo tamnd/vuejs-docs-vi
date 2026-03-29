@@ -93,6 +93,19 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | server-side rendering | kết xuất phía máy chủ | Có thể viết tắt SSR |
 | production deployment | triển khai production | |
 | tooling | công cụ phát triển | Tùy ngữ cảnh có thể rút gọn thành "công cụ" |
+| performance | hiệu năng | |
+| page load performance | hiệu năng tải trang | |
+| update performance | hiệu năng cập nhật | |
+| profiling | đo hiệu năng | Tùy ngữ cảnh có thể dịch là "profile" khi nói về thao tác |
+| code splitting | code splitting | Giữ nguyên tên gọi phổ biến |
+| bundle size | kích thước bundle | |
+| tree-shaking | tree-shaking | |
+| lazy loading | lazy loading | |
+| props stability | độ ổn định của props | |
+| computed stability | độ ổn định của computed | |
+| list virtualization | list virtualization | |
+| immutable | bất biến | |
+| overhead | overhead | |
 | template syntax | cú pháp template | |
 | template ref | template ref | Giữ nguyên cách gọi quen thuộc trong Vue |
 | template | template | Tạm giữ nguyên trong ngữ cảnh Vue |

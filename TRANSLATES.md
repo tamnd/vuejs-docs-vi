@@ -63,7 +63,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 ## Guide
 
 - [x] `src/guide/best-practices/accessibility.md`
-- [ ] `src/guide/best-practices/performance.md`
+- [x] `src/guide/best-practices/performance.md`
 - [ ] `src/guide/best-practices/production-deployment.md`
 - [ ] `src/guide/best-practices/security.md`
 - [ ] `src/guide/built-ins/keep-alive.md`
