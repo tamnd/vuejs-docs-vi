@@ -40,7 +40,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/built-ins/teleport.md`
 - [ ] `src/guide/built-ins/transition-group.md`
 - [ ] `src/guide/built-ins/transition.md`
-- [ ] `src/guide/components/async.md`
+- [x] `src/guide/components/async.md`
 - [ ] `src/guide/components/attrs.md`
 - [ ] `src/guide/components/events.md`
 - [ ] `src/guide/components/props.md`
@@ -104,7 +104,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/built-ins/teleport.md`
 - [ ] `src/guide/built-ins/transition-group.md`
 - [ ] `src/guide/built-ins/transition.md`
-- [ ] `src/guide/components/async.md`
+- [x] `src/guide/components/async.md`
 - [ ] `src/guide/components/attrs.md`
 - [ ] `src/guide/components/events.md`
 - [ ] `src/guide/components/props.md`
