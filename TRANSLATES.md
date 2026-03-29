@@ -55,8 +55,8 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/options-misc.md`
 - [x] `src/api/options-rendering.md`
 - [x] `src/api/options-state.md`
-- [ ] `src/api/reactivity-advanced.md`
-- [ ] `src/api/reactivity-core.md`
+- [x] `src/api/reactivity-advanced.md`
+- [x] `src/api/reactivity-core.md`
 
 ## Ưu tiên sprint đầu
 
@@ -170,9 +170,9 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/options-misc.md`
 - [x] `src/api/options-rendering.md`
 - [x] `src/api/options-state.md`
-- [ ] `src/api/reactivity-advanced.md`
-- [ ] `src/api/reactivity-core.md`
-- [ ] `src/api/reactivity-utilities.md`
+- [x] `src/api/reactivity-advanced.md`
+- [x] `src/api/reactivity-core.md`
+- [x] `src/api/reactivity-utilities.md`
 - [ ] `src/api/render-function.md`
 - [ ] `src/api/sfc-css-features.md`
 - [ ] `src/api/sfc-script-setup.md`
