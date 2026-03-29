@@ -30,7 +30,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `.vitepress/config.ts`
 - [x] `src/translations/index.md`
 - [x] `src/glossary/index.md`
-- [ ] `src/error-reference/index.md`
+- [x] `src/error-reference/index.md`
 - [ ] `src/examples/index.md`
 - [ ] `src/guide/best-practices/performance.md`
 - [x] `src/guide/best-practices/production-deployment.md`
@@ -90,7 +90,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/index.md`
 - [x] `src/translations/index.md`
 - [x] `src/glossary/index.md`
-- [ ] `src/error-reference/index.md`
+- [x] `src/error-reference/index.md`
 - [ ] `src/examples/index.md`
 
 ## Guide
