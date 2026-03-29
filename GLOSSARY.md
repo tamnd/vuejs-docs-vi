@@ -104,6 +104,12 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | production build | bản build production | |
 | runtime error | lỗi lúc chạy | |
 | error handler | trình xử lý lỗi | Tùy ngữ cảnh có thể giữ nguyên tên API |
+| security | bảo mật | |
+| vulnerability | lỗ hổng | |
+| trusted | đáng tin cậy | |
+| escaped / escaping | escape / escape | Giữ nguyên khi nói về kỹ thuật xử lý chuỗi |
+| sanitized / sanitization | sanitize / sanitize | Giữ nguyên khi nói về kỹ thuật xử lý dữ liệu |
+| clickjacking | clickjacking | |
 | tooling | công cụ phát triển | Tùy ngữ cảnh có thể rút gọn thành "công cụ" |
 | style guide | hướng dẫn phong cách | Khi dùng cho mục điều hướng |
 | performance | hiệu năng | |

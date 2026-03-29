@@ -34,7 +34,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `src/examples/index.md`
 - [ ] `src/guide/best-practices/performance.md`
 - [x] `src/guide/best-practices/production-deployment.md`
-- [ ] `src/guide/best-practices/security.md`
+- [x] `src/guide/best-practices/security.md`
 - [ ] `src/guide/built-ins/keep-alive.md`
 - [ ] `src/guide/built-ins/suspense.md`
 - [ ] `src/guide/built-ins/teleport.md`
@@ -98,7 +98,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/best-practices/accessibility.md`
 - [x] `src/guide/best-practices/performance.md`
 - [ ] `src/guide/best-practices/production-deployment.md`
-- [ ] `src/guide/best-practices/security.md`
+- [x] `src/guide/best-practices/security.md`
 - [ ] `src/guide/built-ins/keep-alive.md`
 - [ ] `src/guide/built-ins/suspense.md`
 - [ ] `src/guide/built-ins/teleport.md`
