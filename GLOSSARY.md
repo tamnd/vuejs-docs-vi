@@ -48,6 +48,20 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | server-side rendering | kết xuất phía máy chủ | Có thể viết tắt SSR |
 | production deployment | triển khai production | |
 | tooling | công cụ phát triển | Tùy ngữ cảnh có thể rút gọn thành "công cụ" |
+| template syntax | cú pháp template | |
+| template | template | Tạm giữ nguyên trong ngữ cảnh Vue |
+| text interpolation | nội suy văn bản | |
+| mustache syntax | cú pháp Mustache | |
+| raw HTML | HTML thô | |
+| attribute binding | ràng buộc thuộc tính | |
+| shorthand | cú pháp rút gọn | |
+| boolean attribute | thuộc tính boolean | |
+| JavaScript expression | biểu thức JavaScript | |
+| argument | đối số | |
+| dynamic argument | đối số động | |
+| modifier | modifier | |
+| truthy | truthy | Giữ nguyên khi giải thích cùng liên kết MDN |
+| falsy | falsy | Giữ nguyên khi giải thích cùng liên kết MDN |
 | web components | Web Components | Giữ nguyên tên chuẩn |
 | import maps | Import Maps | |
 | global build | bản build global | |
@@ -60,3 +74,5 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 - `build tool`
 - `mount`
 - `render`
+- `template`
+- `modifier`
