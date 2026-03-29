@@ -52,7 +52,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/index.md`
 - [x] `src/api/options-composition.md`
 - [x] `src/api/options-lifecycle.md`
-- [ ] `src/api/options-misc.md`
+- [x] `src/api/options-misc.md`
 - [ ] `src/api/options-rendering.md`
 - [ ] `src/api/options-state.md`
 - [ ] `src/api/reactivity-advanced.md`
@@ -167,7 +167,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/index.md`
 - [x] `src/api/options-composition.md`
 - [x] `src/api/options-lifecycle.md`
-- [ ] `src/api/options-misc.md`
+- [x] `src/api/options-misc.md`
 - [ ] `src/api/options-rendering.md`
 - [ ] `src/api/options-state.md`
 - [ ] `src/api/reactivity-advanced.md`
