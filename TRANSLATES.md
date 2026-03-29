@@ -136,7 +136,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/introduction.md`
 - [x] `src/guide/quick-start.md`
 - [ ] `src/guide/reusability/composables.md`
-- [ ] `src/guide/reusability/custom-directives.md`
+- [x] `src/guide/reusability/custom-directives.md`
 - [x] `src/guide/reusability/plugins.md`
 - [x] `src/guide/scaling-up/routing.md`
 - [ ] `src/guide/scaling-up/sfc.md`
