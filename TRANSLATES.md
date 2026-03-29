@@ -47,7 +47,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/provide-inject.md`
 - [x] `src/guide/components/registration.md`
 - [ ] `src/guide/components/slots.md`
-- [ ] `src/guide/components/v-model.md`
+- [x] `src/guide/components/v-model.md`
 - [x] `src/guide/extras/animation.md`
 - [x] `src/guide/extras/composition-api-faq.md`
 - [ ] `src/guide/extras/reactivity-in-depth.md`
@@ -111,7 +111,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/provide-inject.md`
 - [x] `src/guide/components/registration.md`
 - [ ] `src/guide/components/slots.md`
-- [ ] `src/guide/components/v-model.md`
+- [x] `src/guide/components/v-model.md`
 - [x] `src/guide/essentials/application.md`
 - [x] `src/guide/essentials/class-and-style.md`
 - [x] `src/guide/essentials/component-basics.md`
