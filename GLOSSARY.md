@@ -76,6 +76,10 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | mustache syntax | cú pháp Mustache | |
 | raw HTML | HTML thô | |
 | attribute binding | ràng buộc thuộc tính | |
+| form input bindings | ràng buộc input của form | |
+| value binding | ràng buộc giá trị | |
+| source of truth | nguồn dữ liệu chuẩn | |
+| Input Method Editor (IME) | IME | Giữ viết tắt quen thuộc |
 | class binding | ràng buộc class | |
 | inline style | inline style | |
 | shorthand | cú pháp rút gọn | |
@@ -84,6 +88,10 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | argument | đối số | |
 | dynamic argument | đối số động | |
 | modifier | modifier | |
+| v-model | v-model | |
+| checkbox | checkbox | |
+| radio input | radio input | |
+| select options | option của select | |
 | PascalCase | PascalCase | Giữ nguyên tên kiểu đặt tên |
 | kebab-case | kebab-case | Giữ nguyên tên kiểu đặt tên |
 | vendor prefix | tiền tố của nhà cung cấp | Có thể viết ngắn là "tiền tố" khi ngữ cảnh rõ |

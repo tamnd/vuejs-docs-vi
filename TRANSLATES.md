@@ -40,6 +40,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/essentials/computed.md`
 - [x] `src/guide/essentials/conditional.md`
 - [x] `src/guide/essentials/event-handling.md`
+- [x] `src/guide/essentials/forms.md`
 
 ## Repo meta
 
@@ -80,7 +81,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/essentials/computed.md`
 - [x] `src/guide/essentials/conditional.md`
 - [x] `src/guide/essentials/event-handling.md`
-- [ ] `src/guide/essentials/forms.md`
+- [x] `src/guide/essentials/forms.md`
 - [ ] `src/guide/essentials/lifecycle.md`
 - [ ] `src/guide/essentials/list.md`
 - [ ] `src/guide/essentials/reactivity-fundamentals.md`
