@@ -203,6 +203,13 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | global build | bản build global | |
 | ES modules build | bản build ES modules | |
 | playground | Playground | Giữ nguyên tên sản phẩm |
+| testing | kiểm thử | |
+| unit test / unit testing | unit test / kiểm thử đơn vị | |
+| component testing | kiểm thử component | |
+| end-to-end (E2E) testing | kiểm thử end-to-end (E2E) | |
+| whitebox / whitebox test | hộp trắng / kiểm thử hộp trắng | |
+| blackbox / blackbox test | hộp đen / kiểm thử hộp đen | |
+| headless | headless | Giữ nguyên cách gọi phổ biến trong ngữ cảnh trình duyệt / runner |
 
 ## Terms To Revisit
 
