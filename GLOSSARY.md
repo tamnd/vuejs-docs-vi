@@ -130,6 +130,7 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | production deployment | triển khai production | |
 | production build | bản build production | |
 | runtime error | lỗi lúc chạy | |
+| runtime declaration | khai báo lúc chạy | |
 | error handler | trình xử lý lỗi | Tùy ngữ cảnh có thể giữ nguyên tên API |
 | security | bảo mật | |
 | vulnerability | lỗ hổng | |
@@ -167,6 +168,10 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | value binding | ràng buộc giá trị | |
 | source of truth | nguồn dữ liệu chuẩn | |
 | alias | bí danh | |
+| type-based declaration | khai báo dựa trên kiểu | |
+| type assertion | ép kiểu | |
+| call signature | chữ ký lời gọi | |
+| named tuple | named tuple | Giữ nguyên cách gọi TypeScript phổ biến |
 | Input Method Editor (IME) | IME | Giữ viết tắt quen thuộc |
 | class binding | ràng buộc class | |
 | inline style | inline style | |
