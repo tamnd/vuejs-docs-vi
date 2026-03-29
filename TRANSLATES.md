@@ -48,7 +48,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `README.md`
 - [x] `TRANSLATES.md`
 - [ ] `.vitepress/config.ts`
-- [ ] `src/index.md`
+- [x] `src/index.md`
 - [ ] `src/guide/introduction.md`
 - [ ] `src/guide/quick-start.md`
 - [ ] `src/guide/essentials/application.md`
@@ -62,7 +62,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Landing and shared pages
 
-- [ ] `src/index.md`
+- [x] `src/index.md`
 - [ ] `src/translations/index.md`
 - [ ] `src/glossary/index.md`
 - [ ] `src/error-reference/index.md`

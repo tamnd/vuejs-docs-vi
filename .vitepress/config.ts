@@ -17,23 +17,23 @@ import {
 
 const nav: ThemeConfig['nav'] = [
   {
-    text: 'Docs',
+    text: 'Tài liệu',
     activeMatch: `^/(guide|tutorial|examples|api|glossary|error-reference)/`,
     items: [
-      { text: 'Quick Start', link: '/guide/quick-start' },
-      { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
+      { text: 'Bắt đầu nhanh', link: '/guide/quick-start' },
+      { text: 'Hướng dẫn', link: '/guide/introduction' },
+      { text: 'Hướng dẫn tương tác', link: '/tutorial/' },
+      { text: 'Ví dụ', link: '/examples/' },
       { text: 'API', link: '/api/' },
       // { text: 'Style Guide', link: '/style-guide/' },
-      { text: 'Glossary', link: '/glossary/' },
-      { text: 'Error Reference', link: '/error-reference/' },
+      { text: 'Thuật ngữ', link: '/glossary/' },
+      { text: 'Tra cứu lỗi', link: '/error-reference/' },
       {
-        text: 'Vue 2 Docs',
+        text: 'Tài liệu Vue 2',
         link: 'https://v2.vuejs.org'
       },
       {
-        text: 'Migration from Vue 2',
+        text: 'Di chuyển từ Vue 2',
         link: 'https://v3-migration.vuejs.org/'
       }
     ]
@@ -43,36 +43,36 @@ const nav: ThemeConfig['nav'] = [
     link: 'https://play.vuejs.org'
   },
   {
-    text: 'Ecosystem',
+    text: 'Hệ sinh thái',
     activeMatch: `^/ecosystem/`,
     items: [
       {
-        text: 'Resources',
+        text: 'Tài nguyên',
         items: [
-          { text: 'Themes', link: '/ecosystem/themes' },
-          { text: 'UI Components', link: 'https://ui-libs.vercel.app/' },
+          { text: 'Theme', link: '/ecosystem/themes' },
+          { text: 'Thành phần UI', link: 'https://ui-libs.vercel.app/' },
           {
-            text: 'Plugins Collection',
+            text: 'Bộ sưu tập plugin',
             link: 'https://www.vue-plugins.org/'
           },
           {
-            text: 'Certification',
+            text: 'Chứng chỉ',
             link: 'https://certificates.dev/vuejs/?ref=vuejs-nav'
           },
-          { text: 'Jobs', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: 'T-Shirt Shop', link: 'https://vue.threadless.com/' }
+          { text: 'Việc làm', link: 'https://vuejobs.com/?ref=vuejs' },
+          { text: 'Cửa hàng áo thun', link: 'https://vue.threadless.com/' }
         ]
       },
       {
-        text: 'Official Libraries',
+        text: 'Thư viện chính thức',
         items: [
           { text: 'Vue Router', link: 'https://router.vuejs.org/' },
           { text: 'Pinia', link: 'https://pinia.vuejs.org/' },
-          { text: 'Tooling Guide', link: '/guide/scaling-up/tooling.html' }
+          { text: 'Hướng dẫn công cụ', link: '/guide/scaling-up/tooling.html' }
         ]
       },
       {
-        text: 'Video Courses',
+        text: 'Khóa học video',
         items: [
           {
             text: 'Vue Mastery',
@@ -85,55 +85,55 @@ const nav: ThemeConfig['nav'] = [
         ]
       },
       {
-        text: 'Help',
+        text: 'Trợ giúp',
         items: [
           {
-            text: 'Discord Chat',
+            text: 'Discord',
             link: 'https://discord.com/invite/HBherRA'
           },
           {
             text: 'GitHub Discussions',
             link: 'https://github.com/vuejs/core/discussions'
           },
-          { text: 'DEV Community', link: 'https://dev.to/t/vue' }
+          { text: 'Cộng đồng DEV', link: 'https://dev.to/t/vue' }
         ]
       },
       {
-        text: 'News',
+        text: 'Tin tức',
         items: [
           { text: 'Blog', link: 'https://blog.vuejs.org/' },
           { text: 'Twitter', link: 'https://x.com/vuejs' },
-          { text: 'Events', link: 'https://events.vuejs.org/' },
-          { text: 'Newsletters', link: '/ecosystem/newsletters' }
+          { text: 'Sự kiện', link: 'https://events.vuejs.org/' },
+          { text: 'Bản tin', link: '/ecosystem/newsletters' }
         ]
       }
     ]
   },
   {
-    text: 'About',
+    text: 'Giới thiệu',
     activeMatch: `^/about/`,
     items: [
       { text: 'FAQ', link: '/about/faq' },
-      { text: 'Team', link: '/about/team' },
-      { text: 'Releases', link: '/about/releases' },
+      { text: 'Nhóm', link: '/about/team' },
+      { text: 'Phát hành', link: '/about/releases' },
       {
-        text: 'Community Guide',
+        text: 'Hướng dẫn cộng đồng',
         link: '/about/community-guide'
       },
-      { text: 'Code of Conduct', link: '/about/coc' },
-      { text: 'Privacy Policy', link: '/about/privacy' },
+      { text: 'Quy tắc ứng xử', link: '/about/coc' },
+      { text: 'Chính sách quyền riêng tư', link: '/about/privacy' },
       {
-        text: 'The Documentary',
+        text: 'Phim tài liệu',
         link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
       }
     ]
   },
   {
-    text: 'Support',
+    text: 'Ủng hộ',
     activeMatch: `^/(sponsor|partners)/`,
     items: [
-      { text: 'Sponsor', link: '/sponsor/' },
-      { text: 'Partners', link: '/partners/' }
+      { text: 'Tài trợ', link: '/sponsor/' },
+      { text: 'Đối tác', link: '/partners/' }
     ]
   }
 ]
