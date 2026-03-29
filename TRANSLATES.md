@@ -35,7 +35,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/typescript/composition-api.md`
 - [x] `src/guide/typescript/options-api.md`
 - [x] `src/guide/typescript/overview.md`
-- [ ] `src/api/application.md`
+- [x] `src/api/application.md`
 - [ ] `src/api/built-in-components.md`
 - [ ] `src/api/built-in-directives.md`
 - [ ] `src/api/built-in-special-attributes.md`
@@ -150,7 +150,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## API
 
-- [ ] `src/api/application.md`
+- [x] `src/api/application.md`
 - [ ] `src/api/built-in-components.md`
 - [ ] `src/api/built-in-directives.md`
 - [ ] `src/api/built-in-special-attributes.md`
