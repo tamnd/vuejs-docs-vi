@@ -49,7 +49,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `TRANSLATES.md`
 - [ ] `.vitepress/config.ts`
 - [x] `src/index.md`
-- [ ] `src/guide/introduction.md`
+- [x] `src/guide/introduction.md`
 - [ ] `src/guide/quick-start.md`
 - [ ] `src/guide/essentials/application.md`
 - [ ] `src/guide/essentials/template-syntax.md`
@@ -108,7 +108,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `src/guide/extras/rendering-mechanism.md`
 - [ ] `src/guide/extras/ways-of-using-vue.md`
 - [ ] `src/guide/extras/web-components.md`
-- [ ] `src/guide/introduction.md`
+- [x] `src/guide/introduction.md`
 - [ ] `src/guide/quick-start.md`
 - [ ] `src/guide/reusability/composables.md`
 - [ ] `src/guide/reusability/custom-directives.md`
