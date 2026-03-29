@@ -149,7 +149,7 @@ const open = ref(false)
 Bạn có thể kết hợp `<Teleport>` với [`<Transition>`](./transition) để tạo modal có animation, xem [ví dụ tại đây](/examples/#modal).
 
 :::tip
-Mục tiêu `to` của teleport phải có sẵn trong DOM vào thời điểm `<Teleport>` được mount. Lý tưởng nhất, đó nên là một phần tử nằm ngoài toàn bộ ứng dụng Vue. Nếu bạn nhắm tới một phần tử khác cũng do Vue render, bạn cần bảo đảm phần tử đó được mount trước `<Teleport>`. Nếu đang dùng SSR, hãy xem [Xử lý Teleport trong SSR](/guide/scaling-up/ssr#teleports).
+Mục tiêu `to` của Teleport phải có sẵn trong DOM vào thời điểm `<Teleport>` được mount. Lý tưởng nhất, đó nên là một phần tử nằm ngoài toàn bộ ứng dụng Vue. Nếu bạn nhắm tới một phần tử khác cũng do Vue render, bạn cần bảo đảm phần tử đó được mount trước `<Teleport>`. Nếu đang dùng SSR, hãy xem [Xử lý Teleport trong SSR](/guide/scaling-up/ssr#teleports).
 :::
 
 ## Dùng cùng với component {#using-with-components}
