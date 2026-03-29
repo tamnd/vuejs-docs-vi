@@ -114,6 +114,8 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | error reference | tra cứu lỗi | Khi dùng cho mục điều hướng |
 | state management | quản lý state | |
 | server-side rendering | kết xuất phía máy chủ | Có thể viết tắt SSR |
+| routing | routing | Giữ nguyên cách gọi phổ biến |
+| router | router | |
 | dependency injection | tiêm phụ thuộc | |
 | production deployment | triển khai production | |
 | production build | bản build production | |
@@ -172,6 +174,16 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | truthy | truthy | Giữ nguyên khi giải thích cùng liên kết MDN |
 | falsy | falsy | Giữ nguyên khi giải thích cùng liên kết MDN |
 | web components | Web Components | Giữ nguyên tên chuẩn |
+| virtual DOM | virtual DOM | |
+| virtual node | virtual node | |
+| render function | render function | |
+| runtime compiler | runtime compiler | |
+| patch | patch | |
+| reconciliation | reconciliation | |
+| patch flag | patch flag | |
+| tree flattening | làm phẳng cây | |
+| hydration | hydration | |
+| plugin | plugin | |
 | Renderless Component | Renderless Component | Giữ nguyên tên gọi phổ biến |
 | import maps | Import Maps | |
 | global build | bản build global | |
