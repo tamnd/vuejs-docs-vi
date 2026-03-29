@@ -43,7 +43,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/async.md`
 - [x] `src/guide/components/attrs.md`
 - [x] `src/guide/components/events.md`
-- [ ] `src/guide/components/props.md`
+- [x] `src/guide/components/props.md`
 - [x] `src/guide/components/provide-inject.md`
 - [x] `src/guide/components/registration.md`
 - [ ] `src/guide/components/slots.md`
@@ -107,7 +107,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/async.md`
 - [x] `src/guide/components/attrs.md`
 - [x] `src/guide/components/events.md`
-- [ ] `src/guide/components/props.md`
+- [x] `src/guide/components/props.md`
 - [x] `src/guide/components/provide-inject.md`
 - [x] `src/guide/components/registration.md`
 - [ ] `src/guide/components/slots.md`
