@@ -31,7 +31,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/translations/index.md`
 - [x] `src/glossary/index.md`
 - [x] `src/error-reference/index.md`
-- [ ] `src/examples/index.md`
+- [x] `src/examples/index.md`
 - [ ] `src/guide/best-practices/performance.md`
 - [x] `src/guide/best-practices/production-deployment.md`
 - [x] `src/guide/best-practices/security.md`
@@ -91,7 +91,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/translations/index.md`
 - [x] `src/glossary/index.md`
 - [x] `src/error-reference/index.md`
-- [ ] `src/examples/index.md`
+- [x] `src/examples/index.md`
 
 ## Guide
 
