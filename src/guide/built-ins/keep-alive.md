@@ -50,7 +50,7 @@ Lúc này, state sẽ được giữ lại qua các lần chuyển component:
 Khi dùng trong [template viết trực tiếp trong DOM](/guide/essentials/component-basics#in-dom-template-parsing-caveats), nó nên được viết là `<keep-alive>`.
 :::
 
-## Include / Exclude {#include-exclude}
+## Bao gồm / Loại trừ {#include-exclude}
 
 Mặc định, `<KeepAlive>` sẽ cache mọi instance component nằm bên trong nó. Ta có thể tùy biến hành vi này bằng props `include` và `exclude`. Cả hai prop đều có thể là chuỗi phân tách bằng dấu phẩy, một `RegExp`, hoặc một mảng chứa các kiểu đó:
 
