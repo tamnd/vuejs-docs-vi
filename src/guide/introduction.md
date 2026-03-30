@@ -85,11 +85,11 @@ const count = ref(0)
 
 Ví dụ trên thể hiện hai điểm chính của Vue:
 
-- **Khai báo giao diện**: mô tả HTML dựa trên state trong JavaScript.
+- **Khai báo giao diện (Declarative Rendering)**: Vue mở rộng HTML với cú pháp template, cho phép mô tả HTML dựa trên state trong JavaScript theo cách khai báo.
 
-- **Tính phản ứng (reactivity)**: khi state thay đổi, Vue tự cập nhật DOM.
+- **Tính phản ứng (Reactivity)**: Vue tự động theo dõi thay đổi của state và cập nhật DOM khi có thay đổi.
 
-Nếu chưa rõ ngay, các phần sau sẽ giải thích chi tiết hơn.
+Bạn có thể đã có một số thắc mắc, đừng lo. Phần còn lại của tài liệu sẽ giải thích chi tiết từng phần. Bây giờ, hãy tiếp tục đọc để có cái nhìn tổng quan về những gì Vue cung cấp.
 
 :::tip Điều kiện tiên quyết
 Bạn nên biết cơ bản về HTML, CSS và JavaScript. Nếu chưa, nên học nền tảng trước rồi quay lại. Bạn có thể kiểm tra kiến thức qua các bài tổng quan về [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML), và [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps). Kinh nghiệm với các framework khác sẽ có ích, nhưng không bắt buộc.
@@ -106,11 +106,11 @@ Vue là một framework cùng hệ sinh thái bao phủ hầu hết nhu cầu ph
 - SSG (tạo site tĩnh)
 - Dùng cho desktop, mobile, WebGL, terminal
 
-Bạn không cần hiểu hết ngay từ đầu. Các phần hướng dẫn chỉ yêu cầu kiến thức cơ bản.
+Nếu bạn thấy các khái niệm này hơi khó hiểu, đừng lo. Phần tutorial và hướng dẫn chỉ yêu cầu kiến thức cơ bản về HTML và JavaScript, và bạn vẫn có thể theo kịp mà không cần là chuyên gia.
 
 Nếu bạn là lập trình viên có kinh nghiệm và muốn biết cách tích hợp Vue vào stack của mình, xem thêm [Các cách sử dụng Vue](/guide/extras/ways-of-using-vue).
 
-Dù dùng theo cách nào, các kiến thức cốt lõi của Vue vẫn giống nhau. Đó là lý do chúng tôi gọi Vue là "Framework linh động": một framework có thể lớn lên cùng bạn và thích nghi theo nhu cầu của bạn.
+Dù rất linh hoạt, các kiến thức cốt lõi về cách Vue hoạt động vẫn giống nhau trong mọi trường hợp sử dụng. Ngay cả khi bạn mới bắt đầu, những gì bạn học được vẫn sẽ hữu ích khi bạn tiến tới những mục tiêu phức tạp hơn sau này. Nếu bạn đã có kinh nghiệm, bạn có thể chọn cách dùng Vue phù hợp nhất với bài toán của mình mà vẫn giữ được năng suất. Đó là lý do Vue được gọi là "Progressive Framework": một framework có thể phát triển cùng bạn và thích nghi theo nhu cầu của bạn.
 
 ## Single-File Components {#single-file-components}
 
