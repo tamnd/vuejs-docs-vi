@@ -1,6 +1,6 @@
 # Accessibility {#accessibility}
 
-Khả năng tiếp cận trên web, thường được gọi là a11y, là cách xây dựng website sao cho ai cũng có thể dùng được. Đó có thể là người khuyết tật, người có đường truyền chậm, dùng phần cứng cũ hay hỏng, hoặc đơn giản là đang ở trong một môi trường không thuận lợi. Ví dụ, việc thêm phụ đề cho video sẽ giúp cả người khiếm thính lẫn người đang ở nơi ồn ào không nghe rõ điện thoại. Tương tự, việc bảo đảm văn bản có độ tương phản đủ cao sẽ giúp cả người có thị lực kém lẫn người đang dùng điện thoại dưới nắng gắt.
+Khả năng tiếp cận trên web, thường được gọi là a11y, là cách xây dựng website sao cho ai cũng có thể dùng được — dù là người khuyết tật, người có đường truyền chậm, dùng phần cứng cũ hay hỏng, hay đơn giản là đang ở trong môi trường không thuận lợi. Ví dụ, thêm phụ đề cho video giúp cả người khiếm thính lẫn người đang ở nơi ồn ào không nghe được. Tương tự, bảo đảm văn bản có độ tương phản đủ cao giúp cả người có thị lực kém lẫn người đang dùng điện thoại dưới nắng gắt.
 
 Bạn muốn bắt đầu nhưng chưa rõ nên đi từ đâu?
 

@@ -1,6 +1,6 @@
 # Hook vòng đời {#lifecycle-hooks}
 
-Mỗi component instance trong Vue sẽ đi qua một loạt bước khởi tạo khi được tạo ra. Ví dụ, nó cần thiết lập việc theo dõi dữ liệu, biên dịch template, mount instance vào DOM và cập nhật DOM khi dữ liệu thay đổi. Trong suốt quá trình đó, nó cũng chạy những hàm gọi là hook vòng đời (lifecycle hook), cho phép người dùng chèn thêm code của mình vào những giai đoạn cụ thể.
+Mỗi component instance trong Vue trải qua một loạt bước khởi tạo khi được tạo ra — ví dụ như thiết lập theo dõi dữ liệu, biên dịch template, mount vào DOM, và cập nhật DOM khi dữ liệu thay đổi. Trong suốt quá trình đó, Vue cũng gọi những hàm được gọi là **hook vòng đời** (lifecycle hook), cho phép bạn chèn code của mình vào những giai đoạn cụ thể.
 
 ## Đăng ký hook vòng đời {#registering-lifecycle-hooks}
 
@@ -57,7 +57,7 @@ Cũng cần lưu ý rằng điều này không có nghĩa lời gọi đó bắt
 
 ## Sơ đồ vòng đời {#lifecycle-diagram}
 
-Dưới đây là sơ đồ vòng đời của instance. Bạn chưa cần phải hiểu hết mọi thứ ngay lúc này, nhưng khi học sâu hơn và xây dựng nhiều hơn, nó sẽ là một tài liệu tham khảo hữu ích.
+Dưới đây là sơ đồ vòng đời của instance. Bạn chưa cần hiểu hết ngay bây giờ, nhưng khi học sâu hơn và xây dựng nhiều hơn, đây sẽ là tài liệu tham khảo rất hữu ích.
 
 ![Sơ đồ vòng đời của component](./images/lifecycle.png)
 

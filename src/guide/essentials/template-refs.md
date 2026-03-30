@@ -1,6 +1,6 @@
 # Template Refs {#template-refs}
 
-Mô hình kết xuất khai báo của Vue giúp bạn không phải đụng trực tiếp tới phần lớn thao tác DOM. Tuy vậy, vẫn có lúc ta cần truy cập thẳng vào phần tử DOM bên dưới. Để làm việc này, ta có thể dùng thuộc tính đặc biệt `ref`:
+Mô hình kết xuất khai báo của Vue giúp bạn hiếm khi phải động tay vào DOM. Tuy vậy, vẫn có lúc ta cần truy cập trực tiếp vào một phần tử DOM cụ thể. Để làm điều đó, ta dùng thuộc tính đặc biệt `ref`:
 
 ```vue-html
 <input ref="input">
