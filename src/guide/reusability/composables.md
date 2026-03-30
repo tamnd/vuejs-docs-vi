@@ -372,11 +372,11 @@ Khuyến nghị là: hãy dùng composable khi tái sử dụng logic thuần, v
 
 ### So Với React Hooks {#vs-react-hooks}
 
-Nếu bạn có kinh nghiệm với React, bạn có thể thấy điều này rất giống custom React hooks. Composition API phần nào được lấy cảm hứng từ React hooks, và composable của Vue quả thực cũng tương tự React hooks ở khả năng kết hợp logic. Tuy nhiên, composable của Vue dựa trên hệ phản ứng chi tiết của Vue, vốn khác biệt căn bản so với mô hình thực thi của React hooks. Điều này được bàn chi tiết hơn trong [Composition API FAQ](/guide/extras/composition-api-faq#comparison-with-react-hooks).
+Nếu bạn có kinh nghiệm với React, bạn có thể thấy điều này rất giống custom React hooks. Composition API phần nào được lấy cảm hứng từ React hooks, và composable của Vue quả thực cũng tương tự React hooks ở khả năng kết hợp logic. Tuy nhiên, composable của Vue dựa trên hệ thống tính phản ứng chi tiết của Vue, vốn khác biệt căn bản so với mô hình thực thi của React hooks. Điều này được bàn chi tiết hơn trong [Composition API FAQ](/guide/extras/composition-api-faq#comparison-with-react-hooks).
 
 ## Đọc Thêm {#further-reading}
 
-- [Reactivity In Depth](/guide/extras/reactivity-in-depth): để hiểu ở mức thấp hệ phản ứng của Vue hoạt động ra sao.
+- [Reactivity In Depth](/guide/extras/reactivity-in-depth): để hiểu ở mức thấp hệ thống tính phản ứng của Vue hoạt động ra sao.
 - [State Management](/guide/scaling-up/state-management): cho các pattern quản lý state dùng chung giữa nhiều component.
 - [Testing Composables](/guide/scaling-up/testing#testing-composables): các mẹo khi unit test composable.
 - [VueUse](https://vueuse.org/): một bộ sưu tập composable của Vue ngày càng lớn. Mã nguồn của nó cũng là tài nguyên học tập rất tốt.
