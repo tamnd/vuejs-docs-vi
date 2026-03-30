@@ -76,7 +76,7 @@ Khác với sự kiện DOM gốc, các sự kiện do component phát ra **khô
 
 ```vue-html
 <button @click="$emit('increaseBy', 1)">
-  Increase by 1
+  Tăng 1
 </button>
 ```
 
