@@ -27,36 +27,36 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Checklist 30 trang tiếp theo
 
-- [ ] `src/guide/scaling-up/sfc.md`
-- [ ] `src/guide/scaling-up/ssr.md`
-- [ ] `src/guide/scaling-up/state-management.md`
-- [ ] `src/guide/scaling-up/testing.md`
-- [ ] `src/guide/scaling-up/tooling.md`
-- [ ] `src/guide/typescript/composition-api.md`
-- [ ] `src/guide/typescript/options-api.md`
-- [ ] `src/guide/typescript/overview.md`
-- [ ] `src/api/application.md`
+- [x] `src/guide/scaling-up/sfc.md`
+- [x] `src/guide/scaling-up/ssr.md`
+- [x] `src/guide/scaling-up/state-management.md`
+- [x] `src/guide/scaling-up/testing.md`
+- [x] `src/guide/scaling-up/tooling.md`
+- [x] `src/guide/typescript/composition-api.md`
+- [x] `src/guide/typescript/options-api.md`
+- [x] `src/guide/typescript/overview.md`
+- [x] `src/api/application.md`
 - [ ] `src/api/built-in-components.md`
 - [ ] `src/api/built-in-directives.md`
 - [ ] `src/api/built-in-special-attributes.md`
 - [ ] `src/api/built-in-special-elements.md`
 - [ ] `src/api/compile-time-flags.md`
 - [ ] `src/api/component-instance.md`
-- [ ] `src/api/composition-api-dependency-injection.md`
-- [ ] `src/api/composition-api-helpers.md`
-- [ ] `src/api/composition-api-lifecycle.md`
-- [ ] `src/api/composition-api-setup.md`
+- [x] `src/api/composition-api-dependency-injection.md`
+- [x] `src/api/composition-api-helpers.md`
+- [x] `src/api/composition-api-lifecycle.md`
+- [x] `src/api/composition-api-setup.md`
 - [ ] `src/api/custom-elements.md`
 - [ ] `src/api/custom-renderer.md`
-- [ ] `src/api/general.md`
+- [x] `src/api/general.md`
 - [ ] `src/api/index.md`
 - [ ] `src/api/options-composition.md`
-- [ ] `src/api/options-lifecycle.md`
+- [x] `src/api/options-lifecycle.md`
 - [ ] `src/api/options-misc.md`
 - [ ] `src/api/options-rendering.md`
-- [ ] `src/api/options-state.md`
-- [ ] `src/api/reactivity-advanced.md`
-- [ ] `src/api/reactivity-core.md`
+- [x] `src/api/options-state.md`
+- [x] `src/api/reactivity-advanced.md`
+- [x] `src/api/reactivity-core.md`
 
 ## Ưu tiên sprint đầu
 
@@ -95,10 +95,10 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Guide
 
-- [ ] `src/guide/best-practices/accessibility.md`
-- [ ] `src/guide/best-practices/performance.md`
-- [ ] `src/guide/best-practices/production-deployment.md`
-- [ ] `src/guide/best-practices/security.md`
+- [x] `src/guide/best-practices/accessibility.md`
+- [x] `src/guide/best-practices/performance.md`
+- [x] `src/guide/best-practices/production-deployment.md`
+- [x] `src/guide/best-practices/security.md`
 - [x] `src/guide/built-ins/keep-alive.md`
 - [x] `src/guide/built-ins/suspense.md`
 - [x] `src/guide/built-ins/teleport.md`
@@ -138,15 +138,15 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/reusability/composables.md`
 - [x] `src/guide/reusability/custom-directives.md`
 - [x] `src/guide/reusability/plugins.md`
-- [ ] `src/guide/scaling-up/routing.md`
-- [ ] `src/guide/scaling-up/sfc.md`
-- [ ] `src/guide/scaling-up/ssr.md`
-- [ ] `src/guide/scaling-up/state-management.md`
-- [ ] `src/guide/scaling-up/testing.md`
-- [ ] `src/guide/scaling-up/tooling.md`
-- [ ] `src/guide/typescript/composition-api.md`
-- [ ] `src/guide/typescript/options-api.md`
-- [ ] `src/guide/typescript/overview.md`
+- [x] `src/guide/scaling-up/routing.md`
+- [x] `src/guide/scaling-up/sfc.md`
+- [x] `src/guide/scaling-up/ssr.md`
+- [x] `src/guide/scaling-up/state-management.md`
+- [x] `src/guide/scaling-up/testing.md`
+- [x] `src/guide/scaling-up/tooling.md`
+- [x] `src/guide/typescript/composition-api.md`
+- [x] `src/guide/typescript/options-api.md`
+- [x] `src/guide/typescript/overview.md`
 
 ## API
 
