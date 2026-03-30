@@ -40,4 +40,4 @@ export default {
 
 </div>
 
-Ví dụ thực tế hơn là log vào console là lấy dữ liệu mới khi ID thay đổi. Code chúng ta đang có lấy dữ liệu todos từ mock API khi component mount. Cũng có nút tăng todo ID cần được lấy. Hãy thử triển khai watcher để lấy todo mới khi nút được nhấn.
+Một ví dụ thực tế hơn là lấy dữ liệu mới khi một ID thay đổi, thay vì chỉ log ra console. Code hiện tại lấy dữ liệu todo từ một mock API khi component mount. Ngoài ra còn có một nút để tăng ID của todo cần lấy. Hãy thử triển khai một watcher để lấy todo mới mỗi khi nút được nhấn.

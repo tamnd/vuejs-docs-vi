@@ -432,7 +432,7 @@ Thông thường, có hai trường hợp dễ khiến ta muốn thay đổi pro
 
 Khi object và array được truyền làm prop, dù component con không thể thay đổi bản thân liên kết của prop, nó **vẫn có thể** thay đổi các property lồng bên trong object hoặc array đó. Lý do là vì trong JavaScript, object và array được truyền bằng tham chiếu, và Vue sẽ phải trả một chi phí quá lớn nếu cố ngăn chặn hoàn toàn các thay đổi kiểu này.
 
-Nhược điểm chính của kiểu thay đổi đó là nó cho phép component con ảnh hưởng tới state của component cha theo một cách không rõ ràng với component cha, khiến việc suy luận về luồng dữ liệu sau này có thể khó hơn. Best practice là nên tránh những thay đổi như vậy trừ khi component cha và component con vốn đã được thiết kế để gắn chặt với nhau. Trong đa số trường hợp, component con nên [phát ra một sự kiện](/guide/components/events) để component cha tự thực hiện thay đổi.
+Nhược điểm chính của kiểu thay đổi đó là nó cho phép component con ảnh hưởng tới state của component cha theo một cách không rõ ràng với component cha, khiến việc suy luận về luồng dữ liệu sau này có thể khó hơn. Thực hành tốt nhất là nên tránh những thay đổi như vậy trừ khi component cha và component con vốn đã được thiết kế để gắn chặt với nhau. Trong đa số trường hợp, component con nên [phát ra một sự kiện](/guide/components/events) để component cha tự thực hiện thay đổi.
 
 ## Kiểm Tra Tính Hợp Lệ Của Prop {#prop-validation}
 

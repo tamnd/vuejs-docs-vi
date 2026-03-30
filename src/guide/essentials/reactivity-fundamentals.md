@@ -12,7 +12,7 @@ Trang này và nhiều chương sau trong hướng dẫn có nội dung khác nh
 
 ## Khai báo state phản ứng \* {#declaring-reactive-state}
 
-Với Options API, chúng ta dùng option `data` để khai báo state phản ứng của component. Giá trị của option này phải là một hàm trả về object. Vue sẽ gọi hàm đó khi tạo một component instance mới, rồi đưa object trả về vào hệ thống phản ứng của nó. Mọi property ở cấp cao nhất của object này sẽ được proxy lên component instance, tức là `this` trong method và hook vòng đời:
+Với Options API, chúng ta dùng option `data` để khai báo state phản ứng của component. Giá trị của option này phải là một hàm trả về object. Vue sẽ gọi hàm đó khi tạo một component instance mới, rồi đưa object trả về vào hệ thống tính phản ứng của nó. Mọi property ở cấp cao nhất của object này sẽ được proxy lên component instance, tức là `this` trong method và hook vòng đời:
 
 ```js{2-6}
 export default {
@@ -43,7 +43,7 @@ Vue dùng tiền tố `$` khi đưa các API dựng sẵn của nó ra thông qu
 
 ### Proxy phản ứng và object gốc \* {#reactive-proxy-vs-original}
 
-Trong Vue 3, dữ liệu được đưa vào hệ phản ứng bằng [JavaScript Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Nếu bạn chuyển từ Vue 2 sang thì nên để ý trường hợp đặc biệt sau:
+Trong Vue 3, dữ liệu được đưa vào hệ thống tính phản ứng bằng [JavaScript Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Nếu bạn chuyển từ Vue 2 sang thì nên để ý trường hợp đặc biệt sau:
 
 ```js
 export default {
@@ -192,9 +192,9 @@ Nếu bạn không dùng SFC, bạn vẫn có thể dùng Composition API thông
 
 ### Tại sao dùng Ref? \*\* {#why-refs}
 
-Có thể bạn sẽ thắc mắc vì sao phải dùng ref với `.value` thay vì chỉ dùng biến thông thường. Để giải thích điều này, chúng ta cần nói ngắn gọn về cách hệ phản ứng của Vue hoạt động.
+Có thể bạn sẽ thắc mắc vì sao phải dùng ref với `.value` thay vì chỉ dùng biến thông thường. Để giải thích điều này, chúng ta cần nói ngắn gọn về cách hệ thống tính phản ứng của Vue hoạt động.
 
-Khi bạn dùng ref trong template rồi thay đổi giá trị của nó về sau, Vue sẽ tự động phát hiện thay đổi và cập nhật DOM tương ứng. Điều này có được nhờ một hệ phản ứng dựa trên cơ chế theo dõi dependency. Khi component được render lần đầu, Vue sẽ **theo dõi** mọi ref đã được dùng trong lần render đó. Về sau, khi ref bị thay đổi, nó sẽ **kích hoạt** render lại cho những component đang theo dõi nó.
+Khi bạn dùng ref trong template rồi thay đổi giá trị của nó về sau, Vue sẽ tự động phát hiện thay đổi và cập nhật DOM tương ứng. Điều này có được nhờ một hệ thống tính phản ứng dựa trên cơ chế theo dõi dependency. Khi component được render lần đầu, Vue sẽ **theo dõi** mọi ref đã được dùng trong lần render đó. Về sau, khi ref bị thay đổi, nó sẽ **kích hoạt** render lại cho những component đang theo dõi nó.
 
 Trong JavaScript thông thường, không có cách nào để phát hiện việc truy cập hay thay đổi của một biến thường. Tuy nhiên, ta có thể đánh chặn thao tác get và set trên property của object bằng getter và setter.
 
@@ -215,9 +215,9 @@ const myRef = {
 }
 ```
 
-Một điểm hay khác của ref là khác với biến thường, bạn có thể truyền ref vào hàm mà vẫn giữ được quyền truy cập tới giá trị mới nhất và giữ nguyên kết nối với hệ phản ứng. Điều này đặc biệt hữu ích khi tách logic phức tạp thành code có thể tái sử dụng.
+Một điểm hay khác của ref là khác với biến thường, bạn có thể truyền ref vào hàm mà vẫn giữ được quyền truy cập tới giá trị mới nhất và giữ nguyên kết nối với hệ thống tính phản ứng. Điều này đặc biệt hữu ích khi tách logic phức tạp thành code có thể tái sử dụng.
 
-Hệ phản ứng sẽ được bàn kỹ hơn trong phần [Tìm hiểu sâu về tính phản ứng](/guide/extras/reactivity-in-depth).
+Hệ thống tính phản ứng sẽ được bàn kỹ hơn trong phần [Tìm hiểu sâu về tính phản ứng](/guide/extras/reactivity-in-depth).
 </div>
 
 <div class="options-api">
@@ -406,7 +406,7 @@ const proxy = reactive(raw)
 console.log(proxy === raw) // false
 ```
 
-Chỉ proxy mới có tính phản ứng, còn việc thay đổi object gốc sẽ không kích hoạt cập nhật. Vì vậy, thực hành tốt nhất khi làm việc với hệ phản ứng của Vue là **chỉ dùng bản proxy của state**.
+Chỉ proxy mới có tính phản ứng, còn việc thay đổi object gốc sẽ không kích hoạt cập nhật. Vì vậy, thực hành tốt nhất khi làm việc với hệ thống tính phản ứng của Vue là **chỉ dùng bản proxy của state**.
 
 Để đảm bảo việc truy cập proxy luôn nhất quán, gọi `reactive()` trên cùng một object sẽ luôn trả về cùng một proxy, và gọi `reactive()` trên một proxy đã có cũng sẽ trả về chính proxy đó:
 

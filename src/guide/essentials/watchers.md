@@ -2,7 +2,7 @@
 
 ## Ví dụ cơ bản {#basic-example}
 
-Thuộc tính computed cho phép ta khai báo giá trị dẫn xuất một cách rõ ràng. Tuy vậy, có những trường hợp ta cần thực hiện "side effect" khi state thay đổi, ví dụ sửa DOM, hoặc cập nhật một phần state khác dựa trên kết quả của một thao tác async.
+Thuộc tính computed cho phép ta khai báo giá trị dẫn xuất một cách rõ ràng. Tuy vậy, có những trường hợp ta cần thực hiện side effect khi state thay đổi, ví dụ sửa DOM, hoặc cập nhật một phần state khác dựa trên kết quả của một thao tác async.
 
 <div class="options-api">
 
@@ -109,7 +109,7 @@ watch(question, async (newQuestion, oldQuestion) => {
 
 ### Kiểu nguồn theo dõi {#watch-source-types}
 
-Đối số đầu tiên của `watch` có thể là nhiều kiểu "nguồn" phản ứng khác nhau: một ref (bao gồm cả computed ref), một object phản ứng, một [hàm getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get#description), hoặc một mảng gồm nhiều nguồn:
+Đối số đầu tiên của `watch` có thể là nhiều kiểu nguồn phản ứng khác nhau: một ref (bao gồm cả computed ref), một object phản ứng, một [hàm getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get#description), hoặc một mảng gồm nhiều nguồn:
 
 ```js
 const x = ref(0)
