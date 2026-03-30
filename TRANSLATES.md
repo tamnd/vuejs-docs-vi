@@ -110,8 +110,8 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/props.md`
 - [ ] `src/guide/components/provide-inject.md`
 - [ ] `src/guide/components/registration.md`
-- [ ] `src/guide/components/slots.md`
-- [ ] `src/guide/components/v-model.md`
+- [x] `src/guide/components/slots.md`
+- [x] `src/guide/components/v-model.md`
 - [x] `src/guide/essentials/application.md`
 - [x] `src/guide/essentials/class-and-style.md`
 - [x] `src/guide/essentials/component-basics.md`
