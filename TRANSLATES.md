@@ -64,19 +64,19 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `TRANSLATES.md`
 - [ ] `.vitepress/config.ts`
 - [ ] `src/index.md`
-- [ ] `src/guide/introduction.md`
-- [ ] `src/guide/quick-start.md`
-- [ ] `src/guide/essentials/application.md`
-- [ ] `src/guide/essentials/template-syntax.md`
-- [ ] `src/guide/essentials/class-and-style.md`
+- [x] `src/guide/introduction.md`
+- [x] `src/guide/quick-start.md`
+- [x] `src/guide/essentials/application.md`
+- [x] `src/guide/essentials/template-syntax.md`
+- [x] `src/guide/essentials/class-and-style.md`
 - [ ] `src/guide/essentials/component-basics.md`
-- [ ] `src/guide/essentials/computed.md`
-- [ ] `src/guide/essentials/conditional.md`
+- [x] `src/guide/essentials/computed.md`
+- [x] `src/guide/essentials/conditional.md`
 - [ ] `src/guide/essentials/event-handling.md`
 - [ ] `src/guide/essentials/forms.md`
 - [ ] `src/guide/essentials/lifecycle.md`
-- [ ] `src/guide/essentials/list.md`
-- [ ] `src/guide/essentials/reactivity-fundamentals.md`
+- [x] `src/guide/essentials/list.md`
+- [x] `src/guide/essentials/reactivity-fundamentals.md`
 - [ ] `src/guide/essentials/template-refs.md`
 
 ## Repo meta
@@ -112,18 +112,18 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/components/registration.md`
 - [x] `src/guide/components/slots.md`
 - [x] `src/guide/components/v-model.md`
-- [ ] `src/guide/essentials/application.md`
-- [ ] `src/guide/essentials/class-and-style.md`
+- [x] `src/guide/essentials/application.md`
+- [x] `src/guide/essentials/class-and-style.md`
 - [ ] `src/guide/essentials/component-basics.md`
-- [ ] `src/guide/essentials/computed.md`
-- [ ] `src/guide/essentials/conditional.md`
+- [x] `src/guide/essentials/computed.md`
+- [x] `src/guide/essentials/conditional.md`
 - [ ] `src/guide/essentials/event-handling.md`
 - [ ] `src/guide/essentials/forms.md`
 - [ ] `src/guide/essentials/lifecycle.md`
-- [ ] `src/guide/essentials/list.md`
-- [ ] `src/guide/essentials/reactivity-fundamentals.md`
+- [x] `src/guide/essentials/list.md`
+- [x] `src/guide/essentials/reactivity-fundamentals.md`
 - [ ] `src/guide/essentials/template-refs.md`
-- [ ] `src/guide/essentials/template-syntax.md`
+- [x] `src/guide/essentials/template-syntax.md`
 - [ ] `src/guide/essentials/watchers.md`
 - [ ] `src/guide/extras/animation.md`
 - [ ] `src/guide/extras/composition-api-faq.md`

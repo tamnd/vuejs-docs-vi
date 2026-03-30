@@ -215,6 +215,15 @@ Tài liệu này dùng để thống nhất cách dịch thuật ngữ trong rep
 | whitebox / whitebox test | hộp trắng / kiểm thử hộp trắng | |
 | blackbox / blackbox test | hộp đen / kiểm thử hộp đen | |
 | headless | headless | Giữ nguyên cách gọi phổ biến trong ngữ cảnh trình duyệt / runner |
+| mutation methods | phương thức thay đổi tại chỗ | Các phương thức mảng làm thay đổi trực tiếp mảng gốc (push, pop, splice, ...) |
+| snapshot | bản chụp nhanh | Khi nói về giá trị computed tại một thời điểm |
+| sandbox | sandbox | Giữ nguyên khi nói về môi trường giới hạn quyền truy cập |
+| in-DOM template | template viết ngay trong DOM | Phân biệt với template trong SFC |
+| reactivity system | hệ thống tính phản ứng | Dùng nhất quán, tránh viết tắt thành "hệ phản ứng" |
+| destructure / destructuring | destructure / destructuring | Giữ nguyên tên kỹ thuật JavaScript phổ biến |
+| debounce | debounce | Giữ nguyên khi nói về kỹ thuật giới hạn tần suất gọi hàm |
+| stateful | có state | Tùy ngữ cảnh; "hàm có state" thay vì "stateful function" |
+| proxy | proxy | Giữ nguyên trong ngữ cảnh JavaScript Proxy |
 
 ## Terms To Revisit
 
