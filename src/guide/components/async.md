@@ -1,6 +1,6 @@
 # Async Component {#async-components}
 
-## Cách dùng cơ bản {#basic-usage}
+## Cách Dùng Cơ Bản {#basic-usage}
 
 Trong các ứng dụng lớn, đôi khi ta cần chia ứng dụng thành những phần nhỏ hơn và chỉ tải một component từ server khi thực sự cần. Để làm điều đó, Vue cung cấp hàm [`defineAsyncComponent`](/api/general#defineasynccomponent):
 
@@ -82,7 +82,7 @@ const AdminPage = defineAsyncComponent(() =>
 
 </div>
 
-## Trạng thái loading và lỗi {#loading-and-error-states}
+## Trạng Thái Loading Và Lỗi {#loading-and-error-states}
 
 Các thao tác bất đồng bộ tất yếu sẽ có trạng thái loading và lỗi. `defineAsyncComponent()` hỗ trợ xử lý các trạng thái này thông qua các option nâng cao:
 
@@ -118,7 +118,7 @@ Trong Vue 3.5 trở lên, async component có thể kiểm soát thời điểm 
 
 - Thiết kế này cố ý ở mức thấp để giữ tính linh hoạt. Trong tương lai, cú pháp sugar ở cấp compiler có thể được xây dựng bên trên nó, trong core hoặc ở các giải pháp cấp cao hơn, chẳng hạn Nuxt.
 
-### Hydrate khi rảnh {#hydrate-on-idle}
+### Hydrate Khi Rảnh {#hydrate-on-idle}
 
 Hydrate thông qua `requestIdleCallback`:
 
@@ -131,7 +131,7 @@ const AsyncComp = defineAsyncComponent({
 })
 ```
 
-### Hydrate khi hiển thị {#hydrate-on-visible}
+### Hydrate Khi Hiển Thị {#hydrate-on-visible}
 
 Hydrate khi phần tử trở nên hiển thị thông qua `IntersectionObserver`.
 
@@ -150,7 +150,7 @@ Bạn cũng có thể truyền vào một object options cho observer:
 hydrateOnVisible({ rootMargin: '100px' })
 ```
 
-### Hydrate theo media query {#hydrate-on-media-query}
+### Hydrate Theo Media Query {#hydrate-on-media-query}
 
 Hydrate khi media query được chỉ định khớp.
 
@@ -163,7 +163,7 @@ const AsyncComp = defineAsyncComponent({
 })
 ```
 
-### Hydrate khi có tương tác {#hydrate-on-interaction}
+### Hydrate Khi Có Tương Tác {#hydrate-on-interaction}
 
 Hydrate khi các event được chỉ định xảy ra trên phần tử của component. Event đã kích hoạt hydration cũng sẽ được phát lại sau khi hydration hoàn tất.
 
@@ -182,7 +182,7 @@ Bạn cũng có thể truyền vào danh sách nhiều loại event:
 hydrateOnInteraction(['wheel', 'mouseover'])
 ```
 
-### Strategy tùy chỉnh {#custom-strategy}
+### Strategy Tùy Chỉnh {#custom-strategy}
 
 ```ts
 import { defineAsyncComponent, type HydrationStrategy } from 'vue'
@@ -207,6 +207,6 @@ const AsyncComp = defineAsyncComponent({
 })
 ```
 
-## Dùng cùng với Suspense {#using-with-suspense}
+## Dùng Cùng Với Suspense {#using-with-suspense}
 
 Async component có thể được dùng cùng với component dựng sẵn `<Suspense>`. Cách `<Suspense>` tương tác với async component đã được mô tả trong [chương dành riêng cho `<Suspense>`](/guide/built-ins/suspense).
