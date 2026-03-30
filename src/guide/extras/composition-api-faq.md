@@ -55,7 +55,7 @@ Nếu bạn muốn học cách dùng Vue với Composition API, bạn có thể 
 
 Ưu điểm chính của Composition API là nó cho phép tái sử dụng logic một cách gọn gàng và hiệu quả dưới dạng [hàm composable](/guide/reusability/composables). Nó giải quyết [mọi nhược điểm của mixin](/guide/reusability/composables#vs-mixins), vốn là cơ chế tái sử dụng logic chính của Options API.
 
-Khả năng tái sử dụng logic của Composition API đã tạo điều kiện cho nhiều dự án cộng đồng ấn tượng như [VueUse](https://vueuse.org/), một bộ sưu tập utility composable ngày càng lớn. Nó cũng là một cơ chế sạch sẽ để tích hợp các dịch vụ hoặc thư viện bên thứ ba có state vào hệ phản ứng của Vue, ví dụ [dữ liệu bất biến](/guide/extras/reactivity-in-depth#immutable-data), [state machine](/guide/extras/reactivity-in-depth#state-machines) và [RxJS](/guide/extras/reactivity-in-depth#rxjs).
+Khả năng tái sử dụng logic của Composition API đã tạo điều kiện cho nhiều dự án cộng đồng ấn tượng như [VueUse](https://vueuse.org/), một bộ sưu tập utility composable ngày càng lớn. Nó cũng là một cơ chế sạch sẽ để tích hợp các dịch vụ hoặc thư viện bên thứ ba có state vào hệ thống tính phản ứng của Vue, ví dụ [dữ liệu bất biến](/guide/extras/reactivity-in-depth#immutable-data), [state machine](/guide/extras/reactivity-in-depth#state-machines) và [RxJS](/guide/extras/reactivity-in-depth#rxjs).
 
 ### Tổ Chức Mã Linh Hoạt Hơn {#more-flexible-code-organization}
 
@@ -152,8 +152,8 @@ Trong khi đó, Vue Composition API:
 
 - Chỉ gọi mã trong `setup()` hoặc `<script setup>` đúng một lần. Điều này khiến mã khớp hơn với trực giác khi dùng JavaScript thông thường vì không có stale closure để phải bận tâm. Các lời gọi Composition API cũng không nhạy cảm với thứ tự gọi và có thể dùng có điều kiện.
 
-- Hệ phản ứng runtime của Vue tự động thu thập các dependency phản ứng được dùng trong computed và watcher, nên không cần phải khai báo dependency thủ công.
+- Hệ thống tính phản ứng runtime của Vue tự động thu thập các dependency phản ứng được dùng trong computed và watcher, nên không cần phải khai báo dependency thủ công.
 
-- Không cần cache callback thủ công để tránh cập nhật component con không cần thiết. Nhìn chung, hệ phản ứng chi tiết của Vue bảo đảm component con chỉ cập nhật khi thực sự cần. Việc tối ưu cập nhật component con bằng tay hiếm khi là mối bận tâm với developer Vue.
+- Không cần cache callback thủ công để tránh cập nhật component con không cần thiết. Nhìn chung, hệ thống tính phản ứng chi tiết của Vue bảo đảm component con chỉ cập nhật khi thực sự cần. Việc tối ưu cập nhật component con bằng tay hiếm khi là mối bận tâm với developer Vue.
 
-Chúng tôi ghi nhận sự sáng tạo của React Hooks, và đó là một nguồn cảm hứng lớn cho Composition API. Tuy nhiên, những vấn đề nêu trên thực sự tồn tại trong thiết kế của nó, và chúng tôi nhận thấy mô hình phản ứng của Vue vô tình cung cấp một lối đi tránh được các vấn đề đó.
+Chúng tôi ghi nhận sự sáng tạo của React Hooks, và đó là một nguồn cảm hứng lớn cho Composition API. Tuy nhiên, những vấn đề nêu trên thực sự tồn tại trong thiết kế của nó, và chúng tôi nhận thấy mô hình tính phản ứng của Vue vô tình cung cấp một lối đi tránh được các vấn đề đó.
