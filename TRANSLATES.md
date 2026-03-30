@@ -125,19 +125,19 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `src/guide/essentials/template-refs.md`
 - [ ] `src/guide/essentials/template-syntax.md`
 - [ ] `src/guide/essentials/watchers.md`
-- [ ] `src/guide/extras/animation.md`
-- [ ] `src/guide/extras/composition-api-faq.md`
-- [ ] `src/guide/extras/reactivity-in-depth.md`
-- [ ] `src/guide/extras/reactivity-transform.md`
-- [ ] `src/guide/extras/render-function.md`
-- [ ] `src/guide/extras/rendering-mechanism.md`
-- [ ] `src/guide/extras/ways-of-using-vue.md`
-- [ ] `src/guide/extras/web-components.md`
+- [x] `src/guide/extras/animation.md`
+- [x] `src/guide/extras/composition-api-faq.md`
+- [x] `src/guide/extras/reactivity-in-depth.md`
+- [x] `src/guide/extras/reactivity-transform.md`
+- [x] `src/guide/extras/render-function.md`
+- [x] `src/guide/extras/rendering-mechanism.md`
+- [x] `src/guide/extras/ways-of-using-vue.md`
+- [x] `src/guide/extras/web-components.md`
 - [ ] `src/guide/introduction.md`
 - [ ] `src/guide/quick-start.md`
-- [ ] `src/guide/reusability/composables.md`
-- [ ] `src/guide/reusability/custom-directives.md`
-- [ ] `src/guide/reusability/plugins.md`
+- [x] `src/guide/reusability/composables.md`
+- [x] `src/guide/reusability/custom-directives.md`
+- [x] `src/guide/reusability/plugins.md`
 - [ ] `src/guide/scaling-up/routing.md`
 - [ ] `src/guide/scaling-up/sfc.md`
 - [ ] `src/guide/scaling-up/ssr.md`
