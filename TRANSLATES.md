@@ -36,34 +36,34 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/guide/typescript/options-api.md`
 - [x] `src/guide/typescript/overview.md`
 - [x] `src/api/application.md`
-- [ ] `src/api/built-in-components.md`
-- [ ] `src/api/built-in-directives.md`
-- [ ] `src/api/built-in-special-attributes.md`
-- [ ] `src/api/built-in-special-elements.md`
-- [ ] `src/api/compile-time-flags.md`
-- [ ] `src/api/component-instance.md`
+- [x] `src/api/built-in-components.md`
+- [x] `src/api/built-in-directives.md`
+- [x] `src/api/built-in-special-attributes.md`
+- [x] `src/api/built-in-special-elements.md`
+- [x] `src/api/compile-time-flags.md`
+- [x] `src/api/component-instance.md`
 - [x] `src/api/composition-api-dependency-injection.md`
 - [x] `src/api/composition-api-helpers.md`
 - [x] `src/api/composition-api-lifecycle.md`
 - [x] `src/api/composition-api-setup.md`
-- [ ] `src/api/custom-elements.md`
-- [ ] `src/api/custom-renderer.md`
+- [x] `src/api/custom-elements.md`
+- [x] `src/api/custom-renderer.md`
 - [x] `src/api/general.md`
-- [ ] `src/api/index.md`
-- [ ] `src/api/options-composition.md`
+- [x] `src/api/index.md`
+- [x] `src/api/options-composition.md`
 - [x] `src/api/options-lifecycle.md`
-- [ ] `src/api/options-misc.md`
-- [ ] `src/api/options-rendering.md`
+- [x] `src/api/options-misc.md`
+- [x] `src/api/options-rendering.md`
 - [x] `src/api/options-state.md`
 - [x] `src/api/reactivity-advanced.md`
 - [x] `src/api/reactivity-core.md`
 
 ## Ưu tiên sprint đầu
 
-- [ ] `README.md`
-- [ ] `TRANSLATES.md`
-- [ ] `.vitepress/config.ts`
-- [ ] `src/index.md`
+- [x] `README.md`
+- [x] `TRANSLATES.md`
+- [x] `.vitepress/config.ts`
+- [x] `src/index.md`
 - [x] `src/guide/introduction.md`
 - [x] `src/guide/quick-start.md`
 - [x] `src/guide/essentials/application.md`
@@ -81,17 +81,17 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Repo meta
 
-- [ ] `README.md`
-- [ ] `TRANSLATES.md`
-- [ ] `.vitepress/config.ts`
+- [x] `README.md`
+- [x] `TRANSLATES.md`
+- [x] `.vitepress/config.ts`
 
 ## Landing and shared pages
 
-- [ ] `src/index.md`
-- [ ] `src/translations/index.md`
-- [ ] `src/glossary/index.md`
-- [ ] `src/error-reference/index.md`
-- [ ] `src/examples/index.md`
+- [x] `src/index.md`
+- [x] `src/translations/index.md`
+- [x] `src/glossary/index.md`
+- [x] `src/error-reference/index.md`
+- [x] `src/examples/index.md`
 
 ## Guide
 
@@ -210,8 +210,8 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Ecosystem
 
-- [ ] `src/ecosystem/newsletters.md`
-- [ ] `src/ecosystem/themes.md`
+- [x] `src/ecosystem/newsletters.md`
+- [x] `src/ecosystem/themes.md`
 
 ## Style guide
 
@@ -223,30 +223,30 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Sponsor and partners
 
-- [ ] `src/sponsor/index.md`
-- [ ] `src/partners/[partnerId].md`
-- [ ] `src/partners/all.md`
-- [ ] `src/partners/index.md`
+- [x] `src/sponsor/index.md`
+- [x] `src/partners/[partnerId].md`
+- [x] `src/partners/all.md`
+- [x] `src/partners/index.md`
 
 ## Examples descriptions
 
-- [ ] `src/examples/src/attribute-bindings/description.txt`
-- [ ] `src/examples/src/cells/description.txt`
-- [ ] `src/examples/src/circle-drawer/description.txt`
-- [ ] `src/examples/src/conditionals-and-loops/description.txt`
-- [ ] `src/examples/src/counter/description.txt`
-- [ ] `src/examples/src/crud/description.txt`
-- [ ] `src/examples/src/fetching-data/description.txt`
-- [ ] `src/examples/src/flight-booker/description.txt`
-- [ ] `src/examples/src/form-bindings/description.txt`
-- [ ] `src/examples/src/grid/description.txt`
-- [ ] `src/examples/src/handling-input/description.txt`
-- [ ] `src/examples/src/hello-world/description.txt`
-- [ ] `src/examples/src/list-transition/description.txt`
-- [ ] `src/examples/src/markdown/description.txt`
-- [ ] `src/examples/src/modal/description.txt`
-- [ ] `src/examples/src/simple-component/description.txt`
-- [ ] `src/examples/src/svg/description.txt`
-- [ ] `src/examples/src/temperature-converter/description.txt`
-- [ ] `src/examples/src/timer/description.txt`
-- [ ] `src/examples/src/tree/description.txt`
+- [x] `src/examples/src/attribute-bindings/description.txt`
+- [x] `src/examples/src/cells/description.txt`
+- [x] `src/examples/src/circle-drawer/description.txt`
+- [x] `src/examples/src/conditionals-and-loops/description.txt`
+- [x] `src/examples/src/counter/description.txt`
+- [x] `src/examples/src/crud/description.txt`
+- [x] `src/examples/src/fetching-data/description.txt`
+- [x] `src/examples/src/flight-booker/description.txt`
+- [x] `src/examples/src/form-bindings/description.txt`
+- [x] `src/examples/src/grid/description.txt`
+- [x] `src/examples/src/handling-input/description.txt`
+- [x] `src/examples/src/hello-world/description.txt`
+- [x] `src/examples/src/list-transition/description.txt`
+- [x] `src/examples/src/markdown/description.txt`
+- [x] `src/examples/src/modal/description.txt`
+- [x] `src/examples/src/simple-component/description.txt`
+- [x] `src/examples/src/svg/description.txt`
+- [x] `src/examples/src/temperature-converter/description.txt`
+- [x] `src/examples/src/timer/description.txt`
+- [x] `src/examples/src/tree/description.txt`
