@@ -216,10 +216,10 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 ## Style guide
 
 - [x] `src/style-guide/index.md`
-- [ ] `src/style-guide/rules-essential.md`
-- [ ] `src/style-guide/rules-recommended.md`
-- [ ] `src/style-guide/rules-strongly-recommended.md`
-- [ ] `src/style-guide/rules-use-with-caution.md`
+- [x] `src/style-guide/rules-essential.md`
+- [x] `src/style-guide/rules-recommended.md`
+- [x] `src/style-guide/rules-strongly-recommended.md`
+- [x] `src/style-guide/rules-use-with-caution.md`
 
 ## Sponsor and partners
 
