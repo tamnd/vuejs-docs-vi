@@ -8,7 +8,7 @@ import SpreadSheet from './demos/SpreadSheet.vue'
 
 # Reactivity In-Depth {#reactivity-in-depth}
 
-Một trong những điểm khác biệt rõ nhất của Vue là hệ thống tính phản ứng hoạt động khá "vô hình". State của component được tạo từ các object JavaScript có tính phản ứng. Khi bạn thay đổi chúng, giao diện sẽ cập nhật theo. Điều này khiến việc quản lý state trở nên đơn giản và trực quan, nhưng cũng rất đáng để hiểu rõ cơ chế bên dưới nhằm tránh những bẫy thường gặp. Trong phần này, ta sẽ đi sâu hơn vào một vài chi tiết ở mức thấp của hệ phản ứng trong Vue.
+Một trong những điểm khác biệt rõ nhất của Vue là hệ thống tính phản ứng hoạt động khá "vô hình". State của component được tạo từ các object JavaScript có tính phản ứng. Khi bạn thay đổi chúng, giao diện sẽ cập nhật theo. Điều này khiến việc quản lý state trở nên đơn giản và trực quan, nhưng cũng rất đáng để hiểu rõ cơ chế bên dưới nhằm tránh những bẫy thường gặp. Trong phần này, ta sẽ đi sâu hơn vào một vài chi tiết ở mức thấp của hệ thống tính phản ứng trong Vue.
 
 ## Tính Phản Ứng Là Gì? {#what-is-reactivity}
 
@@ -202,13 +202,13 @@ Thực ra, điều này khá gần với cách một component Vue đồng bộ 
 
 <div class="options-api">
 
-Các API `ref()`, `computed()` và `watchEffect()` đều thuộc Composition API. Nếu từ trước đến nay bạn chỉ dùng Options API, bạn sẽ nhận ra Composition API gần với cách hệ phản ứng của Vue vận hành bên dưới hơn. Trên thực tế, trong Vue 3, Options API được xây dựng trên nền Composition API. Mọi lần truy cập property trên instance component (`this`) đều đi qua getter / setter để theo dõi phản ứng, còn các option như `watch` và `computed` thì bên trong sẽ gọi các phiên bản Composition API tương đương.
+Các API `ref()`, `computed()` và `watchEffect()` đều thuộc Composition API. Nếu từ trước đến nay bạn chỉ dùng Options API, bạn sẽ nhận ra Composition API gần với cách hệ thống tính phản ứng của Vue vận hành bên dưới hơn. Trên thực tế, trong Vue 3, Options API được xây dựng trên nền Composition API. Mọi lần truy cập property trên instance component (`this`) đều đi qua getter / setter để theo dõi phản ứng, còn các option như `watch` và `computed` thì bên trong sẽ gọi các phiên bản Composition API tương đương.
 
 </div>
 
 ## Tính Phản Ứng Runtime Và Compile-time {#runtime-vs-compile-time-reactivity}
 
-Hệ phản ứng của Vue chủ yếu hoạt động ở runtime: việc track và trigger đều được thực hiện khi mã đang chạy trực tiếp trong trình duyệt. Ưu điểm của tính phản ứng runtime là nó có thể hoạt động mà không cần bước build và có ít edge case hơn. Mặt khác, nó bị giới hạn bởi cú pháp JavaScript, nên ta cần đến những value container như ref của Vue.
+Hệ thống tính phản ứng của Vue chủ yếu hoạt động ở runtime: việc track và trigger đều được thực hiện khi mã đang chạy trực tiếp trong trình duyệt. Ưu điểm của tính phản ứng runtime là nó có thể hoạt động mà không cần bước build và có ít edge case hơn. Mặt khác, nó bị giới hạn bởi cú pháp JavaScript, nên ta cần đến những value container như ref của Vue.
 
 Một số framework như [Svelte](https://svelte.dev/) lại chọn vượt qua giới hạn này bằng cách triển khai tính phản ứng ở thời điểm biên dịch. Chúng phân tích và biến đổi mã để mô phỏng tính phản ứng. Bước biên dịch cho phép framework thay đổi chính ngữ nghĩa của JavaScript, ví dụ tự động chèn mã để phân tích dependency và trigger effect quanh việc truy cập biến cục bộ. Đổi lại, cách này yêu cầu build step, và việc thay đổi ngữ nghĩa JavaScript về bản chất là tạo ra một ngôn ngữ trông giống JavaScript nhưng biên dịch thành thứ khác.
 
@@ -342,9 +342,9 @@ Option `onTrack` và `onTrigger` của watcher chỉ hoạt động trong chế 
 
 ## Tích Hợp Với Hệ Thống State Bên Ngoài {#integration-with-external-state-systems}
 
-Hệ phản ứng của Vue hoạt động bằng cách chuyển sâu các object JavaScript thuần thành proxy reactive. Việc chuyển sâu này đôi khi không cần thiết hoặc không mong muốn khi tích hợp với các hệ quản lý state bên ngoài, ví dụ khi giải pháp bên ngoài cũng dùng Proxy.
+Hệ thống tính phản ứng của Vue hoạt động bằng cách chuyển sâu các object JavaScript thuần thành proxy reactive. Việc chuyển sâu này đôi khi không cần thiết hoặc không mong muốn khi tích hợp với các hệ quản lý state bên ngoài, ví dụ khi giải pháp bên ngoài cũng dùng Proxy.
 
-Ý tưởng chung khi tích hợp hệ phản ứng của Vue với một giải pháp quản lý state bên ngoài là giữ state bên ngoài trong [`shallowRef`](/api/reactivity-advanced#shallowref). Shallow ref chỉ reactive khi property `.value` của nó được truy cập, còn giá trị bên trong thì được giữ nguyên. Khi state bên ngoài thay đổi, chỉ cần thay giá trị ref để kích hoạt cập nhật.
+Ý tưởng chung khi tích hợp hệ thống tính phản ứng của Vue với một giải pháp quản lý state bên ngoài là giữ state bên ngoài trong [`shallowRef`](/api/reactivity-advanced#shallowref). Shallow ref chỉ reactive khi property `.value` của nó được truy cập, còn giá trị bên trong thì được giữ nguyên. Khi state bên ngoài thay đổi, chỉ cần thay giá trị ref để kích hoạt cập nhật.
 
 ### Dữ Liệu Bất Biến {#immutable-data}
 
@@ -396,7 +396,7 @@ export function useMachine(options) {
 
 ### RxJS {#rxjs}
 
-[RxJS](https://rxjs.dev/) là một thư viện làm việc với các luồng sự kiện bất đồng bộ. Thư viện [VueUse](https://vueuse.org/) cung cấp add-on [`@vueuse/rxjs`](https://vueuse.org/rxjs/readme.html) để kết nối stream RxJS với hệ phản ứng của Vue.
+[RxJS](https://rxjs.dev/) là một thư viện làm việc với các luồng sự kiện bất đồng bộ. Thư viện [VueUse](https://vueuse.org/) cung cấp add-on [`@vueuse/rxjs`](https://vueuse.org/rxjs/readme.html) để kết nối stream RxJS với hệ thống tính phản ứng của Vue.
 
 ## Liên Hệ Với Signals {#connection-to-signals}
 

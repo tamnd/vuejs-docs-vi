@@ -444,7 +444,7 @@ import type { ComponentPublicInstance } from 'vue'
 const child = useTemplateRef<ComponentPublicInstance>('child')
 ```
 
-Trong trường hợp component được tham chiếu là [generic component](/guide/typescript/overview.html#generic-components), ví dụ `MyGenericModal`:
+Trong trường hợp component được tham chiếu là [component kiểu tổng quát (generic)](/guide/typescript/overview.html#generic-components), ví dụ `MyGenericModal`:
 
 ```vue [MyGenericModal.vue]
 <script setup lang="ts" generic="ContentType extends string | number">

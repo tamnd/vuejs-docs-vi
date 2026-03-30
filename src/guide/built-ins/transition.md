@@ -580,7 +580,7 @@ Các prop của `<Transition>` như `name` cũng có thể là động. Điều 
 
 Điều này hữu ích khi bạn đã định nghĩa sẵn các CSS transition / animation theo quy ước class transition của Vue và muốn chuyển đổi giữa chúng.
 
-Bạn cũng có thể áp dụng hành vi khác nhau trong các JavaScript transition hook dựa trên state hiện tại của component. Cuối cùng, cách tối hậu để tạo transition động là thông qua [component transition có thể tái sử dụng](#reusable-transitions) nhận props để thay đổi bản chất của transition sẽ dùng. Nghe có vẻ "bay bổng", nhưng giới hạn thực sự gần như chỉ là trí tưởng tượng của bạn.
+Bạn cũng có thể áp dụng hành vi khác nhau trong các JavaScript transition hook dựa trên state hiện tại của component. Cuối cùng, cách tối hậu để tạo transition động là thông qua [component transition có thể tái sử dụng](#reusable-transitions) nhận props để thay đổi bản chất của transition sẽ dùng. Nghe có vẻ "bay bổng", nhưng giới hạn thực sự chỉ là trí tưởng tượng của bạn.
 
 ## Transition Với Thuộc Tính `key` {#transitions-with-the-key-attribute}
 

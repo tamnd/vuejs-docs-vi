@@ -212,7 +212,7 @@ Tất cả API liệt kê trên trang này phải được gọi đồng bộ tr
 
   Bạn có thể thay đổi state component trong `onErrorCaptured()` để hiển thị trạng thái lỗi cho người dùng. Tuy nhiên, điều quan trọng là trạng thái lỗi không nên render nội dung gốc gây ra lỗi; nếu không component sẽ rơi vào vòng lặp render vô hạn.
 
-  Hook có thể trả về `false` để ngừng lỗi không tiếp tục truyền lên. Xem chi tiết về quy tắc truyền lỗi bên dưới.
+  Hook có thể trả về `false` để ngăn lỗi tiếp tục truyền lên. Xem chi tiết về quy tắc truyền lỗi bên dưới.
 
   **Quy tắc Truyền Lỗi**
 

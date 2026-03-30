@@ -183,7 +183,7 @@ Việc tự cài list virtualization không hề đơn giản. May là đã có 
 
 ### Giảm overhead của tính phản ứng với cấu trúc lớn nhưng bất biến {#reduce-reactivity-overhead-for-large-immutable-structures}
 
-Hệ phản ứng của Vue mặc định là sâu. Điều này giúp việc quản lý state tự nhiên hơn, nhưng cũng tạo ra một mức overhead nhất định khi dữ liệu quá lớn, vì mỗi lần truy cập property đều đi qua proxy trap để theo dõi dependency. Điều này thường bắt đầu thấy rõ khi làm việc với những mảng lớn chứa các object lồng nhau sâu, nơi chỉ một lần render cũng có thể phải đọc hơn 100.000 property. Vì vậy, nó chỉ ảnh hưởng tới những trường hợp khá đặc thù.
+Hệ thống tính phản ứng của Vue mặc định là sâu. Điều này giúp việc quản lý state tự nhiên hơn, nhưng cũng tạo ra một mức overhead nhất định khi dữ liệu quá lớn, vì mỗi lần truy cập property đều đi qua proxy trap để theo dõi dependency. Điều này thường bắt đầu thấy rõ khi làm việc với những mảng lớn chứa các object lồng nhau sâu, nơi chỉ một lần render cũng có thể phải đọc hơn 100.000 property. Vì vậy, nó chỉ ảnh hưởng tới những trường hợp khá đặc thù.
 
 Vue có cung cấp một lối thoát để bỏ qua tính phản ứng sâu, bằng cách dùng [`shallowRef()`](/api/reactivity-advanced#shallowref) và [`shallowReactive()`](/api/reactivity-advanced#shallowreactive). Các API shallow tạo ra state chỉ phản ứng ở cấp gốc, còn mọi object lồng bên trong sẽ được giữ nguyên. Nhờ đó, việc truy cập property lồng bên trong sẽ nhanh hơn, đổi lại là giờ đây ta phải xem toàn bộ object lồng bên trong là bất biến, và chỉ có thể kích hoạt cập nhật bằng cách thay thế state ở gốc:
 
