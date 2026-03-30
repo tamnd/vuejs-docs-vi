@@ -6,7 +6,7 @@
 Mặc dù Vue có hỗ trợ TypeScript khi dùng Options API, nhưng nên dùng Vue với TypeScript qua Composition API vì cách này cho phép suy luận kiểu đơn giản hơn, hiệu quả hơn và mạnh mẽ hơn.
 :::
 
-## Khai báo kiểu cho Props của Component {#typing-component-props}
+## Khai Báo Kiểu Cho Props Của Component {#typing-component-props}
 
 Suy luận kiểu cho props trong Options API yêu cầu bọc component bằng `defineComponent()`. Nhờ đó, Vue có thể suy luận kiểu cho các prop dựa trên option `props`, có tính đến các option bổ sung như `required: true` và `default`:
 
@@ -65,7 +65,7 @@ export default defineComponent({
 })
 ```
 
-### Lưu ý {#caveats}
+### Lưu Ý {#caveats}
 
 Nếu phiên bản TypeScript của bạn nhỏ hơn `4.7`, hãy cẩn thận khi dùng giá trị hàm cho các option `validator` và `default` của prop - hãy đảm bảo dùng arrow function:
 
@@ -94,7 +94,7 @@ export default defineComponent({
 
 Điều này ngăn TypeScript phải suy luận kiểu của `this` bên trong các hàm đó, điều mà không may có thể khiến suy luận kiểu thất bại. Đây là [hạn chế thiết kế](https://github.com/microsoft/TypeScript/issues/38845) trước đây, và đã được cải thiện trong [TypeScript 4.7](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-7.html#improved-function-inference-in-objects-and-methods).
 
-## Khai báo kiểu cho Emits của Component {#typing-component-emits}
+## Khai Báo Kiểu Cho Emits Của Component {#typing-component-emits}
 
 Ta có thể khai báo kiểu payload mong đợi cho một sự kiện được emit bằng cú pháp object của option `emits`. Ngoài ra, mọi sự kiện emit không được khai báo sẽ báo lỗi kiểu khi được gọi:
 
@@ -120,7 +120,7 @@ export default defineComponent({
 })
 ```
 
-## Khai báo kiểu cho Thuộc tính Computed {#typing-computed-properties}
+## Khai Báo Kiểu Cho Thuộc Tính Computed {#typing-computed-properties}
 
 Thuộc tính computed tự suy luận kiểu dựa trên giá trị trả về của nó:
 
@@ -176,7 +176,7 @@ export default defineComponent({
 
 Chú thích rõ ràng cũng có thể cần thiết trong một số trường hợp đặc biệt khi TypeScript không thể suy luận kiểu của thuộc tính computed do vòng lặp suy luận tròn.
 
-## Khai báo kiểu cho Event Handler {#typing-event-handlers}
+## Khai Báo Kiểu Cho Event Handler {#typing-event-handlers}
 
 Khi xử lý sự kiện DOM native, đôi khi hữu ích khi khai báo kiểu đúng cho đối số truyền vào handler. Hãy xem ví dụ sau:
 
@@ -213,7 +213,7 @@ export default defineComponent({
 })
 ```
 
-## Mở rộng Thuộc tính Toàn cục {#augmenting-global-properties}
+## Mở Rộng Thuộc Tính Toàn Cục {#augmenting-global-properties}
 
 Một số plugin cài đặt các thuộc tính có sẵn toàn cục cho tất cả instance component thông qua [`app.config.globalProperties`](/api/application#app-config-globalproperties). Ví dụ, ta có thể cài `this.$http` để lấy dữ liệu hoặc `this.$translate` để đa ngôn ngữ. Để tích hợp tốt với TypeScript, Vue cung cấp interface `ComponentCustomProperties` được thiết kế để mở rộng thông qua [module augmentation của TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation):
 
@@ -232,7 +232,7 @@ Xem thêm:
 
 - [Unit test TypeScript cho type extensions của component](https://github.com/vuejs/core/blob/main/packages-private/dts-test/componentTypeExtensions.test-d.tsx)
 
-### Vị trí đặt Type Augmentation {#type-augmentation-placement}
+### Vị Trí Đặt Type Augmentation {#type-augmentation-placement}
 
 Ta có thể đặt type augmentation này trong một file `.ts`, hoặc trong một file `*.d.ts` áp dụng toàn dự án. Dù cách nào, hãy đảm bảo nó được đưa vào `tsconfig.json`. Với tác giả thư viện / plugin, file này nên được khai báo trong thuộc tính `types` của `package.json`.
 
@@ -258,7 +258,7 @@ declare module 'vue' {
 }
 ```
 
-## Mở rộng Custom Options {#augmenting-custom-options}
+## Mở Rộng Custom Options {#augmenting-custom-options}
 
 Một số plugin, ví dụ `vue-router`, hỗ trợ các option component tùy chỉnh như `beforeRouteEnter`:
 
@@ -292,6 +292,6 @@ Xem thêm:
 
 - [Unit test TypeScript cho type extensions của component](https://github.com/vuejs/core/blob/main/packages-private/dts-test/componentTypeExtensions.test-d.tsx)
 
-## Khai báo kiểu cho Custom Directive Toàn cục {#typing-global-custom-directives}
+## Khai Báo Kiểu Cho Custom Directive Toàn Cục {#typing-global-custom-directives}
 
-Xem: [Khai báo kiểu cho Custom Directive Toàn cục](/guide/typescript/composition-api#typing-global-custom-directives) <sup class="vt-badge ts" />
+Xem: [Khai Báo Kiểu Cho Custom Directive Toàn Cục](/guide/typescript/composition-api#typing-global-custom-directives) <sup class="vt-badge ts" />

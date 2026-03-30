@@ -213,7 +213,7 @@ export function useCount() {
 }
 ```
 
-Việc hệ phản ứng của Vue được tách khỏi mô hình component khiến nó cực kỳ linh hoạt.
+Việc hệ thống tính phản ứng của Vue được tách khỏi mô hình component khiến nó cực kỳ linh hoạt.
 
 ## Lưu Ý Với SSR {#ssr-considerations}
 
