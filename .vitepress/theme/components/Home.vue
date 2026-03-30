@@ -15,7 +15,7 @@ onMounted(load)
     <h1 class="tagline">
       Framework JavaScript
       <br />
-      <span class="accent">Tiến Bộ</span>
+      <span class="accent">linh hoạt</span>
     </h1>
     <p class="description">
       Một framework dễ tiếp cận, hiệu năng cao và linh hoạt để xây dựng

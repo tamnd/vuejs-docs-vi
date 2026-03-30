@@ -1,6 +1,6 @@
 ---
 page: true
-title: Vue.js - Framework JavaScript Tiến Bộ
+title: Vue.js - Framework JavaScript linh hoạt
 ---
 
 <script setup>

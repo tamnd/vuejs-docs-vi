@@ -50,17 +50,17 @@ const nav: ThemeConfig['nav'] = [
         text: 'Tài nguyên',
         items: [
           { text: 'Theme', link: '/ecosystem/themes' },
-          { text: 'Thành phần UI', link: 'https://ui-libs.vercel.app/' },
+          { text: 'Thư viện UI', link: 'https://ui-libs.vercel.app/' },
           {
             text: 'Bộ sưu tập plugin',
             link: 'https://www.vue-plugins.org/'
           },
           {
-            text: 'Chứng chỉ',
+            text: 'Chứng nhận',
             link: 'https://certificates.dev/vuejs/?ref=vuejs-nav'
           },
           { text: 'Việc làm', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: 'Cửa hàng áo thun', link: 'https://vue.threadless.com/' }
+          { text: 'Cửa hàng', link: 'https://vue.threadless.com/' }
         ]
       },
       {
@@ -68,7 +68,7 @@ const nav: ThemeConfig['nav'] = [
         items: [
           { text: 'Vue Router', link: 'https://router.vuejs.org/' },
           { text: 'Pinia', link: 'https://pinia.vuejs.org/' },
-          { text: 'Hướng dẫn công cụ', link: '/guide/scaling-up/tooling.html' }
+          { text: 'Công cụ phát triển', link: '/guide/scaling-up/tooling.html' }
         ]
       },
       {
@@ -88,7 +88,7 @@ const nav: ThemeConfig['nav'] = [
         text: 'Trợ giúp',
         items: [
           {
-            text: 'Discord Chat',
+            text: 'Discord',
             link: 'https://discord.com/invite/HBherRA'
           },
           {
@@ -102,7 +102,7 @@ const nav: ThemeConfig['nav'] = [
         text: 'Tin tức',
         items: [
           { text: 'Blog', link: 'https://blog.vuejs.org/' },
-          { text: 'Twitter', link: 'https://x.com/vuejs' },
+          { text: 'X', link: 'https://x.com/vuejs' },
           { text: 'Sự kiện', link: 'https://events.vuejs.org/' },
           { text: 'Bản tin', link: '/ecosystem/newsletters' }
         ]
@@ -113,15 +113,15 @@ const nav: ThemeConfig['nav'] = [
     text: 'Giới thiệu',
     activeMatch: `^/about/`,
     items: [
-      { text: 'FAQ', link: '/about/faq' },
+      { text: 'Câu hỏi thường gặp', link: '/about/faq' },
       { text: 'Đội ngũ', link: '/about/team' },
-      { text: 'Phiên bản', link: '/about/releases' },
+      { text: 'Phiên bản phát hành', link: '/about/releases' },
       {
         text: 'Hướng dẫn cộng đồng',
         link: '/about/community-guide'
       },
       { text: 'Quy tắc ứng xử', link: '/about/coc' },
-      { text: 'Chính sách bảo mật', link: '/about/privacy' },
+      { text: 'Chính sách quyền riêng tư', link: '/about/privacy' },
       {
         text: 'Phim tài liệu',
         link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
@@ -129,7 +129,7 @@ const nav: ThemeConfig['nav'] = [
     ]
   },
   {
-    text: 'Hỗ trợ',
+    text: 'Ủng hộ',
     activeMatch: `^/(sponsor|partners)/`,
     items: [
       { text: 'Tài trợ', link: '/sponsor/' },
@@ -182,11 +182,11 @@ export const sidebar: ThemeConfig['sidebar'] = {
           text: 'Xử lý sự kiện',
           link: '/guide/essentials/event-handling'
         },
-        { text: 'Ràng buộc input của form', link: '/guide/essentials/forms' },
+        { text: 'Ràng buộc biểu mẫu', link: '/guide/essentials/forms' },
         { text: 'Watcher', link: '/guide/essentials/watchers' },
         { text: 'Template ref', link: '/guide/essentials/template-refs' },
         {
-          text: 'Component cơ bản',
+          text: 'Kiến thức cơ bản về component',
           link: '/guide/essentials/component-basics'
         },
         {
@@ -215,7 +215,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/guide/components/provide-inject'
         },
         {
-          text: 'Component async',
+          text: 'Component bất đồng bộ',
           link: '/guide/components/async'
         }
       ]
@@ -252,7 +252,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
       items: [
         { text: 'Single-File Component', link: '/guide/scaling-up/sfc' },
         { text: 'Công cụ phát triển', link: '/guide/scaling-up/tooling' },
-        { text: 'Routing', link: '/guide/scaling-up/routing' },
+        { text: 'Điều hướng', link: '/guide/scaling-up/routing' },
         {
           text: 'Quản lý state',
           link: '/guide/scaling-up/state-management'
@@ -276,7 +276,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/guide/best-practices/performance'
         },
         {
-          text: 'Khả năng tiếp cận',
+          text: 'Khả năng truy cập',
           link: '/guide/best-practices/accessibility'
         },
         {
@@ -290,11 +290,11 @@ export const sidebar: ThemeConfig['sidebar'] = {
       items: [
         { text: 'Tổng quan', link: '/guide/typescript/overview' },
         {
-          text: 'TS với Composition API',
+          text: 'TypeScript với Composition API',
           link: '/guide/typescript/composition-api'
         },
         {
-          text: 'TS với Options API',
+          text: 'TypeScript với Options API',
           link: '/guide/typescript/options-api'
         }
       ]
@@ -307,7 +307,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/guide/extras/ways-of-using-vue'
         },
         {
-          text: 'FAQ về Composition API',
+          text: 'Câu hỏi thường gặp về Composition API',
           link: '/guide/extras/composition-api-faq'
         },
         {
@@ -315,11 +315,11 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/guide/extras/reactivity-in-depth'
         },
         {
-          text: 'Cơ chế render',
+          text: 'Cơ chế kết xuất',
           link: '/guide/extras/rendering-mechanism'
         },
         {
-          text: 'Render function & JSX',
+          text: 'Render function và JSX',
           link: '/guide/extras/render-function'
         },
         {
@@ -377,7 +377,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/api/composition-api-dependency-injection'
         },
         {
-          text: 'Trợ giúp',
+          text: 'Hàm trợ giúp',
           link: '/api/composition-api-helpers'
         }
       ]
@@ -397,7 +397,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
         },
         { text: 'Options: Khác', link: '/api/options-misc' },
         {
-          text: 'Instance của component',
+          text: 'Instance component',
           link: '/api/component-instance'
         }
       ]
@@ -431,7 +431,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
         { text: 'Custom Elements', link: '/api/custom-elements' },
         { text: 'Render function', link: '/api/render-function' },
         { text: 'Kết xuất phía máy chủ', link: '/api/ssr' },
-        { text: 'TypeScript Utility Types', link: '/api/utility-types' },
+        { text: 'Utility Types của TypeScript', link: '/api/utility-types' },
         { text: 'Custom Renderer', link: '/api/custom-renderer' },
         { text: 'Cờ biên dịch', link: '/api/compile-time-flags' }
       ]
@@ -458,7 +458,7 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/examples/#conditionals-and-loops'
         },
         {
-          text: 'Ràng buộc form',
+          text: 'Ràng buộc biểu mẫu',
           link: '/examples/#form-bindings'
         },
         {
@@ -468,10 +468,10 @@ export const sidebar: ThemeConfig['sidebar'] = {
       ]
     },
     {
-      text: 'Thực tế',
+      text: 'Ứng dụng thực tế',
       items: [
         {
-          text: 'Trình soạn Markdown',
+          text: 'Trình soạn thảo Markdown',
           link: '/examples/#markdown'
         },
         {
@@ -483,11 +483,11 @@ export const sidebar: ThemeConfig['sidebar'] = {
           link: '/examples/#grid'
         },
         {
-          text: 'Dạng cây',
+          text: 'Cấu trúc cây',
           link: '/examples/#tree'
         },
         {
-          text: 'Đồ thị SVG',
+          text: 'Biểu đồ SVG',
           link: '/examples/#svg'
         },
         {
@@ -501,7 +501,6 @@ export const sidebar: ThemeConfig['sidebar'] = {
       ]
     },
     {
-      // https://eugenkiss.github.io/7guis/
       text: '7 GUIs',
       items: [
         {
@@ -574,29 +573,28 @@ const i18n: ThemeConfig['i18n'] = {
   next: 'Tiếp',
   pageNotFound: 'Không tìm thấy trang',
   deadLink: {
-    before: 'Bạn đã truy cập một liên kết không tồn tại: ',
+    before: 'Bạn vừa truy cập một liên kết không tồn tại: ',
     after: '.'
   },
   deadLinkReport: {
     before: 'Vui lòng ',
     link: 'báo lỗi cho chúng tôi',
-    after: ' để chúng tôi có thể sửa chữa.'
+    after: ' để chúng tôi có thể sửa lại.'
   },
   footerLicense: {
     before: '',
     after: ''
   },
 
-  // aria labels
   ariaAnnouncer: {
     before: '',
     after: ' đã được tải'
   },
-  ariaDarkMode: 'Chuyển chế độ tối',
-  ariaSkipToContent: 'Chuyển đến nội dung',
+  ariaDarkMode: 'Chuyển sang chế độ tối',
+  ariaSkipToContent: 'Bỏ qua để đến nội dung chính',
   ariaToC: 'Mục lục của trang hiện tại',
   ariaMainNav: 'Điều hướng chính',
-  ariaMobileNav: 'Điều hướng trên di động',
+  ariaMobileNav: 'Điều hướng trên thiết bị di động',
   ariaSidebarNav: 'Điều hướng thanh bên'
 }
 
@@ -620,7 +618,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   lang: 'vi',
   title: 'Vue.js',
-  description: 'Vue.js - Framework JavaScript Tiến Bộ',
+  description: 'Vue.js - Progressive JavaScript Framework',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
 
@@ -633,7 +631,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       'meta',
       {
         property: 'og:description',
-        content: 'Vue.js - Framework JavaScript Tiến Bộ'
+        content: 'Vue.js - Progressive JavaScript Framework'
       }
     ],
     [
@@ -745,7 +743,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
       {
         link: '/translations/',
-        text: 'Help Us Translate!',
+        text: 'Hãy cùng dịch Vue.js',
         isTranslationsDesc: true
       }
     ],
@@ -777,10 +775,10 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     footer: {
       license: {
-        text: 'MIT License',
+        text: 'Giấy phép MIT',
         link: 'https://opensource.org/licenses/MIT'
       },
-      copyright: `Copyright © 2014-${new Date().getFullYear()} Evan You`
+      copyright: `Bản quyền © 2014-${new Date().getFullYear()} Evan You`
     }
   },
 
@@ -807,7 +805,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     server: {
       host: true,
       fs: {
-        // for when developing with locally linked theme
         allow: ['../..']
       }
     },
