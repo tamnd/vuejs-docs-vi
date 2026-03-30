@@ -385,11 +385,13 @@ export default {
 
 </div>
 
-Lưu ý: ES modules không chạy được qua `file://`. Cần chạy qua HTTP server, ví dụ:
+Nếu bạn mở trực tiếp file `index.html` trên trình duyệt, bạn sẽ gặp lỗi vì ES modules không hoạt động qua giao thức `file://`, đây là giao thức mà trình duyệt dùng khi mở file local.
 
-```sh
-npx serve
-```
+Vì lý do bảo mật, ES modules chỉ hoạt động qua giao thức `http://`, đây cũng là giao thức mà trình duyệt sử dụng khi tải các trang web. Để ES modules chạy được trên máy local, bạn cần chạy file `index.html` thông qua `http://` bằng một HTTP server local.
+
+Để khởi động HTTP server local, trước tiên hãy đảm bảo bạn đã cài đặt [Node.js](https://nodejs.org/en/), sau đó chạy lệnh `npx serve` trong command line tại thư mục chứa file HTML. Bạn cũng có thể dùng bất kỳ HTTP server nào khác, miễn là có thể chạy các tệp tĩnh với MIME type chính xác.
+
+Bạn có thể nhận thấy template của component được import đang được viết trực tiếp dưới dạng một chuỗi JavaScript. Nếu bạn dùng VS Code, có thể cài extension [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) và thêm comment `/*html*/` trước chuỗi để bật tô màu cú pháp cho phần HTML bên trong chuỗi đó.
 
 ## Các bước tiếp theo {#next-steps}
 
