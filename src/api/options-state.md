@@ -213,7 +213,7 @@ Khai báo các thuộc tính computed để expose trên instance component.
 
 ## methods {#methods}
 
-Khai báo các phương thức để trộn vào instance component.
+Khai báo các phương thức để đưa vào instance component.
 
 - **Kiểu**
 

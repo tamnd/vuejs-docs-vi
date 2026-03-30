@@ -38,7 +38,7 @@ export default {
 </template>
 ```
 
-[ref](/api/reactivity-core#ref) được trả về từ `setup` sẽ được [tự động mở bọc nông](/guide/essentials/reactivity-fundamentals#deep-reactivity) khi truy cập trong template vì vậy bạn không cần dùng `.value` khi truy cập chúng. Chúng cũng được mở bọc theo cách tương tự khi truy cập trên `this`.
+[ref](/api/reactivity-core#ref) được trả về từ `setup` sẽ được [tự động unwrap nông](/guide/essentials/reactivity-fundamentals#deep-reactivity) khi truy cập trong template, vì vậy bạn không cần dùng `.value` khi truy cập chúng. Chúng cũng được unwrap theo cách tương tự khi truy cập qua `this`.
 
 `setup()` bản thân nó không có quyền truy cập vào instance component - `this` sẽ có giá trị `undefined` bên trong `setup()`. Bạn có thể truy cập các giá trị được expose qua Composition API từ Options API, nhưng không phải ngược lại.
 
