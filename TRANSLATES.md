@@ -62,7 +62,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 - [x] `README.md`
 - [x] `TRANSLATES.md`
-- [ ] `.vitepress/config.ts`
+- [x] `.vitepress/config.ts`
 - [x] `src/index.md`
 - [x] `src/guide/introduction.md`
 - [x] `src/guide/quick-start.md`
@@ -83,7 +83,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 - [x] `README.md`
 - [x] `TRANSLATES.md`
-- [ ] `.vitepress/config.ts`
+- [x] `.vitepress/config.ts`
 
 ## Landing and shared pages
 
@@ -223,10 +223,10 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Sponsor and partners
 
-- [ ] `src/sponsor/index.md`
-- [ ] `src/partners/[partnerId].md`
-- [ ] `src/partners/all.md`
-- [ ] `src/partners/index.md`
+- [x] `src/sponsor/index.md`
+- [x] `src/partners/[partnerId].md`
+- [x] `src/partners/all.md`
+- [x] `src/partners/index.md`
 
 ## Examples descriptions
 
