@@ -245,9 +245,9 @@ export default {
 
 <div class="composition-api">
 
-Khi dùng giá trị provide / inject dạng phản ứng, **chúng tôi khuyến nghị nên giữ mọi thao tác thay đổi reactive state bên trong _provider_ bất cứ khi nào có thể**. Điều này bảo đảm state được provide và các cách thay đổi nó được đặt cùng nhau trong cùng một component, nhờ đó về sau dễ bảo trì hơn.
+Khi dùng giá trị provide / inject dạng phản ứng, **tốt nhất là giữ mọi thao tác thay đổi reactive state bên trong _provider_ bất cứ khi nào có thể**. Điều này bảo đảm state được provide và các cách thay đổi nó được đặt cùng nhau trong cùng một component, nhờ đó về sau dễ bảo trì hơn.
 
-Sẽ có lúc ta cần cập nhật dữ liệu từ component injector. Trong những trường hợp đó, chúng tôi khuyến nghị provide một hàm chịu trách nhiệm thay đổi state:
+Sẽ có lúc ta cần cập nhật dữ liệu từ component injector. Trong những trường hợp đó, nên provide một hàm chịu trách nhiệm thay đổi state:
 
 ```vue{7-9,13}
 <!-- bên trong component provider -->

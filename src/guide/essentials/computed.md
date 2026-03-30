@@ -196,7 +196,7 @@ const now = computed(() => Date.now())
 
 Ngược lại, một lời gọi method sẽ **luôn** chạy lại hàm mỗi khi có re-render.
 
-Vì sao cần cache? Hãy tưởng tượng ta có một thuộc tính computed tốn kém tên là `list`, phải lặp qua một mảng rất lớn và thực hiện nhiều phép tính. Sau đó lại có những thuộc tính computed khác phụ thuộc vào `list`. Nếu không có cache, getter của `list` sẽ bị chạy lại nhiều lần hơn mức cần thiết. Trong những trường hợp bạn không muốn cache, hãy dùng method thay thế.
+Tại sao lại cần cache? Hãy tưởng tượng bạn có một thuộc tính computed nặng tên là `list` — nó phải lặp qua một mảng rất lớn và thực hiện nhiều phép tính. Sau đó lại có những thuộc tính computed khác phụ thuộc vào `list`. Nếu không có cache, getter của `list` sẽ chạy lại nhiều lần không cần thiết. Trong những trường hợp bạn không muốn cache, hãy dùng method thay thế.
 
 ## Computed có thể ghi {#writable-computed}
 

@@ -64,7 +64,7 @@ Modifier `.once` cũng được hỗ trợ trên listener của sự kiện comp
 <MyComponent @some-event.once="callback" />
 ```
 
-Giống như tên component và prop, tên sự kiện cũng được tự động chuyển đổi kiểu chữ. Hãy chú ý rằng ta phát một sự kiện camelCase, nhưng vẫn có thể lắng nghe nó bằng listener kebab-case ở component cha. Tương tự như [kiểu chữ của prop](/guide/components/props#prop-name-casing), chúng tôi khuyến nghị dùng listener sự kiện dạng kebab-case trong template.
+Giống như tên component và prop, tên sự kiện cũng được tự động chuyển đổi kiểu chữ. Hãy chú ý rằng ta phát một sự kiện camelCase, nhưng vẫn có thể lắng nghe nó bằng listener kebab-case ở component cha. Tương tự như [kiểu chữ của prop](/guide/components/props#prop-name-casing), chúng ta nên dùng listener sự kiện dạng kebab-case trong template.
 
 :::tip
 Khác với sự kiện DOM gốc, các sự kiện do component phát ra **không** nổi bọt. Bạn chỉ có thể lắng nghe các sự kiện được phát ra bởi component con trực tiếp. Nếu cần giao tiếp giữa các component cùng cấp hoặc lồng sâu, hãy dùng event bus bên ngoài hoặc [giải pháp quản lý state global](/guide/scaling-up/state-management).

@@ -130,7 +130,7 @@ Lưu ý rằng **component được đăng ký local sẽ _không_ tự động 
 
 ## Kiểu Chữ Trong Tên Component {#component-name-casing}
 
-Xuyên suốt tài liệu, chúng tôi dùng tên PascalCase khi đăng ký component. Lý do là vì:
+Trong suốt tài liệu này, chúng ta dùng tên PascalCase khi đăng ký component. Lý do là vì:
 
 1. Tên PascalCase là định danh JavaScript hợp lệ. Điều này giúp việc import và đăng ký component trong JavaScript dễ dàng hơn. Nó cũng giúp IDE tự động hoàn thành tốt hơn.
 

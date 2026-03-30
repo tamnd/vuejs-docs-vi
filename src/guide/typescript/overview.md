@@ -14,7 +14,7 @@ Vue được viết bằng TypeScript và cung cấp hỗ trợ TypeScript hạn
 
 ### Tổng Quan {#overview}
 
-Với cài đặt dựa trên Vite, dev server và bundler chỉ thực hiện transpile, không kiểm tra kiểu. Điều này đảm bảo Vite dev server luôn chạy nhanh ngay cả khi dùng TypeScript.
+Với thiết lập dựa trên Vite, dev server và bundler chỉ thực hiện transpile, không kiểm tra kiểu. Nhờ đó, Vite dev server luôn chạy nhanh ngay cả khi dùng TypeScript.
 
 - Trong quá trình phát triển, nên dựa vào [cài đặt IDE](#ide-support) tốt để nhận phản hồi tức thì về lỗi kiểu.
 
