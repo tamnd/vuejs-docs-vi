@@ -65,8 +65,8 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `.vitepress/config.ts`
 - [ ] `src/index.md`
 - [ ] `src/guide/introduction.md`
-- [ ] `src/guide/quick-start.md`
-- [ ] `src/guide/essentials/application.md`
+- [x] `src/guide/quick-start.md`
+- [x] `src/guide/essentials/application.md`
 - [ ] `src/guide/essentials/template-syntax.md`
 - [ ] `src/guide/essentials/class-and-style.md`
 - [ ] `src/guide/essentials/component-basics.md`
@@ -112,7 +112,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `src/guide/components/registration.md`
 - [ ] `src/guide/components/slots.md`
 - [ ] `src/guide/components/v-model.md`
-- [ ] `src/guide/essentials/application.md`
+- [x] `src/guide/essentials/application.md`
 - [ ] `src/guide/essentials/class-and-style.md`
 - [ ] `src/guide/essentials/component-basics.md`
 - [ ] `src/guide/essentials/computed.md`
@@ -134,7 +134,7 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [ ] `src/guide/extras/ways-of-using-vue.md`
 - [ ] `src/guide/extras/web-components.md`
 - [ ] `src/guide/introduction.md`
-- [ ] `src/guide/quick-start.md`
+- [x] `src/guide/quick-start.md`
 - [ ] `src/guide/reusability/composables.md`
 - [ ] `src/guide/reusability/custom-directives.md`
 - [ ] `src/guide/reusability/plugins.md`
