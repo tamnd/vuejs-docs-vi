@@ -27,14 +27,14 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Checklist 30 trang tiếp theo
 
-- [ ] `src/guide/scaling-up/sfc.md`
-- [ ] `src/guide/scaling-up/ssr.md`
-- [ ] `src/guide/scaling-up/state-management.md`
-- [ ] `src/guide/scaling-up/testing.md`
-- [ ] `src/guide/scaling-up/tooling.md`
-- [ ] `src/guide/typescript/composition-api.md`
-- [ ] `src/guide/typescript/options-api.md`
-- [ ] `src/guide/typescript/overview.md`
+- [x] `src/guide/scaling-up/sfc.md`
+- [x] `src/guide/scaling-up/ssr.md`
+- [x] `src/guide/scaling-up/state-management.md`
+- [x] `src/guide/scaling-up/testing.md`
+- [x] `src/guide/scaling-up/tooling.md`
+- [x] `src/guide/typescript/composition-api.md`
+- [x] `src/guide/typescript/options-api.md`
+- [x] `src/guide/typescript/overview.md`
 - [x] `src/api/application.md`
 - [x] `src/api/built-in-components.md`
 - [x] `src/api/built-in-directives.md`
@@ -46,24 +46,24 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/composition-api-helpers.md`
 - [x] `src/api/composition-api-lifecycle.md`
 - [x] `src/api/composition-api-setup.md`
-- [ ] `src/api/custom-elements.md`
-- [ ] `src/api/custom-renderer.md`
-- [ ] `src/api/general.md`
-- [ ] `src/api/index.md`
-- [ ] `src/api/options-composition.md`
-- [ ] `src/api/options-lifecycle.md`
-- [ ] `src/api/options-misc.md`
-- [ ] `src/api/options-rendering.md`
-- [ ] `src/api/options-state.md`
-- [ ] `src/api/reactivity-advanced.md`
-- [ ] `src/api/reactivity-core.md`
+- [x] `src/api/custom-elements.md`
+- [x] `src/api/custom-renderer.md`
+- [x] `src/api/general.md`
+- [x] `src/api/index.md`
+- [x] `src/api/options-composition.md`
+- [x] `src/api/options-lifecycle.md`
+- [x] `src/api/options-misc.md`
+- [x] `src/api/options-rendering.md`
+- [x] `src/api/options-state.md`
+- [x] `src/api/reactivity-advanced.md`
+- [x] `src/api/reactivity-core.md`
 
 ## Ưu tiên sprint đầu
 
-- [ ] `README.md`
-- [ ] `TRANSLATES.md`
+- [x] `README.md`
+- [x] `TRANSLATES.md`
 - [ ] `.vitepress/config.ts`
-- [ ] `src/index.md`
+- [x] `src/index.md`
 - [x] `src/guide/introduction.md`
 - [x] `src/guide/quick-start.md`
 - [x] `src/guide/essentials/application.md`
@@ -81,17 +81,17 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Repo meta
 
-- [ ] `README.md`
-- [ ] `TRANSLATES.md`
+- [x] `README.md`
+- [x] `TRANSLATES.md`
 - [ ] `.vitepress/config.ts`
 
 ## Landing and shared pages
 
-- [ ] `src/index.md`
-- [ ] `src/translations/index.md`
-- [ ] `src/glossary/index.md`
-- [ ] `src/error-reference/index.md`
-- [ ] `src/examples/index.md`
+- [x] `src/index.md`
+- [x] `src/translations/index.md`
+- [x] `src/glossary/index.md`
+- [x] `src/error-reference/index.md`
+- [x] `src/examples/index.md`
 
 ## Guide
 
@@ -161,65 +161,65 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 - [x] `src/api/composition-api-helpers.md`
 - [x] `src/api/composition-api-lifecycle.md`
 - [x] `src/api/composition-api-setup.md`
-- [ ] `src/api/custom-elements.md`
-- [ ] `src/api/custom-renderer.md`
-- [ ] `src/api/general.md`
-- [ ] `src/api/index.md`
-- [ ] `src/api/options-composition.md`
-- [ ] `src/api/options-lifecycle.md`
-- [ ] `src/api/options-misc.md`
-- [ ] `src/api/options-rendering.md`
-- [ ] `src/api/options-state.md`
-- [ ] `src/api/reactivity-advanced.md`
-- [ ] `src/api/reactivity-core.md`
-- [ ] `src/api/reactivity-utilities.md`
-- [ ] `src/api/render-function.md`
-- [ ] `src/api/sfc-css-features.md`
-- [ ] `src/api/sfc-script-setup.md`
-- [ ] `src/api/sfc-spec.md`
-- [ ] `src/api/ssr.md`
-- [ ] `src/api/utility-types.md`
+- [x] `src/api/custom-elements.md`
+- [x] `src/api/custom-renderer.md`
+- [x] `src/api/general.md`
+- [x] `src/api/index.md`
+- [x] `src/api/options-composition.md`
+- [x] `src/api/options-lifecycle.md`
+- [x] `src/api/options-misc.md`
+- [x] `src/api/options-rendering.md`
+- [x] `src/api/options-state.md`
+- [x] `src/api/reactivity-advanced.md`
+- [x] `src/api/reactivity-core.md`
+- [x] `src/api/reactivity-utilities.md`
+- [x] `src/api/render-function.md`
+- [x] `src/api/sfc-css-features.md`
+- [x] `src/api/sfc-script-setup.md`
+- [x] `src/api/sfc-spec.md`
+- [x] `src/api/ssr.md`
+- [x] `src/api/utility-types.md`
 
 ## Tutorial
 
-- [ ] `src/tutorial/index.md`
-- [ ] `src/tutorial/src/step-1/description.md`
-- [ ] `src/tutorial/src/step-10/description.md`
-- [ ] `src/tutorial/src/step-11/description.md`
-- [ ] `src/tutorial/src/step-12/description.md`
-- [ ] `src/tutorial/src/step-13/description.md`
-- [ ] `src/tutorial/src/step-14/description.md`
-- [ ] `src/tutorial/src/step-15/description.md`
-- [ ] `src/tutorial/src/step-2/description.md`
-- [ ] `src/tutorial/src/step-3/description.md`
-- [ ] `src/tutorial/src/step-4/description.md`
-- [ ] `src/tutorial/src/step-5/description.md`
-- [ ] `src/tutorial/src/step-6/description.md`
-- [ ] `src/tutorial/src/step-7/description.md`
-- [ ] `src/tutorial/src/step-8/description.md`
-- [ ] `src/tutorial/src/step-9/description.md`
+- [x] `src/tutorial/index.md`
+- [x] `src/tutorial/src/step-1/description.md`
+- [x] `src/tutorial/src/step-10/description.md`
+- [x] `src/tutorial/src/step-11/description.md`
+- [x] `src/tutorial/src/step-12/description.md`
+- [x] `src/tutorial/src/step-13/description.md`
+- [x] `src/tutorial/src/step-14/description.md`
+- [x] `src/tutorial/src/step-15/description.md`
+- [x] `src/tutorial/src/step-2/description.md`
+- [x] `src/tutorial/src/step-3/description.md`
+- [x] `src/tutorial/src/step-4/description.md`
+- [x] `src/tutorial/src/step-5/description.md`
+- [x] `src/tutorial/src/step-6/description.md`
+- [x] `src/tutorial/src/step-7/description.md`
+- [x] `src/tutorial/src/step-8/description.md`
+- [x] `src/tutorial/src/step-9/description.md`
 
 ## About
 
-- [ ] `src/about/coc.md`
-- [ ] `src/about/community-guide.md`
-- [ ] `src/about/faq.md`
-- [ ] `src/about/privacy.md`
-- [ ] `src/about/releases.md`
-- [ ] `src/about/team.md`
+- [x] `src/about/coc.md`
+- [x] `src/about/community-guide.md`
+- [x] `src/about/faq.md`
+- [x] `src/about/privacy.md`
+- [x] `src/about/releases.md`
+- [x] `src/about/team.md`
 
 ## Ecosystem
 
-- [ ] `src/ecosystem/newsletters.md`
-- [ ] `src/ecosystem/themes.md`
+- [x] `src/ecosystem/newsletters.md`
+- [x] `src/ecosystem/themes.md`
 
 ## Style guide
 
-- [ ] `src/style-guide/index.md`
-- [ ] `src/style-guide/rules-essential.md`
-- [ ] `src/style-guide/rules-recommended.md`
-- [ ] `src/style-guide/rules-strongly-recommended.md`
-- [ ] `src/style-guide/rules-use-with-caution.md`
+- [x] `src/style-guide/index.md`
+- [x] `src/style-guide/rules-essential.md`
+- [x] `src/style-guide/rules-recommended.md`
+- [x] `src/style-guide/rules-strongly-recommended.md`
+- [x] `src/style-guide/rules-use-with-caution.md`
 
 ## Sponsor and partners
 
@@ -230,23 +230,23 @@ Tài liệu này dùng để theo dõi tiến độ dịch thủ công cho repo 
 
 ## Examples descriptions
 
-- [ ] `src/examples/src/attribute-bindings/description.txt`
-- [ ] `src/examples/src/cells/description.txt`
-- [ ] `src/examples/src/circle-drawer/description.txt`
-- [ ] `src/examples/src/conditionals-and-loops/description.txt`
-- [ ] `src/examples/src/counter/description.txt`
-- [ ] `src/examples/src/crud/description.txt`
-- [ ] `src/examples/src/fetching-data/description.txt`
-- [ ] `src/examples/src/flight-booker/description.txt`
-- [ ] `src/examples/src/form-bindings/description.txt`
-- [ ] `src/examples/src/grid/description.txt`
-- [ ] `src/examples/src/handling-input/description.txt`
-- [ ] `src/examples/src/hello-world/description.txt`
-- [ ] `src/examples/src/list-transition/description.txt`
-- [ ] `src/examples/src/markdown/description.txt`
-- [ ] `src/examples/src/modal/description.txt`
-- [ ] `src/examples/src/simple-component/description.txt`
-- [ ] `src/examples/src/svg/description.txt`
-- [ ] `src/examples/src/temperature-converter/description.txt`
-- [ ] `src/examples/src/timer/description.txt`
-- [ ] `src/examples/src/tree/description.txt`
+- [x] `src/examples/src/attribute-bindings/description.txt`
+- [x] `src/examples/src/cells/description.txt`
+- [x] `src/examples/src/circle-drawer/description.txt`
+- [x] `src/examples/src/conditionals-and-loops/description.txt`
+- [x] `src/examples/src/counter/description.txt`
+- [x] `src/examples/src/crud/description.txt`
+- [x] `src/examples/src/fetching-data/description.txt`
+- [x] `src/examples/src/flight-booker/description.txt`
+- [x] `src/examples/src/form-bindings/description.txt`
+- [x] `src/examples/src/grid/description.txt`
+- [x] `src/examples/src/handling-input/description.txt`
+- [x] `src/examples/src/hello-world/description.txt`
+- [x] `src/examples/src/list-transition/description.txt`
+- [x] `src/examples/src/markdown/description.txt`
+- [x] `src/examples/src/modal/description.txt`
+- [x] `src/examples/src/simple-component/description.txt`
+- [x] `src/examples/src/svg/description.txt`
+- [x] `src/examples/src/temperature-converter/description.txt`
+- [x] `src/examples/src/timer/description.txt`
+- [x] `src/examples/src/tree/description.txt`

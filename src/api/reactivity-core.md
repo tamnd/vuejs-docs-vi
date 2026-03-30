@@ -116,7 +116,7 @@ Nhận một [getter function](https://developer.mozilla.org/en-US/docs/Web/Java
 
 ## reactive() {#reactive}
 
-Trả về một reactive proxy của object.
+Trả về một proxy phản ứng của object.
 
 - **Kiểu**
 
@@ -128,11 +128,11 @@ Trả về một reactive proxy của object.
 
   Chuyển đổi reactive là "sâu": nó ảnh hưởng đến tất cả các thuộc tính lồng nhau. Một reactive object cũng unwrap sâu bất kỳ thuộc tính nào là [ref](#ref) trong khi vẫn duy trì tính phản ứng.
 
-  Cần lưu ý rằng không có unwrap ref nào được thực hiện khi ref được truy cập như một phần tử của reactive array hoặc kiểu collection gốc như `Map`.
+  Cần lưu ý rằng không có mở bọc ref (ref unwrapping) nào được thực hiện khi ref được truy cập như một phần tử của reactive array hoặc kiểu collection gốc như `Map`.
 
   Để tránh chuyển đổi sâu và chỉ giữ tính phản ứng ở cấp gốc, dùng [shallowReactive()](./reactivity-advanced#shallowreactive) thay thế.
 
-  Object được trả về và các object lồng nhau của nó được bọc bởi [ES Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) và **không** bằng với các object gốc. Khuyến nghị làm việc hoàn toàn với reactive proxy và tránh phụ thuộc vào object gốc.
+  Object được trả về và các object lồng nhau của nó được bọc bởi [ES Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) và **không** bằng với các object gốc. Khuyến nghị làm việc hoàn toàn với proxy phản ứng và tránh phụ thuộc vào object gốc.
 
 - **Ví dụ**
 
@@ -143,7 +143,7 @@ Trả về một reactive proxy của object.
   obj.count++
   ```
 
-  Unwrap ref:
+  Mở bọc ref:
 
   ```ts
   const count = ref(1)
@@ -205,7 +205,7 @@ Nhận một object (reactive hoặc plain) hoặc một [ref](#ref) và trả v
 
 - **Chi tiết**
 
-  Readonly proxy là sâu: bất kỳ thuộc tính lồng nhau nào được truy cập cũng sẽ là readonly. Nó cũng có hành vi unwrap ref giống như `reactive()`, ngoại trừ các giá trị được unwrap cũng sẽ được làm readonly.
+  Readonly proxy là sâu: bất kỳ thuộc tính lồng nhau nào được truy cập cũng sẽ là readonly. Nó cũng có hành vi mở bọc ref giống như `reactive()`, ngoại trừ các giá trị được unwrap cũng sẽ được làm readonly.
 
   Để tránh chuyển đổi sâu, dùng [shallowReadonly()](./reactivity-advanced#shallowreadonly) thay thế.
 

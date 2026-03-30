@@ -6,7 +6,7 @@ outline: deep
 
 Cộng đồng Vue đang phát triển với tốc độ đáng kinh ngạc và nếu bạn đang đọc điều này, rất có thể bạn đã sẵn sàng tham gia. Vậy thì... chào mừng bạn!
 
-Bây giờ chúng ta sẽ trả lời cả những gì cộng đồng có thể làm cho bạn và những gì bạn có thể làm cho cộng đồng.
+Sau đây chúng ta sẽ cùng tìm hiểu: cộng đồng có thể làm gì cho bạn, và bạn có thể đóng góp gì cho cộng đồng.
 
 ## Tài nguyên {#resources}
 

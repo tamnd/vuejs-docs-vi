@@ -2,7 +2,7 @@
 
 ## Cam kết của Chúng tôi {#our-pledge}
 
-Vì lợi ích của việc thúc đẩy môi trường cởi mở và thân thiện, chúng tôi là những người đóng góp và maintainer cam kết tạo ra sự tham gia trong dự án và cộng đồng của chúng tôi là trải nghiệm không có quấy rối cho mọi người, bất kể tuổi tác, vóc dáng cơ thể, khuyết tật, dân tộc, đặc điểm giới tính, bản sắc và biểu hiện giới, mức độ kinh nghiệm, trình độ học vấn, địa vị kinh tế xã hội, quốc tịch, ngoại hình, chủng tộc, tôn giáo, đảng phái chính trị, hay bản sắc và xu hướng tình dục. Tuy nhiên lưu ý rằng tôn giáo, đảng phái chính trị, hay liên kết tư tưởng khác không được miễn trừ cho hành vi mà chúng tôi quy định là không chấp nhận được trong Quy tắc Ứng xử này.
+Nhằm thúc đẩy một môi trường cởi mở và thân thiện, chúng tôi — những người đóng góp và maintainer — cam kết đảm bảo việc tham gia vào dự án và cộng đồng của chúng tôi là trải nghiệm không có quấy rối cho tất cả mọi người, bất kể tuổi tác, vóc dáng, khuyết tật, dân tộc, đặc điểm giới tính, bản sắc và biểu hiện giới, mức độ kinh nghiệm, trình độ học vấn, địa vị kinh tế xã hội, quốc tịch, ngoại hình, chủng tộc, tôn giáo, đảng phái chính trị, hay xu hướng tình dục. Tuy nhiên, cần lưu ý rằng tôn giáo, đảng phái chính trị hay các liên kết tư tưởng khác không được miễn trừ khỏi những hành vi mà chúng tôi xác định là không thể chấp nhận trong Quy tắc Ứng xử này.
 
 ## Tiêu chuẩn của Chúng tôi {#our-standards}
 
@@ -24,7 +24,7 @@ Ví dụ về hành vi không chấp nhận được từ người tham gia bao 
 
 ## Trách nhiệm của Chúng tôi {#our-responsibilities}
 
-Các maintainer dự án có trách nhiệm làm rõ các tiêu chuẩn hành vi chấp nhận được và được kỳ vọng thực hiện hành động khắc phục phù hợp và công bằng để đáp lại bất kỳ trường hợp hành vi không chấp nhận được nào.
+Các maintainer dự án có trách nhiệm làm rõ các tiêu chuẩn về hành vi được chấp nhận, và có nghĩa vụ thực hiện các hành động khắc phục phù hợp và công bằng để đáp lại bất kỳ hành vi không thể chấp nhận nào.
 
 Các maintainer dự án có quyền và trách nhiệm xóa, chỉnh sửa, hoặc từ chối các bình luận, commit, code, chỉnh sửa wiki, issue, và các đóng góp khác không phù hợp với Quy tắc Ứng xử này, hoặc cấm tạm thời hoặc vĩnh viễn bất kỳ người đóng góp nào vì các hành vi khác mà họ cho là không phù hợp, đe dọa, xúc phạm, hoặc có hại.
 
@@ -34,7 +34,7 @@ Quy tắc Ứng xử này áp dụng trong cả không gian dự án và không 
 
 ## Thực thi {#enforcement}
 
-Các trường hợp hành vi lạm dụng, quấy rối, hoặc không chấp nhận được khác có thể được báo cáo bằng cách liên hệ nhóm dự án tại community@vuejs.org. Tất cả các khiếu nại sẽ được xem xét, điều tra và dẫn đến phản hồi được cho là cần thiết và phù hợp với hoàn cảnh. Nhóm dự án có nghĩa vụ duy trì bảo mật liên quan đến người báo cáo sự cố. Thông tin chi tiết hơn về các chính sách thực thi cụ thể có thể được đăng riêng.
+Các trường hợp lạm dụng, quấy rối hoặc hành vi không thể chấp nhận có thể được báo cáo bằng cách liên hệ nhóm dự án tại community@vuejs.org. Tất cả khiếu nại sẽ được xem xét, điều tra và xử lý với phản hồi phù hợp theo từng hoàn cảnh cụ thể. Nhóm dự án có nghĩa vụ giữ bí mật thông tin liên quan đến người báo cáo sự việc. Thông tin chi tiết hơn về các chính sách thực thi cụ thể có thể được đăng riêng.
 
 Các maintainer dự án không tuân thủ hoặc thực thi Quy tắc Ứng xử một cách thiện chí có thể phải đối mặt với hậu quả tạm thời hoặc vĩnh viễn do các thành viên khác trong ban lãnh đạo dự án xác định.
 
