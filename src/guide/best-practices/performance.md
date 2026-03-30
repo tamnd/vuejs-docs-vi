@@ -6,14 +6,14 @@ outline: deep
 
 ## Tổng quan {#overview}
 
-Vue được thiết kế để có hiệu năng tốt trong hầu hết các trường hợp phổ biến mà không cần tối ưu thủ công quá nhiều. Tuy vậy, vẫn luôn có những tình huống khó hơn đòi hỏi phải tinh chỉnh thêm. Trong phần này, ta sẽ bàn về những điểm bạn nên chú ý khi nói tới hiệu năng trong một ứng dụng Vue.
+Vue được thiết kế để có hiệu năng tốt trong hầu hết các trường hợp phổ biến mà không cần tối ưu thủ công quá nhiều. Tuy vậy, vẫn luôn có những tình huống khó hơn đòi hỏi phải tinh chỉnh thêm. Trong phần này, ta sẽ bàn về những điểm cần chú ý khi nói tới hiệu năng trong ứng dụng Vue.
 
 Trước hết, hãy nói về hai mặt chính của hiệu năng web:
 
 - **Hiệu năng tải trang**: ứng dụng hiển thị nội dung và trở nên tương tác được nhanh đến đâu ở lần truy cập đầu tiên. Phần này thường được đo bằng các chỉ số web vital như [Largest Contentful Paint (LCP)](https://web.dev/lcp/) và [Interaction to Next Paint](https://web.dev/articles/inp).
 - **Hiệu năng cập nhật**: ứng dụng phản hồi với thao tác người dùng nhanh đến đâu. Ví dụ, danh sách cập nhật nhanh ra sao khi người dùng gõ vào ô tìm kiếm, hoặc trang chuyển nhanh tới mức nào khi người dùng bấm vào một liên kết điều hướng trong một Single-Page Application (SPA).
 
-Lý tưởng nhất là tối ưu được cả hai, nhưng mỗi kiểu kiến trúc frontend lại ảnh hưởng khác nhau tới việc đạt được hiệu năng mong muốn ở từng mặt. Ngoài ra, loại ứng dụng bạn đang xây dựng cũng ảnh hưởng rất lớn tới việc nên ưu tiên tối ưu cái gì. Vì vậy, bước đầu tiên để bảo đảm hiệu năng tốt là chọn đúng kiến trúc cho loại ứng dụng bạn đang làm:
+Lý tưởng nhất là tối ưu được cả hai, nhưng mỗi kiểu kiến trúc frontend lại ảnh hưởng khác nhau đến từng mặt. Ngoài ra, loại ứng dụng bạn đang xây cũng ảnh hưởng lớn đến việc nên ưu tiên tối ưu cái gì. Bước đầu tiên để có hiệu năng tốt là chọn đúng kiến trúc cho loại ứng dụng của bạn:
 
 - Xem [Ways of Using Vue](/guide/extras/ways-of-using-vue) để hiểu những cách khác nhau mà bạn có thể tận dụng Vue.
 - Jason Miller bàn về các loại ứng dụng web và cách triển khai / phân phối phù hợp nhất của chúng trong bài [Application Holotypes](https://jasonformat.com/application-holotypes/).
@@ -183,7 +183,7 @@ Việc tự cài list virtualization không hề đơn giản. May là đã có 
 
 ### Giảm overhead của tính phản ứng với cấu trúc lớn nhưng bất biến {#reduce-reactivity-overhead-for-large-immutable-structures}
 
-Hệ thống tính phản ứng của Vue mặc định là sâu. Điều này giúp việc quản lý state tự nhiên hơn, nhưng cũng tạo ra một mức overhead nhất định khi dữ liệu quá lớn, vì mỗi lần truy cập property đều đi qua proxy trap để theo dõi dependency. Điều này thường bắt đầu thấy rõ khi làm việc với những mảng lớn chứa các object lồng nhau sâu, nơi chỉ một lần render cũng có thể phải đọc hơn 100.000 property. Vì vậy, nó chỉ ảnh hưởng tới những trường hợp khá đặc thù.
+Hệ thống tính phản ứng của Vue mặc định là sâu. Điều này giúp việc quản lý state tự nhiên hơn, nhưng cũng tạo ra một mức overhead nhất định khi dữ liệu quá lớn, vì mỗi lần truy cập property đều đi qua proxy trap để theo dõi dependency. Điều này thường thấy rõ khi làm việc với những mảng lớn chứa các object lồng nhau sâu, nơi chỉ một lần render cũng có thể đọc hơn 100.000 property. Tuy nhiên, nó chỉ ảnh hưởng đến những trường hợp khá đặc thù.
 
 Vue có cung cấp một lối thoát để bỏ qua tính phản ứng sâu, bằng cách dùng [`shallowRef()`](/api/reactivity-advanced#shallowref) và [`shallowReactive()`](/api/reactivity-advanced#shallowreactive). Các API shallow tạo ra state chỉ phản ứng ở cấp gốc, còn mọi object lồng bên trong sẽ được giữ nguyên. Nhờ đó, việc truy cập property lồng bên trong sẽ nhanh hơn, đổi lại là giờ đây ta phải xem toàn bộ object lồng bên trong là bất biến, và chỉ có thể kích hoạt cập nhật bằng cách thay thế state ở gốc:
 

@@ -353,7 +353,7 @@ this.items = this.items.filter((item) => item.message.match(/Foo/))
 
 </div>
 
-Bạn có thể nghĩ rằng cách này sẽ khiến Vue bỏ toàn bộ DOM hiện có và render lại cả danh sách, nhưng may là không phải vậy. Vue triển khai một số chiến lược tối ưu khá thông minh để tái sử dụng DOM element nhiều nhất có thể, nên việc thay một mảng bằng mảng khác có chứa những object trùng nhau là một thao tác rất hiệu quả.
+Bạn có thể lo rằng cách này sẽ khiến Vue bỏ toàn bộ DOM hiện có và render lại cả danh sách — nhưng may là không phải vậy. Vue có một số chiến lược tối ưu thông minh để tái sử dụng DOM element nhiều nhất có thể, nên việc thay một mảng bằng mảng khác có chứa những object trùng nhau là thao tác rất hiệu quả.
 
 ## Hiển thị kết quả đã lọc hoặc sắp xếp {#displaying-filtered-sorted-results}
 

@@ -106,7 +106,7 @@ Một vài lưu ý:
 
 - Khác với props, thuộc tính kế thừa giữ nguyên kiểu chữ gốc của chúng trong JavaScript, vì vậy một thuộc tính như `foo-bar` phải được truy cập bằng `$attrs['foo-bar']`.
 
-- Một event listener `v-on` như `@click` sẽ được lộ ra trên object dưới dạng một hàm nằm ở `$attrs.onClick`.
+- Một event listener `v-on` như `@click` sẽ có mặt trên object dưới dạng một hàm nằm ở `$attrs.onClick`.
 
 Quay lại ví dụ `<MyButton>` ở [phần trước](#attribute-inheritance), đôi khi ta cần bọc phần tử `<button>` thật bằng một `<div>` bổ sung để phục vụ việc styling:
 
@@ -164,7 +164,7 @@ const attrs = useAttrs()
 </script>
 ```
 
-Nếu không dùng `<script setup>`, `attrs` sẽ được lộ ra như một property của context `setup()`:
+Nếu không dùng `<script setup>`, `attrs` sẽ khả dụng như một property của context `setup()`:
 
 ```js
 export default {

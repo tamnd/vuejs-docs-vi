@@ -50,6 +50,6 @@ Có hai cách để cập nhật danh sách:
 
    </div>
 
-Đây chúng ta có một danh sách todo đơn giản - hãy thử triển khai logic cho các method `addTodo()` và `removeTodo()` để làm cho nó hoạt động!
+Chúng ta đã có sẵn một danh sách todo đơn giản - hãy thử triển khai logic cho các method `addTodo()` và `removeTodo()` để làm cho nó hoạt động!
 
 Chi tiết thêm về `v-for`: <a target="_blank" href="/guide/essentials/list.html">Hướng dẫn - Kết xuất danh sách</a>

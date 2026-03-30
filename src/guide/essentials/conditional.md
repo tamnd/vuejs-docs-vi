@@ -100,13 +100,13 @@ Một cách khác để hiển thị phần tử theo điều kiện là dùng d
 
 ## `v-if` vs. `v-show` {#v-if-vs-v-show}
 
-`v-if` là kết xuất có điều kiện "thật sự" vì nó đảm bảo các event listener và component con bên trong khối điều kiện sẽ được hủy và tạo lại đúng cách trong quá trình chuyển trạng thái.
+`v-if` là kết xuất có điều kiện thực sự — nó đảm bảo các event listener và component con bên trong khối điều kiện sẽ được hủy và tạo lại đúng cách trong quá trình chuyển trạng thái.
 
-`v-if` cũng **lazy**: nếu điều kiện là false ở lần render đầu tiên, nó sẽ không làm gì cả, khối điều kiện sẽ chưa được render cho tới khi điều kiện trở thành true lần đầu.
+`v-if` cũng **lazy**: nếu điều kiện là false ở lần render đầu tiên, nó không làm gì cả — khối điều kiện chỉ được render khi điều kiện trở thành true lần đầu.
 
-Trong khi đó, `v-show` đơn giản hơn nhiều: phần tử luôn được render bất kể điều kiện ban đầu là gì, rồi việc ẩn/hiện được xử lý bằng CSS.
+Trong khi đó, `v-show` đơn giản hơn nhiều: phần tử luôn được render bất kể điều kiện ban đầu là gì, và việc ẩn/hiện được xử lý thuần bằng CSS.
 
-Nói chung, `v-if` có chi phí chuyển trạng thái cao hơn, còn `v-show` có chi phí render ban đầu cao hơn. Vì vậy, hãy ưu tiên `v-show` nếu bạn cần bật/tắt một thứ rất thường xuyên, và ưu tiên `v-if` nếu điều kiện đó hiếm khi thay đổi trong lúc chạy.
+Nhìn chung, `v-if` tốn kém hơn mỗi khi chuyển trạng thái, còn `v-show` tốn kém hơn ở lần render đầu tiên. Vì vậy, hãy ưu tiên `v-show` nếu bạn cần bật/tắt thứ gì đó rất thường xuyên, và ưu tiên `v-if` nếu điều kiện hiếm khi thay đổi lúc chạy.
 
 ## `v-if` cùng `v-for` {#v-if-with-v-for}
 

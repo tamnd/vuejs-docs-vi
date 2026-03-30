@@ -14,7 +14,7 @@ Vue được viết bằng TypeScript và cung cấp hỗ trợ TypeScript hạn
 
 ### Tổng Quan {#overview}
 
-Với cài đặt dựa trên Vite, dev server và bundler chỉ thực hiện transpile, không kiểm tra kiểu. Điều này đảm bảo Vite dev server luôn chạy nhanh ngay cả khi dùng TypeScript.
+Với thiết lập dựa trên Vite, dev server và bundler chỉ thực hiện transpile, không kiểm tra kiểu. Nhờ đó, Vite dev server luôn chạy nhanh ngay cả khi dùng TypeScript.
 
 - Trong quá trình phát triển, nên dựa vào [cài đặt IDE](#ide-support) tốt để nhận phản hồi tức thì về lỗi kiểu.
 
@@ -55,13 +55,13 @@ Xem thêm:
 
 ### Ghi Chú Về Vue CLI Và `ts-loader` {#note-on-vue-cli-and-ts-loader}
 
-Trong các cài đặt dựa trên webpack như Vue CLI, thông thường người ta kiểm tra kiểu như một phần của pipeline transform module, ví dụ dùng `ts-loader`. Tuy nhiên, đây không phải giải pháp gọn gàng vì hệ thống kiểu cần biết toàn bộ module graph để thực hiện kiểm tra kiểu. Bước transform của từng module đơn lẻ đơn giản không phải nơi phù hợp cho tác vụ này. Điều này dẫn đến các vấn đề sau:
+Trong các thiết lập dựa trên webpack như Vue CLI, thông thường người ta kiểm tra kiểu như một phần của pipeline transform module, ví dụ dùng `ts-loader`. Tuy nhiên, đây không phải giải pháp gọn gàng vì hệ thống kiểu cần biết toàn bộ module graph để kiểm tra kiểu. Bước transform của từng module đơn lẻ không phải nơi phù hợp cho tác vụ này, và dẫn đến các vấn đề sau:
 
 - `ts-loader` chỉ có thể kiểm tra kiểu code sau khi transform. Điều này không khớp với lỗi ta thấy trong IDE hay từ `vue-tsc`, vốn ánh xạ trực tiếp về source code gốc.
 
 - Kiểm tra kiểu có thể chậm. Khi thực hiện trong cùng thread/process với biến đổi code, nó ảnh hưởng đáng kể đến tốc độ build của toàn ứng dụng.
 
-- Ta đã có kiểm tra kiểu chạy ngay trong IDE trong một process riêng, nên chi phí làm chậm trải nghiệm dev đơn giản không đáng đổi.
+- Ta đã có kiểm tra kiểu chạy ngay trong IDE ở một process riêng, nên chi phí làm chậm trải nghiệm dev đơn giản là không đáng.
 
 Nếu bạn đang dùng Vue 3 + TypeScript qua Vue CLI, chúng tôi khuyến nghị mạnh mẽ chuyển sang Vite. Chúng tôi cũng đang làm việc trên các tùy chọn CLI để bật hỗ trợ TypeScript chỉ transpile, để bạn có thể chuyển sang `vue-tsc` cho kiểm tra kiểu.
 
