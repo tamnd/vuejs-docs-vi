@@ -13,13 +13,13 @@ onMounted(load)
   <section id="hero">
     <img id="uwu" alt="Vue.js Kawaii Logo by @icarusgkx" />
     <h1 class="tagline">
-      Framework
-      <span class="accent">JavaScript Tiến Bộ</span>
-      <br />cho giao diện web
+      Framework JavaScript
+      <br />
+      <span class="accent">linh động</span>
     </h1>
     <p class="description">
-      Một framework dễ tiếp cận, hiệu năng cao, và linh hoạt để xây dựng giao
-      diện người dùng trên web.
+      Một framework dễ tiếp cận, hiệu năng cao và linh hoạt để xây dựng
+      giao diện người dùng trên web.
     </p>
     <p class="actions">
       <VueMasteryModal />
@@ -39,7 +39,7 @@ onMounted(load)
       </a>
       <a class="setup" href="/guide/quick-start.html">Cài đặt</a>
       <a class="security" href="https://v2.vuejs.org/eol/" target="_blank">
-        Nhận bản cập nhật bảo mật cho Vue 2
+        Nhận cập nhật bảo mật cho Vue 2
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ onMounted(load)
   <section v-else id="special-spsr">
     <span>
       <a href="/sponsor/#tier-benefits">
-        Vị trí nhà tài trợ đặc biệt hiện đang trống, liên hệ ngay
+        Vị trí Nhà tài trợ đặc biệt đang trống - Liên hệ ngay
       </a>
     </span>
   </section>
@@ -87,28 +87,28 @@ onMounted(load)
     <div class="vt-box">
       <h2>Dễ tiếp cận</h2>
       <p>
-        Được xây dựng trên nền HTML, CSS, và JavaScript tiêu chuẩn với API trực
-        quan và tài liệu chất lượng hàng đầu.
+        Xây dựng trên nền HTML, CSS và JavaScript chuẩn với API trực quan
+        và tài liệu chất lượng hàng đầu.
       </p>
     </div>
     <div class="vt-box">
       <h2>Hiệu năng cao</h2>
       <p>
-        Hệ thống kết xuất thực sự phản ứng, được tối ưu bởi compiler và hiếm
-        khi cần tối ưu thủ công.
+        Hệ thống render mang tính reactive (phản ứng), tối ưu hóa bởi compiler,
+        hiếm khi cần tối ưu thủ công.
       </p>
     </div>
     <div class="vt-box">
       <h2>Linh hoạt</h2>
       <p>
-        Một hệ sinh thái phong phú, có thể áp dụng dần dần và mở rộng từ một
-        thư viện nhỏ đến một framework đầy đủ tính năng.
+        Hệ sinh thái phong phú, có thể áp dụng dần dần, mở rộng từ thư viện
+        đến framework đầy đủ tính năng.
       </p>
     </div>
   </section>
 
   <section id="spsrs">
-    <h2>Nhà tài trợ Bạch kim</h2>
+    <h2>Nhà tài trợ Bạch Kim</h2>
     <SponsorsGroup tier="platinum" placement="landing" />
     <h2>Nhà tài trợ Vàng</h2>
     <SponsorsGroup tier="gold" placement="landing" />

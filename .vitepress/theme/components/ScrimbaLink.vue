@@ -6,7 +6,7 @@
       rel="sponsored noopener"
       :title="title"
     >
-      <slot>Watch a free interactive tutorial on Scrimba</slot>
+      <slot>Xem hướng dẫn tương tác miễn phí trên Scrimba</slot>
     </a>
   </div>
 </template>
