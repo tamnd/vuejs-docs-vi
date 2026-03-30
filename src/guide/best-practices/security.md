@@ -2,7 +2,7 @@
 
 ## Báo cáo lỗ hổng bảo mật {#reporting-vulnerabilities}
 
-Khi có một lỗ hổng được báo cáo, đó sẽ ngay lập tức trở thành ưu tiên cao nhất của chúng tôi, và một contributor toàn thời gian sẽ gác mọi việc khác để xử lý. Để báo cáo lỗ hổng, vui lòng gửi email tới [security@vuejs.org](mailto:security@vuejs.org).
+Khi nhận được báo cáo lỗ hổng, đó ngay lập tức trở thành ưu tiên cao nhất của chúng tôi — một contributor toàn thời gian sẽ gác mọi việc khác để xử lý. Để báo cáo lỗ hổng, vui lòng gửi email tới [security@vuejs.org](mailto:security@vuejs.org).
 
 Dù việc phát hiện ra lỗ hổng mới là khá hiếm, chúng tôi vẫn luôn khuyến nghị bạn dùng phiên bản mới nhất của Vue và các thư viện đồng hành chính thức của nó để ứng dụng của bạn an toàn nhất có thể.
 
@@ -16,7 +16,7 @@ Vue.createApp({
 }).mount('#app')
 ```
 
-Template của Vue được biên dịch thành JavaScript, và các biểu thức bên trong template sẽ được thực thi như một phần của quá trình render. Dù các biểu thức được đánh giá trong một ngữ cảnh render cụ thể, sự phức tạp của các môi trường thực thi toàn cục khiến một framework như Vue không thể bảo vệ bạn hoàn toàn khỏi việc thực thi mã độc mà không phải trả giá hiệu năng quá lớn. Cách rõ ràng và đơn giản nhất để tránh hẳn nhóm vấn đề này là bảo đảm nội dung template Vue của bạn luôn là nội dung đáng tin cậy và hoàn toàn do bạn kiểm soát.
+Template của Vue được biên dịch thành JavaScript, và các biểu thức bên trong template sẽ được thực thi như một phần của quá trình render. Dù các biểu thức được đánh giá trong một ngữ cảnh render cụ thể, sự phức tạp của môi trường thực thi toàn cục khiến Vue không thể bảo vệ bạn hoàn toàn khỏi mã độc mà không phải trả giá hiệu năng quá lớn. Cách đơn giản và hiệu quả nhất để tránh hẳn nhóm vấn đề này là luôn bảo đảm template Vue của bạn là nội dung đáng tin cậy, hoàn toàn do bạn kiểm soát.
 
 ## Vue bảo vệ bạn như thế nào {#what-vue-does-to-protect-you}
 
@@ -164,7 +164,7 @@ JavaScript do người dùng cung cấp không bao giờ có thể được xem 
 
 ## Thực hành tốt nhất {#best-practices}
 
-Quy tắc chung là: nếu bạn cho phép nội dung do người dùng cung cấp mà chưa sanitize được thực thi, dù là dưới dạng HTML, JavaScript hay thậm chí CSS, thì bạn có thể tự mở cửa cho các cuộc tấn công. Lời khuyên này đúng không chỉ với Vue, mà với cả framework khác, hoặc kể cả khi bạn không dùng framework nào.
+Quy tắc chung là: nếu bạn cho phép nội dung do người dùng cung cấp chưa được sanitize thực thi dưới dạng HTML, JavaScript hay CSS, bạn đang tự mở cửa cho tấn công. Lời khuyên này đúng không chỉ với Vue mà với mọi framework, kể cả khi bạn không dùng framework nào.
 
 Ngoài những khuyến nghị ở trên trong phần [Những rủi ro có thể gặp](#potential-dangers), chúng tôi cũng khuyên bạn làm quen với các tài nguyên sau:
 
