@@ -275,21 +275,25 @@ Với `<template v-for>`:
 </template>
 ```
 
-Nên dùng `key` khi có thể, trừ khi nội dung đơn giản.
+:::tip Lưu ý
+`key` ở đây là một thuộc tính đặc biệt được bind với `v-bind`. Không nhầm với biến property key khi [dùng `v-for` với object](#v-for-with-an-object).
+:::
 
-`key` phải là giá trị primitive (string, number), không dùng object.
+Nên dùng `key` khi có thể, trừ khi nội dung DOM được lặp rất đơn giản (không chứa component hoặc phần tử DOM có trạng thái), hoặc bạn đang cố ý dựa vào hành vi mặc định để tăng hiệu năng.
+
+Binding `key` yêu cầu giá trị nguyên thủy - tức là string hoặc number. Không dùng object làm key cho `v-for`. Để biết chi tiết về attribute `key`, xem [tài liệu API `key`](/api/built-in-special-attributes#key).
 
 ## `v-for` với Component {#v-for-with-a-component}
 
-Bạn có thể dùng `v-for` trực tiếp trên component:
+> Phần này giả định bạn đã biết về [Components](/guide/essentials/component-basics). Bạn có thể bỏ qua và quay lại sau.
+
+Bạn có thể dùng `v-for` trực tiếp trên component, giống như bất kỳ phần tử thông thường nào (đừng quên cung cấp `key`):
 
 ```vue-html
 <MyComponent v-for="item in items" :key="item.id" />
 ```
 
-Nhưng dữ liệu không tự truyền vào component.
-
-Cần dùng props:
+Tuy nhiên, điều này sẽ không tự động truyền bất kỳ dữ liệu nào vào component, vì component có scope cô lập của riêng nó. Để truyền dữ liệu đã lặp vào component, chúng ta cần dùng props:
 
 ```vue-html
 <MyComponent
@@ -300,7 +304,18 @@ Cần dùng props:
 />
 ```
 
-Việc không inject tự động giúp component tái sử dụng tốt hơn.
+Lý do không tự inject `item` vào component là để tránh tạo sự phụ thuộc chặt chẽ vào cách `v-for` hoạt động. Việc khai báo rõ nguồn gốc dữ liệu giúp component có thể tái sử dụng trong các tình huống khác.
+
+<div class="composition-api">
+
+Xem [ví dụ về danh sách todo đơn giản này](https://play.vuejs.org/#eNp1U8Bu2zAM/RXCGGAHTWx02ylwgxZYB+ywYRhyq3dwLGYRYkuCJTsZjPz7KMmK3ay9JBQfH/meKA/Rk1Jp32G0jnJdtVwZ0Gg6tSkEb5RsDQzQ4h4usG9lAzGVxldoK5n8ZrAZsTQLCduRygAKUUmhDQg8WWyLZwMPtmESx4sAGkL0mH6xrMH+AHC2hvuljw03Na4h/iLBHBAY1wfUbsTFVcwoH28o2/KIIDuaQ0TTlvrwNu/TDe+7PDlKXZ6EZxTiN4kuRI3W0dk4u4yUf7bZfScqw6WAkrEf3m+y8AOcw7Qv6w5T1elDMhs7Nbq7e61gdmme60SQAvgfIhExiSSJeeb3SBukAy1D1aVBezL5XrYN9Csp1rrbNdykqsUehXkookl0EVGxlZHX5Q5rIBLhNHFlbRD6xBiUzlOeuZJQz4XqjI+BxjSSYe2pQWwRBZizV01DmsRWeJA1Qzv0Of2TwldE5hZRlVd+FkbuOmOksJLybIwtkmfWqg+7qz47asXpSiaN3lxikSVwwfC8oD+/sEnV+oh/qcxmU85mebepgLjDBD622Mg+oDrVquYVJm7IEu4XoXKTZ1dho3gnmdJhedEymn9ab3ysDPdc4M9WKp28xE5JbB+rzz/Trm3eK3LAu8/E7p2PNzYM/i3ChR7W7L7hsSIvR7L2Aal1EhqTp80vF95sw3WcG7r8A0XaeME=) để xem cách render danh sách component bằng `v-for`, truyền dữ liệu khác nhau vào mỗi instance.
+
+</div>
+<div class="options-api">
+
+Xem [ví dụ về danh sách todo đơn giản này](https://play.vuejs.org/#eNqNVE2PmzAQ/SsjVIlEm4C27Qmx0a7UVuqhPVS5lT04eFKsgG2BSVJF+e8d2xhIu10tihR75s2bNx9wiZ60To49RlmUd2UrtNkUUjRatQa2iquvBhvYt6qBOEmDwQbEhQQoJJ4dlOOe9bWBi7WWiuIlStNlcJlYrivr5MywxdIDAVo0fSvDDUDiyeK3eDYZxLGLsI8hI7H9DHeYQuwjeAb3I9gFCFMjUXxSYCoELroKO6fZP17Mf6jev0i1ZQcE1RtHaFrWVW/l+/Ai3zd1clQ1O8k5Uzg+j1HUZePaSFwfvdGhfNIGTaW47bV3Mc6/+zZOfaaslegS18ZE9121mIm0Ep17ynN3N5M8CB4g44AC4Lq8yTFDwAPNcK63kPTL03HR6EKboWtm0N5MvldtA8e1klnX7xphEt3ikTbpoYimsoqIwJY0r9kOa6Ag8lPeta2PvE+cA3M7k6cOEvBC6n7UfVw3imPtQ8eiouAW/IY0mElsiZWqOdqkn5NfCXxB5G6SJRvj05By1xujpJWUp8PZevLUluqP/ajPploLasmk0Re3sJ4VCMnxvKQ//0JMqrID/iaYtSaCz+xudsHjLpPzscVGHYO3SzpdixIXLskK7pcBucnTUdgg3kkmcxhetIrmH4ebr8m/n4jC6FZp+z7HTlLsVx1p4M7odcXPr6+Lnb8YOne5+C2F6/D6DH2Hx5JqOlCJ7yz7IlBTbZsf7vjXVBzjvLDrH5T0lgo=) để xem cách render danh sách component bằng `v-for`, truyền dữ liệu khác nhau vào mỗi instance.
+
+</div>
 
 ## Phát hiện thay đổi Array {#array-change-detection}
 
@@ -324,33 +339,94 @@ Các method như `filter()`, `concat()`, `slice()` trả về array mới.
 
 Khi dùng chúng, cần gán lại:
 
+<div class="composition-api">
+
 ```js
+// `items` là một ref với giá trị array
 items.value = items.value.filter((item) => item.message.match(/Foo/))
 ```
+
+</div>
+<div class="options-api">
+
+```js
+this.items = this.items.filter((item) => item.message.match(/Foo/))
+```
+
+</div>
 
 Vue vẫn tối ưu DOM khi replace array.
 
 ## Hiển thị danh sách lọc/sắp xếp {#displaying-filtered-sorted-results}
 
-Có thể dùng computed để tạo danh sách lọc:
+Đôi khi chúng ta muốn hiển thị phiên bản lọc hoặc sắp xếp của một array mà không thực sự mutate hay reset dữ liệu gốc. Trong trường hợp này, bạn có thể tạo một computed property trả về array đã lọc hoặc sắp xếp.
+
+Ví dụ:
+
+<div class="composition-api">
 
 ```js
+const numbers = ref([1, 2, 3, 4, 5])
+
 const evenNumbers = computed(() => {
   return numbers.value.filter((n) => n % 2 === 0)
 })
 ```
 
+</div>
+<div class="options-api">
+
+```js
+data() {
+  return {
+    numbers: [1, 2, 3, 4, 5]
+  }
+},
+computed: {
+  evenNumbers() {
+    return this.numbers.filter(n => n % 2 === 0)
+  }
+}
+```
+
+</div>
+
 ```vue-html
 <li v-for="n in evenNumbers">{{ n }}</li>
 ```
 
-Nếu không dùng computed, có thể dùng method:
+Trong các tình huống không thể dùng computed property (ví dụ: bên trong vòng lặp `v-for` lồng nhau), bạn có thể dùng method:
+
+<div class="composition-api">
 
 ```js
+const sets = ref([
+  [1, 2, 3, 4, 5],
+  [6, 7, 8, 9, 10]
+])
+
 function even(numbers) {
   return numbers.filter((number) => number % 2 === 0)
 }
 ```
+
+</div>
+<div class="options-api">
+
+```js
+data() {
+  return {
+    sets: [[ 1, 2, 3, 4, 5 ], [6, 7, 8, 9, 10]]
+  }
+},
+methods: {
+  even(numbers) {
+    return numbers.filter(number => number % 2 === 0)
+  }
+}
+```
+
+</div>
 
 ```vue-html
 <ul v-for="numbers in sets">
