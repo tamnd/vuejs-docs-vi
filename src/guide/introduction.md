@@ -92,29 +92,29 @@ Ví dụ trên thể hiện hai điểm chính của Vue:
 Bạn có thể đã có một số thắc mắc, đừng lo. Phần còn lại của tài liệu sẽ giải thích chi tiết từng phần. Bây giờ, hãy tiếp tục đọc để có cái nhìn tổng quan về những gì Vue cung cấp.
 
 :::tip Điều kiện tiên quyết
-Bạn nên biết cơ bản về HTML, CSS và JavaScript. Nếu chưa, nên học nền tảng trước rồi quay lại. Bạn có thể kiểm tra kiến thức qua các bài tổng quan về [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML), và [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps). Kinh nghiệm với các framework khác sẽ có ích, nhưng không bắt buộc.
+Phần còn lại của tài liệu giả định rằng bạn đã có kiến thức cơ bản về HTML, CSS và JavaScript. Nếu bạn hoàn toàn mới với lập trình frontend, việc nhảy thẳng vào một framework ngay từ đầu có thể không phải là ý hay nhất - hãy nắm vững kiến thức nền tảng trước rồi quay lại! Bạn có thể kiểm tra trình độ của mình qua các bài tổng quan về [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML), và [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) nếu cần. Kinh nghiệm với các framework khác sẽ có ích, nhưng không bắt buộc.
 :::
 
 ## Framework linh động {#the-progressive-framework}
 
-Vue là một framework cùng hệ sinh thái bao phủ hầu hết nhu cầu phát triển frontend. Tuy nhiên, vì ứng dụng web rất đa dạng, Vue được thiết kế để dùng linh hoạt, có thể áp dụng dần dần. Bạn có thể dùng Vue theo nhiều cách:
+Vue là một framework cùng hệ sinh thái bao phủ hầu hết nhu cầu phát triển frontend. Nhưng web cực kỳ đa dạng - những thứ chúng ta xây dựng trên web có thể khác nhau rất nhiều về hình thức và quy mô. Với suy nghĩ đó, Vue được thiết kế để dùng linh hoạt và có thể áp dụng dần dần. Tùy vào nhu cầu, bạn có thể dùng Vue theo nhiều cách:
 
 - Thêm vào HTML có sẵn (không cần build)
-- Nhúng như Web Components
-- Xây dựng SPA (Single Page Application)
-- SSR (render phía server)
-- SSG (tạo site tĩnh)
-- Dùng cho desktop, mobile, WebGL, terminal
+- Nhúng như Web Components trên bất kỳ trang nào
+- Xây dựng Single-Page Application (SPA)
+- Fullstack / Server-Side Rendering (SSR)
+- Jamstack / Static Site Generation (SSG)
+- Dùng cho desktop, mobile, WebGL, và cả terminal
 
 Nếu bạn thấy các khái niệm này hơi khó hiểu, đừng lo. Phần tutorial và hướng dẫn chỉ yêu cầu kiến thức cơ bản về HTML và JavaScript, và bạn vẫn có thể theo kịp mà không cần là chuyên gia.
 
-Nếu bạn là lập trình viên có kinh nghiệm và muốn biết cách tích hợp Vue vào stack của mình, xem thêm [Các cách sử dụng Vue](/guide/extras/ways-of-using-vue).
+Nếu bạn là lập trình viên có kinh nghiệm và muốn biết cách tích hợp Vue vào stack của mình, hoặc bạn tò mò về ý nghĩa của các khái niệm trên, chúng tôi thảo luận chi tiết hơn trong phần [Các cách sử dụng Vue](/guide/extras/ways-of-using-vue).
 
 Dù rất linh hoạt, các kiến thức cốt lõi về cách Vue hoạt động vẫn giống nhau trong mọi trường hợp sử dụng. Ngay cả khi bạn mới bắt đầu, những gì bạn học được vẫn sẽ hữu ích khi bạn tiến tới những mục tiêu phức tạp hơn sau này. Nếu bạn đã có kinh nghiệm, bạn có thể chọn cách dùng Vue phù hợp nhất với bài toán của mình mà vẫn giữ được năng suất. Đó là lý do Vue được gọi là "Progressive Framework": một framework có thể phát triển cùng bạn và thích nghi theo nhu cầu của bạn.
 
 ## Single-File Components {#single-file-components}
 
-Trong các dự án có build tool, Vue thường dùng file `.vue`, gọi là **Single-File Component** (SFC). Một file SFC chứa logic (JavaScript), template (HTML), và style (CSS) trong cùng một tệp. Ví dụ:
+Trong hầu hết các dự án Vue có build tool, chúng ta viết component dưới dạng file giống HTML gọi là **Single-File Component** (còn gọi là file `*.vue`, viết tắt là **SFC**). Như tên gọi, một file SFC đóng gói logic (JavaScript), template (HTML), và style (CSS) của component trong cùng một file. Đây là ví dụ trước, nhưng được viết dưới dạng SFC:
 
 <div class="options-api">
 
@@ -162,7 +162,7 @@ button {
 
 </div>
 
-SFC là cách viết component được khuyến nghị khi dùng build tool. Bạn có thể tìm hiểu thêm về [cách thức và lý do dùng SFC](/guide/scaling-up/sfc) trong phần riêng của nó.
+SFC là một tính năng đặc trưng của Vue và là cách viết component được khuyến nghị **nếu** bạn sử dụng build tool. Bạn có thể tìm hiểu thêm về [cách thức và lý do dùng SFC](/guide/scaling-up/sfc) trong phần riêng của nó - nhưng bây giờ, chỉ cần biết rằng Vue sẽ lo toàn bộ việc thiết lập build tool cho bạn.
 
 ## Các kiểu API {#api-styles}
 
@@ -170,7 +170,7 @@ Vue có hai cách viết component: **Options API** và **Composition API**.
 
 ### Options API {#options-api}
 
-Bạn định nghĩa logic bằng một object gồm các option như `data`, `methods`, `mounted`. Các thuộc tính này sẽ dùng qua `this`, trỏ đến instance của component:
+Với Options API, chúng ta định nghĩa logic của component bằng một object gồm các option như `data`, `methods`, và `mounted`. Các thuộc tính được định nghĩa bởi các option sẽ được expose trên `this` bên trong các hàm, trỏ đến instance của component:
 
 ```vue
 <script>
@@ -266,7 +266,7 @@ Xem thêm phần [FAQ](/about/faq).
 
 ## Chọn lộ trình học {#pick-your-learning-path}
 
-Mỗi người học theo cách khác nhau, bạn có thể chọn. Nên đọc toàn bộ nếu có thể.
+Mỗi lập trình viên có phong cách học khác nhau. Hãy thoải mái chọn lộ trình phù hợp với bạn - tuy nhiên chúng tôi khuyến nghị bạn nên đọc qua toàn bộ nội dung nếu có thể!
 
 <div class="vt-box-container next-steps">
   <a class="vt-box" href="/tutorial/">
