@@ -1,8 +1,8 @@
-# Creating a Vue Application {#creating-a-vue-application}
+# Tạo một Ứng dụng Vue {#creating-a-vue-application}
 
-## The Application Instance {#the-application-instance}
+## Instance Ứng Dụng {#the-application-instance}
 
-Every Vue application starts by creating a new **application instance** with the [`createApp`](/api/application#createapp) function:
+Mọi ứng dụng Vue đều bắt đầu bằng cách tạo một **instance ứng dụng** mới thông qua hàm [`createApp`](/api/application#createapp):
 
 ```js
 import { createApp } from 'vue'
@@ -12,11 +12,11 @@ const app = createApp({
 })
 ```
 
-## The Root Component {#the-root-component}
+## Component Gốc {#the-root-component}
 
-The object we are passing into `createApp` is in fact a component. Every app requires a "root component" that can contain other components as its children.
+Đối tượng chúng ta truyền vào `createApp` thực chất là một component. Mỗi ứng dụng cần có một "component gốc" có thể chứa các component khác như là con của nó.
 
-If you are using Single-File Components, we typically import the root component from another file:
+Nếu bạn đang dùng Single-File Component, chúng ta thường import component gốc từ một file riêng:
 
 ```js
 import { createApp } from 'vue'
@@ -26,7 +26,7 @@ import App from './App.vue'
 const app = createApp(App)
 ```
 
-While many examples in this guide only need a single component, most real applications are organized into a tree of nested, reusable components. For example, a Todo application's component tree might look like this:
+Dù nhiều ví dụ trong hướng dẫn này chỉ cần một component duy nhất, hầu hết các ứng dụng thực tế đều được tổ chức thành một cây gồm các component lồng nhau và có thể tái sử dụng. Ví dụ, cây component của một ứng dụng Todo có thể trông như sau:
 
 ```
 App (root component)
@@ -39,11 +39,11 @@ App (root component)
    └─ TodoStatistics
 ```
 
-In later sections of the guide, we will discuss how to define and compose multiple components together. Before that, we will focus on what happens inside a single component.
+Ở các phần sau của hướng dẫn, chúng ta sẽ thảo luận về cách định nghĩa và kết hợp nhiều component lại với nhau. Trước đó, hãy tập trung vào những gì xảy ra bên trong một component đơn lẻ.
 
-## Mounting the App {#mounting-the-app}
+## Mount Ứng Dụng {#mounting-the-app}
 
-An application instance won't render anything until its `.mount()` method is called. It expects a "container" argument, which can either be an actual DOM element or a selector string:
+Một instance ứng dụng sẽ không render bất cứ thứ gì cho đến khi phương thức `.mount()` được gọi. Nó nhận một đối số "container", có thể là một phần tử DOM thực sự hoặc một chuỗi selector:
 
 ```html
 <div id="app"></div>
@@ -53,13 +53,13 @@ An application instance won't render anything until its `.mount()` method is cal
 app.mount('#app')
 ```
 
-The content of the app's root component will be rendered inside the container element. The container element itself is not considered part of the app.
+Nội dung của component gốc trong ứng dụng sẽ được render bên trong phần tử chứa. Bản thân phần tử chứa đó không được coi là một phần của ứng dụng.
 
-The `.mount()` method should always be called after all app configurations and asset registrations are done. Also note that its return value, unlike the asset registration methods, is the root component instance instead of the application instance.
+Phương thức `.mount()` luôn phải được gọi sau khi tất cả các cấu hình và đăng ký tài nguyên của ứng dụng đã hoàn tất. Cũng lưu ý rằng giá trị trả về của nó, khác với các phương thức đăng ký tài nguyên, là instance của component gốc chứ không phải instance ứng dụng.
 
-### In-DOM Root Component Template {#in-dom-root-component-template}
+### Template Component Gốc Trong DOM {#in-dom-root-component-template}
 
-The template for the root component is usually part of the component itself, but it is also possible to provide the template separately by writing it directly inside the mount container:
+Template của component gốc thường là một phần của chính component đó, nhưng cũng có thể cung cấp template riêng biệt bằng cách viết trực tiếp bên trong phần tử chứa khi mount:
 
 ```html
 <div id="app">
@@ -81,13 +81,13 @@ const app = createApp({
 app.mount('#app')
 ```
 
-Vue will automatically use the container's `innerHTML` as the template if the root component does not already have a `template` option.
+Vue sẽ tự động sử dụng `innerHTML` của phần tử chứa làm template nếu component gốc chưa có tùy chọn `template`.
 
-In-DOM templates are often used in applications that are [using Vue without a build step](/guide/quick-start.html#using-vue-from-cdn). They can also be used in conjunction with server-side frameworks, where the root template might be generated dynamically by the server.
+Template trong DOM thường được dùng trong các ứng dụng [sử dụng Vue không có bước build](/guide/quick-start.html#using-vue-from-cdn). Chúng cũng có thể được dùng kết hợp với các framework phía server, nơi template gốc có thể được server tạo ra động.
 
-## App Configurations {#app-configurations}
+## Cấu Hình Ứng Dụng {#app-configurations}
 
-The application instance exposes a `.config` object that allows us to configure a few app-level options, for example, defining an app-level error handler that captures errors from all descendant components:
+Instance ứng dụng cung cấp một đối tượng `.config` cho phép chúng ta cấu hình một số tùy chọn ở cấp ứng dụng, ví dụ như định nghĩa một trình xử lý lỗi ở cấp ứng dụng để bắt các lỗi từ tất cả các component con:
 
 ```js
 app.config.errorHandler = (err) => {
@@ -95,19 +95,19 @@ app.config.errorHandler = (err) => {
 }
 ```
 
-The application instance also provides a few methods for registering app-scoped assets. For example, registering a component:
+Instance ứng dụng cũng cung cấp một số phương thức để đăng ký tài nguyên có phạm vi toàn ứng dụng. Ví dụ, đăng ký một component:
 
 ```js
 app.component('TodoDeleteButton', TodoDeleteButton)
 ```
 
-This makes the `TodoDeleteButton` available for use anywhere in our app. We will discuss registration for components and other types of assets in later sections of the guide. You can also browse the full list of application instance APIs in its [API reference](/api/application).
+Điều này giúp `TodoDeleteButton` có thể sử dụng ở bất kỳ đâu trong ứng dụng của chúng ta. Chúng ta sẽ thảo luận về việc đăng ký component và các loại tài nguyên khác ở các phần sau của hướng dẫn. Bạn cũng có thể xem danh sách đầy đủ các API của instance ứng dụng trong [tài liệu API](/api/application).
 
-Make sure to apply all app configurations before mounting the app!
+Hãy đảm bảo áp dụng tất cả các cấu hình ứng dụng trước khi mount ứng dụng!
 
-## Multiple Application Instances {#multiple-application-instances}
+## Nhiều Instance Ứng Dụng {#multiple-application-instances}
 
-You are not limited to a single application instance on the same page. The `createApp` API allows multiple Vue applications to co-exist on the same page, each with its own scope for configuration and global assets:
+Bạn không bị giới hạn ở một instance ứng dụng duy nhất trên cùng một trang. API `createApp` cho phép nhiều ứng dụng Vue cùng tồn tại trên một trang, mỗi ứng dụng có phạm vi riêng về cấu hình và tài nguyên toàn cục:
 
 ```js
 const app1 = createApp({
@@ -121,4 +121,4 @@ const app2 = createApp({
 app2.mount('#container-2')
 ```
 
-If you are using Vue to enhance server-rendered HTML and only need Vue to control specific parts of a large page, avoid mounting a single Vue application instance on the entire page. Instead, create multiple small application instances and mount them on the elements they are responsible for.
+Nếu bạn đang dùng Vue để cải thiện HTML do server render và chỉ cần Vue kiểm soát các phần cụ thể của một trang lớn, hãy tránh mount một instance ứng dụng Vue duy nhất lên toàn bộ trang. Thay vào đó, hãy tạo nhiều instance ứng dụng nhỏ và mount chúng lên các phần tử mà chúng phụ trách.
