@@ -8,7 +8,7 @@ Ví dụ, hook <span class="composition-api">`onMounted`</span><span class="opti
 
 <div class="composition-api">
 
-```vue id="z1x8mv"
+```vue
 <script setup>
 import { onMounted } from 'vue'
 
@@ -21,7 +21,7 @@ onMounted(() => {
 </div>
 <div class="options-api">
 
-```js id="g5r2yv"
+```js
 export default {
   mounted() {
     console.log(`component đã được mount.`)
@@ -43,7 +43,7 @@ Tất cả lifecycle hook đều được gọi với context `this` trỏ tới
 
 Khi gọi `onMounted`, Vue sẽ tự động gắn callback đã đăng ký với instance component hiện tại đang active. Điều này yêu cầu các hook phải được đăng ký **một cách đồng bộ (synchronous)** trong quá trình setup của component. Ví dụ, không nên làm như sau:
 
-```js id="9m8q2d"
+```js
 setTimeout(() => {
   onMounted(() => {
     // đoạn này sẽ không hoạt động.

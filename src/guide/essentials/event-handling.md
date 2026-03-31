@@ -24,14 +24,14 @@ Inline handler thường được dùng trong các trường hợp đơn giản,
 
 <div class="composition-api">
 
-```js id="mw5i3x"
+```js
 const count = ref(0)
 ```
 
 </div>
 <div class="options-api">
 
-```js id="qk5n5w"
+```js
 data() {
   return {
     count: 0
@@ -41,7 +41,7 @@ data() {
 
 </div>
 
-```vue-html id="m9yb3k"
+```vue-html
 <button @click="count++">Thêm 1</button>
 <p>Count là: {{ count }}</p>
 ```
@@ -65,7 +65,7 @@ Ví dụ:
 
 <div class="composition-api">
 
-```js id="btahps"
+```js
 const name = ref('Vue.js')
 
 function greet(event) {
@@ -80,7 +80,7 @@ function greet(event) {
 </div>
 <div class="options-api">
 
-```js id="g68h8u"
+```js
 data() {
   return {
     name: 'Vue.js'
@@ -100,7 +100,7 @@ methods: {
 
 </div>
 
-```vue-html id="67ykk6"
+```vue-html
 <!-- `greet` là tên method được định nghĩa ở trên -->
 <button @click="greet">Greet</button>
 ```
@@ -139,7 +139,7 @@ Thay vì bind trực tiếp tới tên method, chúng ta cũng có thể gọi m
 
 <div class="composition-api">
 
-```js id="0k4n8n"
+```js
 function say(message) {
   alert(message)
 }
@@ -148,7 +148,7 @@ function say(message) {
 </div>
 <div class="options-api">
 
-```js id="j44l1i"
+```js
 methods: {
   say(message) {
     alert(message)
@@ -158,7 +158,7 @@ methods: {
 
 </div>
 
-```vue-html id="i6mfjq"
+```vue-html
 <button @click="say('hello')">Say hello</button>
 <button @click="say('bye')">Say bye</button>
 ```
@@ -178,7 +178,7 @@ methods: {
 
 Đôi khi chúng ta cũng cần truy cập DOM event gốc trong inline handler. Bạn có thể truyền nó vào method bằng biến đặc biệt `$event`, hoặc dùng arrow function:
 
-```vue-html id="n9r7d3"
+```vue-html
 <!-- dùng biến đặc biệt $event -->
 <button @click="warn('Form chưa thể submit.', $event)">
   Submit
@@ -192,7 +192,7 @@ methods: {
 
 <div class="composition-api">
 
-```js id="tq4j9n"
+```js
 function warn(message, event) {
   // giờ chúng ta có thể truy cập event gốc
   if (event) {
@@ -205,7 +205,7 @@ function warn(message, event) {
 </div>
 <div class="options-api">
 
-```js id="y1n0zx"
+```js
 methods: {
   warn(message, event) {
     // giờ chúng ta có thể truy cập event gốc
@@ -232,7 +232,7 @@ Nhu cầu gọi `event.preventDefault()` hoặc `event.stopPropagation()` trong 
 * `.once`
 * `.passive`
 
-```vue-html id="e2kqsy"
+```vue-html
 <!-- dừng propagation của sự kiện click -->
 <a @click.stop="doThis"></a>
 
@@ -255,7 +255,7 @@ Thứ tự modifier quan trọng vì code được tạo ra theo thứ tự đó
 
 Các modifier `.capture`, `.once`, và `.passive` tương ứng với các option của `addEventListener`:
 
-```vue-html id="x2o6wh"
+```vue-html
 <!-- dùng capture mode -->
 <div @click.capture="doThis">...</div>
 
@@ -276,14 +276,14 @@ Không dùng `.passive` và `.prevent` cùng nhau, vì `.passive` đã báo vớ
 
 Khi lắng nghe keyboard event, chúng ta thường cần kiểm tra phím cụ thể. Vue cho phép thêm key modifier:
 
-```vue-html id="k5h02c"
+```vue-html
 <!-- chỉ gọi submit khi nhấn Enter -->
 <input @keyup.enter="submit" />
 ```
 
 Bạn có thể dùng bất kỳ tên phím hợp lệ từ `KeyboardEvent.key`, chuyển sang kebab-case:
 
-```vue-html id="1k6g5g"
+```vue-html
 <input @keyup.page-down="onPageDown" />
 ```
 
@@ -318,7 +318,7 @@ Trên bàn phím Mac, meta là phím command (⌘). Trên Windows, meta là phí
 
 Ví dụ:
 
-```vue-html id="9x5y5z"
+```vue-html
 <!-- Alt + Enter -->
 <input @keyup.alt.enter="clear" />
 
@@ -334,7 +334,7 @@ Modifier key khác với key thông thường. Với `keyup`, chúng phải đư
 
 Modifier `.exact` cho phép kiểm soát chính xác tổ hợp phím:
 
-```vue-html id="j7f4d3"
+```vue-html
 <!-- vẫn trigger nếu Alt hoặc Shift cũng được nhấn -->
 <button @click.ctrl="onClick">A</button>
 
