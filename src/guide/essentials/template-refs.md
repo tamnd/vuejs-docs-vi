@@ -108,6 +108,8 @@ watchEffect(() => {
 })
 ```
 
+> Xem thêm: [Typing Template Refs](/guide/typescript/composition-api#typing-template-refs) <sup class="vt-badge ts" />
+
 </div>
 
 ## Ref trên Component {#ref-on-component}
@@ -183,6 +185,8 @@ Khi component cha lấy instance qua ref, object nhận được sẽ có dạng
 
 Lưu ý `defineExpose` phải được gọi trước bất kỳ thao tác await nào.
 
+> Xem thêm: [Typing Component Template Refs](/guide/typescript/composition-api#typing-component-template-refs) <sup class="vt-badge ts" />
+
 </div>
 
 <div class="options-api">
@@ -211,6 +215,8 @@ Component cha chỉ truy cập được `publicData` và `publicMethod`.
 
 ## Refs trong `v-for` {#refs-inside-v-for}
 
+> Yêu cầu v3.5 trở lên
+
 <div class="composition-api">
 
 Khi dùng `ref` trong `v-for`, ref sẽ là một array chứa các phần tử sau khi mount:
@@ -219,7 +225,10 @@ Khi dùng `ref` trong `v-for`, ref sẽ là một array chứa các phần tử 
 <script setup>
 import { ref, useTemplateRef, onMounted } from 'vue'
 
-const list = ref([])
+const list = ref([
+  /* ... */
+])
+
 const itemRefs = useTemplateRef('items')
 
 onMounted(() => console.log(itemRefs.value))
@@ -233,6 +242,37 @@ onMounted(() => console.log(itemRefs.value))
   </ul>
 </template>
 ```
+
+[Thử trong Playground](https://play.vuejs.org/#eNp9UsluwjAQ/ZWRLwQpDepyQoDUIg6t1EWUW91DFAZq6tiWF4oU5d87dtgqVRyyzLw3b+aN3bB7Y4ptQDZkI1dZYTw49MFMuBK10dZDAxZXOQSHC6yNLD3OY6zVsw7K4xJaWFldQ49UelxxVWnlPEhBr3GszT6uc7jJ4fazf4KFx5p0HFH+Kme9CLle4h6bZFkfxhNouAIoJVqfHQSKbSkDFnVpMhEpovC481NNVcr3SaWlZzTovJErCqgydaMIYBRk+tKfFLC9Wmk75iyqg1DJBWfRxT7pONvTAZom2YC23QsMpOg0B0l0NDh2YjnzjpyvxLrYOK1o3ckLZ5WujSBHr8YL2gxnw85lxEop9c9TynkbMD/kqy+svv/Jb9wu5jh7s+jQbpGzI+ZLu0byEuHZ+wvt6Ays9TJIYl8A5+i0DHHGjvYQ1JLGPuOlaR/TpRFqvXCzHR2BO5iKg0Zmm/ic0W2ZXrB+Gve2uEt1dJKs/QXbwePE)
+
+<details>
+<summary>Cách dùng trước v3.5</summary>
+
+Trong các phiên bản trước 3.5 khi chưa có `useTemplateRef()`, chúng ta cần khai báo một ref với tên trùng với giá trị của attribute `ref` trong template. Ref này cũng cần chứa giá trị array:
+
+```vue
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const list = ref([
+  /* ... */
+])
+
+const itemRefs = ref([])
+
+onMounted(() => console.log(itemRefs.value))
+</script>
+
+<template>
+  <ul>
+    <li v-for="item in list" ref="itemRefs">
+      {{ item }}
+    </li>
+  </ul>
+</template>
+```
+
+</details>
 
 </div>
 <div class="options-api">
