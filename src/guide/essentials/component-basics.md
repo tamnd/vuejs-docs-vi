@@ -95,6 +95,10 @@ Ví dụ trên định nghĩa một component đơn và export nó như default 
 
 ## Sử dụng Component {#using-a-component}
 
+:::tip
+Chúng tôi sẽ dùng cú pháp SFC cho phần còn lại của hướng dẫn này - các khái niệm về component là như nhau dù bạn có dùng build step hay không. Phần [Examples](/examples/) hiển thị cách dùng component trong cả hai trường hợp.
+:::
+
 Để sử dụng component con, chúng ta cần import nó vào component cha. Giả sử component counter nằm trong file `ButtonCounter.vue`, component đó sẽ được export mặc định:
 
 <div class="options-api">
@@ -271,6 +275,8 @@ Sau đó render bằng `v-for`:
 
 Lưu ý dùng [`v-bind`](/api/built-in-directives#v-bind) (`:title="post.title"`) để truyền giá trị động. Điều này hữu ích khi không biết trước nội dung.
 
+Đó là tất cả những gì bạn cần biết về props hiện tại, nhưng sau khi đọc xong trang này và cảm thấy thoải mái với nội dung, chúng tôi khuyến nghị bạn quay lại đọc đầy đủ hướng dẫn về [Props](/guide/components/props).
+
 ## Lắng nghe Events {#listening-to-events}
 
 Khi phát triển `<BlogPost>`, có thể cần giao tiếp ngược lên component cha. Ví dụ, thêm tính năng tăng cỡ chữ.
@@ -348,25 +354,46 @@ Component con emit event bằng `$emit`:
 
 Cha sẽ nhận event và cập nhật `postFontSize`.
 
-Có thể khai báo event bằng <span class="options-api">`emits`</span><span class="composition-api">`defineEmits`</span>:
+Có thể khai báo event bằng <span class="options-api">[`emits`](/api/options-state#emits) option</span><span class="composition-api">[`defineEmits`](/api/sfc-script-setup#defineprops-defineemits) macro</span>:
 
-```vue
+<div class="options-api">
+
+```vue [BlogPost.vue]
+<script>
+export default {
+  props: ['title'],
+  emits: ['enlarge-text']
+}
+</script>
+```
+
+</div>
+<div class="composition-api">
+
+```vue [BlogPost.vue]
 <script setup>
 defineProps(['title'])
 defineEmits(['enlarge-text'])
 </script>
 ```
 
-`defineEmits` trả về hàm `emit` tương đương `$emit`:
+</div>
+
+Điều này giúp document tất cả event mà component emit ra và tùy chọn [validate chúng](/guide/components/events#events-validation). Nó cũng cho phép Vue tránh áp dụng ngầm định chúng như native listener lên root element của component con.
+
+<div class="composition-api">
+
+Tương tự `defineProps`, `defineEmits` chỉ dùng được trong `<script setup>` và không cần import. Nó trả về hàm `emit` tương đương với phương thức `$emit`. Có thể dùng để emit event trong phần `<script setup>` của component, nơi `$emit` không trực tiếp truy cập được:
 
 ```vue
 <script setup>
 const emit = defineEmits(['enlarge-text'])
+
 emit('enlarge-text')
 </script>
 ```
 
-Nếu không dùng `<script setup>`:
+Nếu không dùng `<script setup>`, bạn có thể khai báo event bằng option `emits`. Bạn có thể truy cập hàm `emit` như property của setup context (được truyền vào `setup()` như đối số thứ hai):
 
 ```js
 export default {
@@ -377,9 +404,13 @@ export default {
 }
 ```
 
+</div>
+
+Đó là tất cả những gì bạn cần biết về custom component event hiện tại, nhưng sau khi đọc xong trang này và cảm thấy thoải mái với nội dung, chúng tôi khuyến nghị bạn quay lại đọc đầy đủ hướng dẫn về [Custom Events](/guide/components/events).
+
 ## Truyền nội dung với Slots {#content-distribution-with-slots}
 
-Tương tự HTML, có thể truyền nội dung vào component:
+Tương tự HTML, có khi cần truyền nội dung vào component, như thế này:
 
 ```vue-html
 <AlertBox>
@@ -387,9 +418,9 @@ Tương tự HTML, có thể truyền nội dung vào component:
 </AlertBox>
 ```
 
-Dùng `<slot>`:
+Có thể thực hiện bằng element `<slot>` tùy chỉnh của Vue:
 
-```vue
+```vue [AlertBox.vue]
 <template>
   <div class="alert-box">
     <strong>Đây là lỗi demo</strong>
@@ -398,47 +429,103 @@ Dùng `<slot>`:
 </template>
 ```
 
-`<slot>` là vị trí nội dung sẽ được chèn vào.
+Như bạn thấy ở trên, chúng ta dùng `<slot>` như placeholder cho nội dung sẽ được chèn vào — và vậy là xong!
+
+Đó là tất cả những gì bạn cần biết về slot hiện tại, nhưng sau khi đọc xong trang này và cảm thấy thoải mái với nội dung, chúng tôi khuyến nghị bạn quay lại đọc đầy đủ hướng dẫn về [Slots](/guide/components/slots).
 
 ## Dynamic Components {#dynamic-components}
 
-Có thể chuyển đổi component động, ví dụ tab:
+Có khi cần chuyển đổi linh hoạt giữa các component, ví dụ trong giao diện tab.
+
+Điều trên được thực hiện bởi element `<component>` của Vue với attribute đặc biệt `is`:
+
+<div class="options-api">
 
 ```vue-html
+<!-- Component thay đổi khi currentTab thay đổi -->
 <component :is="currentTab"></component>
 ```
 
-Hoặc:
+</div>
+<div class="composition-api">
 
 ```vue-html
+<!-- Component thay đổi khi currentTab thay đổi -->
 <component :is="tabs[currentTab]"></component>
 ```
 
-Giá trị `:is` có thể là:
+</div>
 
-* tên component đã đăng ký, hoặc
-* object component
+Trong ví dụ trên, giá trị được truyền vào `:is` có thể chứa:
 
-Khi chuyển đổi, component cũ sẽ bị unmount. Có thể giữ lại bằng [`<KeepAlive>`](/guide/built-ins/keep-alive).
+- chuỗi tên của một component đã đăng ký, HOẶC
+- object component thực sự được import
+
+Bạn cũng có thể dùng attribute `is` để tạo các HTML element thông thường.
+
+Khi chuyển đổi giữa nhiều component với `<component :is="...">`, component cũ sẽ bị unmount. Có thể buộc các component không hoạt động ở lại "sống" bằng [component `<KeepAlive>` built-in](/guide/built-ins/keep-alive).
 
 ## Lưu ý khi parse template trong DOM {#in-dom-template-parsing-caveats}
 
-Nếu viết template trực tiếp trong DOM, sẽ bị ảnh hưởng bởi cách parse HTML của trình duyệt.
+Nếu viết template Vue trực tiếp trong DOM, Vue phải lấy chuỗi template từ DOM. Điều này dẫn đến một số lưu ý do cách parse HTML gốc của trình duyệt.
+
+:::tip
+Cần lưu ý rằng các hạn chế được thảo luận dưới đây chỉ áp dụng nếu bạn viết template trực tiếp trong DOM. Chúng **KHÔNG** áp dụng nếu bạn dùng string template từ các nguồn sau:
+
+- Single-File Components
+- Chuỗi template inline (ví dụ: `template: '...'`)
+- `<script type="text/x-template">`
+  :::
 
 ### Không phân biệt chữ hoa thường {#case-insensitivity}
 
-HTML không phân biệt chữ hoa thường, nên phải dùng kebab-case:
+HTML tag và tên attribute không phân biệt chữ hoa thường, nên trình duyệt sẽ hiểu bất kỳ ký tự hoa nào là chữ thường. Điều đó có nghĩa là khi dùng in-DOM template, tên component viết PascalCase và tên prop viết camelCase hoặc tên event `v-on` đều cần dùng dạng kebab-case (ngăn cách bằng dấu gạch ngang):
+
+```js
+// camelCase trong JavaScript
+const BlogPost = {
+  props: ['postTitle'],
+  emits: ['updatePost'],
+  template: `
+    <h3>{{ postTitle }}</h3>
+  `
+}
+```
 
 ```vue-html
+<!-- kebab-case trong HTML -->
 <blog-post post-title="hello!" @update-post="onUpdatePost"></blog-post>
 ```
 
 ### Self Closing Tags {#self-closing-tags}
 
-Trong DOM, phải đóng tag đầy đủ:
+Chúng ta đã dùng self-closing tag cho component trong các ví dụ trước:
+
+```vue-html
+<MyComponent />
+```
+
+Vì template parser của Vue hiểu `/>` là dấu hiệu kết thúc bất kỳ tag nào, bất kể loại của nó.
+
+Tuy nhiên trong in-DOM template, phải luôn dùng closing tag đầy đủ:
 
 ```vue-html
 <my-component></my-component>
+```
+
+Vì đặc tả HTML chỉ cho phép [một số phần tử cụ thể](https://html.spec.whatwg.org/multipage/syntax.html#void-elements) bỏ qua closing tag, phổ biến nhất là `<input>` và `<img>`. Với tất cả các phần tử khác, nếu bỏ closing tag, HTML parser gốc sẽ cho rằng bạn chưa kết thúc thẻ mở. Ví dụ, đoạn code sau:
+
+```vue-html
+<my-component /> <!-- chúng ta muốn đóng tag ở đây... -->
+<span>hello</span>
+```
+
+sẽ được parse thành:
+
+```vue-html
+<my-component>
+  <span>hello</span>
+</my-component> <!-- nhưng trình duyệt sẽ đóng nó ở đây. -->
 ```
 
 ### Giới hạn vị trí phần tử {#element-placement-restrictions}
@@ -459,6 +546,10 @@ Sẽ lỗi. Cách đúng:
 </table>
 ```
 
-Khi dùng `is` với HTML gốc, phải thêm `vue:`.
+:::tip
+Khi dùng trên HTML element gốc, giá trị của `is` phải có tiền tố `vue:` để được hiểu là Vue component. Điều này cần thiết để tránh nhầm lẫn với [customized built-in elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-customized-builtin-example) gốc.
+:::
 
-Đây là phần kết của Vue Essentials.
+Đó là tất cả những gì bạn cần biết về in-DOM template parsing caveats hiện tại - và thực ra, đây cũng là phần kết của Vue _Essentials_. Chúc mừng! Vẫn còn nhiều thứ để học, nhưng trước tiên, chúng tôi khuyến nghị bạn nghỉ một chút và tự mình thực hành Vue - hãy xây dựng thứ gì đó thú vị, hoặc xem qua một số [Examples](/examples/) nếu bạn chưa làm vậy.
+
+Khi bạn đã cảm thấy thoải mái với kiến thức vừa tiếp thu, hãy tiếp tục với phần hướng dẫn để tìm hiểu sâu hơn về component.
