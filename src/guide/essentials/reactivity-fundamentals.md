@@ -1,4 +1,6 @@
-## outline: deep
+---
+outline: deep
+---
 
 # Nền tảng Reactivity {#reactivity-fundamentals}
 
@@ -12,7 +14,7 @@ Trang này và nhiều chương khác trong hướng dẫn có nội dung khác 
 
 Với Options API, chúng ta dùng option `data` để khai báo state reactive của component. Giá trị của option này phải là một function trả về một object. Vue sẽ gọi function này khi tạo instance component mới, và bọc object trả về trong hệ thống reactivity của nó. Mọi property cấp cao nhất của object này sẽ được proxy lên instance component (`this` trong methods và lifecycle hooks):
 
-```js id="a9s3kt"
+```js
 export default {
   data() {
     return {
@@ -43,7 +45,7 @@ Vue dùng tiền tố `$` khi expose các API built-in của nó thông qua inst
 
 Trong Vue 3, dữ liệu được làm reactive bằng cách sử dụng [JavaScript Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Những người dùng từ Vue 2 cần lưu ý edge case sau:
 
-```js id="q8l2wm"
+```js
 export default {
   data() {
     return {
@@ -71,7 +73,7 @@ Khi bạn truy cập `this.someObject` sau khi gán, giá trị đó là một r
 
 Trong Composition API, cách được khuyến nghị để khai báo state reactive là dùng function `ref()`:
 
-```js id="h4m7zc"
+```js
 import { ref } from 'vue'
 
 const count = ref(0)
@@ -79,7 +81,7 @@ const count = ref(0)
 
 `ref()` nhận một tham số và trả về một object ref chứa giá trị đó trong property `.value`:
 
-```js id="x2n8tp"
+```js
 const count = ref(0)
 
 console.log(count) // { value: 0 }
@@ -91,7 +93,7 @@ console.log(count.value) // 1
 
 Để truy cập ref trong template của component, hãy khai báo và return chúng từ function `setup()`:
 
-```js id="c3k9va"
+```js
 import { ref } from 'vue'
 
 export default {
@@ -105,7 +107,7 @@ export default {
 }
 ```
 
-```vue-html id="v7d1os"
+```vue-html
 <div>{{ count }}</div>
 ```
 
@@ -113,7 +115,7 @@ Lưu ý rằng chúng ta không cần thêm `.value` khi dùng ref trong templat
 
 Bạn cũng có thể mutate ref trực tiếp trong event handler:
 
-```vue-html id="y9b3zr"
+```vue-html
 <button @click="count++">
   {{ count }}
 </button>
@@ -121,7 +123,7 @@ Bạn cũng có thể mutate ref trực tiếp trong event handler:
 
 Với logic phức tạp hơn, chúng ta có thể khai báo function thao tác với ref trong cùng scope và expose chúng như method:
 
-```js id="t5w8lk"
+```js
 import { ref } from 'vue'
 
 export default {
@@ -142,7 +144,7 @@ export default {
 
 Các method này có thể dùng làm event handler:
 
-```vue-html id="p1z7dx"
+```vue-html
 <button @click="increment">
   {{ count }}
 </button>
@@ -152,7 +154,7 @@ Các method này có thể dùng làm event handler:
 
 Việc expose state và method thủ công qua `setup()` có thể dài dòng. Có thể tránh bằng cách dùng `<script setup>`:
 
-```vue id="k8c2px"
+```vue
 <script setup>
 import { ref } from 'vue'
 
@@ -182,7 +184,7 @@ Trong JavaScript thường, không thể phát hiện truy cập biến. Nhưng 
 
 `.value` cho phép Vue track và trigger:
 
-```js id="n2d9vk"
+```js
 const myRef = {
   _value: 0,
   get value() {
@@ -206,7 +208,7 @@ Ref có thể truyền qua function mà vẫn giữ reactivity.
 
 Để thêm method, dùng `methods`:
 
-```js id="u6q8df"
+```js
 export default {
   data() {
     return {
@@ -228,7 +230,7 @@ Vue tự động bind `this`. Không dùng arrow function.
 
 Methods dùng trong template:
 
-```vue-html id="o9k3xa"
+```vue-html
 <button @click="increment">{{ count }}</button>
 ```
 
@@ -240,7 +242,7 @@ Methods dùng trong template:
 
 State mặc định deep reactive:
 
-```js id="m4r8yz"
+```js
 export default {
   data() {
     return {
@@ -265,7 +267,7 @@ export default {
 
 Ref hỗ trợ object lồng nhau:
 
-```js id="s7z2qn"
+```js
 import { ref } from 'vue'
 
 const obj = ref({
@@ -282,7 +284,7 @@ DOM update không đồng bộ. Vue batch update.
 
 Dùng `nextTick()` để chờ:
 
-```js id="d2n7fh"
+```js
 import { nextTick } from 'vue'
 ```
 
