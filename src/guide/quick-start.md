@@ -65,14 +65,14 @@ Lệnh này sẽ chạy công cụ [create-vue](https://github.com/vuejs/create-
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Pinia for state management? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Vitest for Unit testing? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add an End-to-End Testing Solution? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Cypress / Nightwatch / Playwright</span></span>
-<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add ESLint for code quality? <span style="color:#888;">… No / <span style="color:#89DDFF;text-decoration:underline">Có</span></span></span>
+<span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add ESLint for code quality? <span style="color:#888;">… No / <span style="color:#89DDFF;text-decoration:underline">Yes</span></span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Prettier for code formatting? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Vue DevTools 7 extension for debugging? (experimental) <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span></span>
 <span style="color:#A6ACCD;">Scaffolding project in ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span>...</span>
 <span style="color:#A6ACCD;">Done.</span></code></pre></div>
 
-Nếu chưa chắc, cứ chọn `No`. Sau khi tạo xong:
+Nếu chưa chắc về tùy chọn nào, bạn có thể tạm thời chọn `No` bằng cách nhấn Enter. Sau khi tạo xong dự án, hãy làm theo hướng dẫn để cài đặt dependencies và khởi động dev server:
 
 ::: code-group
 
@@ -103,9 +103,10 @@ $ bun run dev
 :::
 
 
-Giờ bạn đã có project Vue chạy local. Một số lưu ý:
+Giờ bạn đã chạy được project Vue đầu tiên trên máy. Lưu ý là các component mẫu trong project được tạo sẵn dùng [Composition API](/guide/introduction#composition-api) cùng với `<script setup>`, thay vì [Options API](/guide/introduction#options-api).
 
-- Project mặc định dùng [Composition API](/guide/introduction#composition-api) + `<script setup>`
+Một vài điểm bạn nên biết thêm:
+
 - IDE khuyến nghị: [Visual Studio Code](https://code.visualstudio.com/) + [Vue - Official extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar). Nếu dùng editor khác, xem phần [hỗ trợ IDE](/guide/scaling-up/tooling#ide-support).
 - Có thể xem thêm [tài liệu Vite](https://vite.dev/) nếu muốn hiểu build tool
 - Nếu dùng TypeScript, nên đọc thêm [guide riêng](/guide/typescript/overview)
