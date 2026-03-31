@@ -327,12 +327,18 @@ Có thể bind động:
   :false-value="dynamicFalseValue" />
 ```
 
+:::tip Lưu ý
+`true-value` và `false-value` không ảnh hưởng đến thuộc tính `value` của input, vì trình duyệt không đưa các checkbox không được chọn vào form submission. Để đảm bảo một trong hai giá trị được submit (ví dụ: 'yes' hoặc 'no'), hãy dùng radio input.
+:::
+
 ### Radio {#radio-1}
 
 ```vue-html
 <input type="radio" v-model="pick" :value="first" />
 <input type="radio" v-model="pick" :value="second" />
 ```
+
+`pick` sẽ được set thành giá trị của `first` khi radio input đầu tiên được chọn, và thành giá trị của `second` khi cái thứ hai được chọn.
 
 ### Select Options {#select-options}
 
@@ -342,7 +348,7 @@ Có thể bind động:
 </select>
 ```
 
-`v-model` hỗ trợ giá trị không phải string. Khi chọn, `selected` sẽ là object `{ number: 123 }`.
+`v-model` hỗ trợ binding giá trị không phải string! Trong ví dụ trên, khi option được chọn, `selected` sẽ được set thành giá trị object `{ number: 123 }`.
 
 ## Modifiers {#modifiers}
 
@@ -362,7 +368,9 @@ Tự động chuyển input thành number:
 <input v-model.number="age" />
 ```
 
-Nếu không parse được, giữ nguyên string. Nếu input rỗng, trả về chuỗi rỗng.
+Nếu giá trị không thể parse bằng `parseFloat()`, giá trị gốc (string) sẽ được dùng thay thế. Đặc biệt, nếu input rỗng, một string rỗng được trả về. Hành vi này khác với [DOM property `valueAsNumber`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#valueasnumber).
+
+Modifier `number` tự động được áp dụng nếu input có `type="number"`.
 
 ### `.trim` {#trim}
 
