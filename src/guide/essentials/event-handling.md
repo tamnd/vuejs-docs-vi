@@ -1,4 +1,4 @@
-# Event Handling {#event-handling}
+# Xử Lý Sự Kiện {#event-handling}
 
 <div class="options-api">
   <VueSchoolLink href="https://vueschool.io/lessons/user-events-in-vue-3" title="Free Vue.js Events Lesson"/>
@@ -8,19 +8,19 @@
   <VueSchoolLink href="https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3" title="Free Vue.js Events Lesson"/>
 </div>
 
-## Listening to Events {#listening-to-events}
+## Lắng Nghe Sự Kiện {#listening-to-events}
 
-We can use the `v-on` directive, which we typically shorten to the `@` symbol, to listen to DOM events and run some JavaScript when they're triggered. The usage would be `v-on:click="handler"` or with the shortcut, `@click="handler"`.
+Chúng ta có thể dùng directive `v-on`, thường được viết tắt thành ký hiệu `@`, để lắng nghe các sự kiện DOM và thực thi một đoạn JavaScript khi chúng được kích hoạt. Cú pháp đầy đủ là `v-on:click="handler"`, hoặc dùng cú pháp rút gọn: `@click="handler"`.
 
-The handler value can be one of the following:
+Giá trị của handler có thể là một trong hai dạng:
 
-1. **Inline handlers:** Inline JavaScript to be executed when the event is triggered (similar to the native `onclick` attribute).
+1. **Inline handler:** JavaScript được thực thi trực tiếp khi sự kiện xảy ra (tương tự thuộc tính `onclick` của HTML thuần).
 
-2. **Method handlers:** A property name or path that points to a method defined on the component.
+2. **Method handler:** Tên hoặc đường dẫn của một phương thức được định nghĩa trên component.
 
-## Inline Handlers {#inline-handlers}
+## Inline Handler {#inline-handlers}
 
-Inline handlers are typically used in simple cases, for example:
+Inline handler thường được dùng trong các trường hợp đơn giản, ví dụ:
 
 <div class="composition-api">
 
@@ -48,20 +48,20 @@ data() {
 
 <div class="composition-api">
 
-[Try it in the Playground](https://play.vuejs.org/#eNo9jssKgzAURH/lko0tgrbbEqX+Q5fZaLxiqHmQ3LgJ+fdqFZcD58xMYp1z1RqRvRgP0itHEJCia4VR2llPkMDjBBkmbzUUG1oII4y0JhBIGw2hh2Znbo+7MLw+WjZ/C4TaLT3hnogPkcgaeMtFyW8j2GmXpWBtN47w5PWBHLhrPzPCKfWDXRHmPsCAaOBfgSOkdH3IGUhpDBWv9/e8vsZZ/gFFhFJN)
+[Thử trong Playground](https://play.vuejs.org/#eNo9jssKgzAURH/lko0tgrbbEqX+Q5fZaLxiqHmQ3LgJ+fdqFZcD58xMYp1z1RqRvRgP0itHEJCia4VR2llPkMDjBBkmbzUUG1oII4y0JhBIGw2hh2Znbo+7MLw+WjZ/C4TaLT3hnogPkcgaeMtFyW8j2GmXpWBtN47w5PWBHLhrPzPCKfWDXRHmPsCAaOBfgSOkdH3IGUhpDBWv9/e8vsZZ/gFFhFJN)
 
 </div>
 <div class="options-api">
 
-[Try it in the Playground](https://play.vuejs.org/#eNo9jcEKgzAQRH9lyKlF0PYqqdR/6DGXaLYo1RjiRgrivzepIizLzu7sm1XUzuVLIFEKObe+d1wpS183eYahtw4DY1UWMJr15ZpmxYAnDt7uF0BxOwXL5Evc0kbxlmyxxZLFyY2CaXSDZkqKZROYJ4tnO/Tt56HEgckyJaraGNxlsVt2u6teHeF40s20EDo9oyGy+CPIYF1xULBt4H6kOZeFiwBZnOFi+wH0B1hk)
+[Thử trong Playground](https://play.vuejs.org/#eNo9jcEKgzAQRH9lyKlF0PYqqdR/6DGXaLYo1RjiRgrivzepIizLzu7sm1XUzuVLIFEKObe+d1wpS183eYahtw4DY1UWMJr15ZpmxYAnDt7uF0BxOwXL5Evc0kbxlmyxxZLFyY2CaXSDZkqKZROYJ4tnO/Tt56HEgckyJaraGNxlsVt2u6teHeF40s20EDo9oyGy+CPIYF1xULBt4H6kOZeFiwBZnOFi+wH0B1hk)
 
 </div>
 
-## Method Handlers {#method-handlers}
+## Method Handler {#method-handlers}
 
-The logic for many event handlers will be more complex though, and likely isn't feasible with inline handlers. That's why `v-on` can also accept the name or path of a component method you'd like to call.
+Tuy nhiên, logic của nhiều event handler sẽ phức tạp hơn và không thể viết gọn trong một inline handler. Đó là lý do `v-on` cũng có thể nhận tên hoặc đường dẫn của một phương thức trên component mà bạn muốn gọi.
 
-For example:
+Ví dụ:
 
 <div class="composition-api">
 
@@ -107,35 +107,35 @@ methods: {
 
 <div class="composition-api">
 
-[Try it in the Playground](https://play.vuejs.org/#eNpVj0FLxDAQhf/KMwjtXtq7dBcFQS/qzVMOrWFao2kSkkkvpf/dJIuCEBgm771vZnbx4H23JRJ3YogqaM+IxMlfpNWrd4GxI9CMA3NwK5psbaSVVjkbGXZaCediaJv3RN1XbE5FnZNVrJ3FEoi4pY0sn7BLC0yGArfjMxnjcLsXQrdNJtFxM+Ys0PcYa2CEjuBPylNYb4THtxdUobj0jH/YX3D963gKC5WyvGZ+xR7S5jf01yPzeblhWr2ZmErHw0dizivfK6PV91mKursUl6dSh/4qZ+vQ/+XE8QODonDi)
+[Thử trong Playground](https://play.vuejs.org/#eNpVj0FLxDAQhf/KMwjtXtq7dBcFQS/qzVMOrWFao2kSkkkvpf/dJIuCEBgm771vZnbx4H23JRJ3YogqaM+IxMlfpNWrd4GxI9CMA3NwK5psbaSVVjkbGXZaCediaJv3RN1XbE5FnZNVrJ3FEoi4pY0sn7BLC0yGArfjMxnjcLsXQrdNJtFxM+Ys0PcYa2CEjuBPylNYb4THtxdUobj0jH/YX3D963gKC5WyvGZ+xR7S5jf01yPzeblhWr2ZmErHw0dizivfK6PV91mKursUl6dSh/4qZ+vQ/+XE8QODonDi)
 
 </div>
 <div class="options-api">
 
-[Try it in the Playground](https://play.vuejs.org/#eNplUE1LxDAQ/StjEbYL0t5LXRQEvag3Tz00prNtNE1CMilC6X83SUkRhJDJfLz3Jm8tHo2pFo9FU7SOW2Ho0in8MdoSDHhlXhKsnQIYGLHyvL8BLJK3KmcAis3YwOnDY/XlTnt1i2G7i/eMNOnBNRkwWkQqcUFFByVAXUNPk3A9COXEgBkGRgtFDkgDTQjcWxuAwDiJBeMsMcUxszCJlsr+BaXUcLtGwiqut930579KST1IBd5Aqlgie3p/hdTIk+IK//bMGqleEbMjxjC+BZVDIv0+m9CpcNr6MDgkhLORjDBm1H56Iq3ggUvBv++7IhnUFZfnGNt6b4fRtj5wxfYL9p+Sjw==)
+[Thử trong Playground](https://play.vuejs.org/#eNplUE1LxDAQ/StjEbYL0t5LXRQEvag3Tz00prNtNE1CMilC6X83SUkRhJDJfLz3Jm8tHo2pFo9FU7SOW2Ho0in8MdoSDHhlXhKsnQIYGLHyvL8BLJK3KmcAis3YwOnDY/XlTnt1i2G7i/eMNOnBNRkwWkQqcUFFByVAXUNPk3A9COXEgBkGRgtFDkgDTQjcWxuAwDiJBeMsMcUxszCJlsr+BaXUcLtGwiqut930579KST1IBd5Aqlgie3p/hdTIk+IK//bMGqleEbMjxjC+BZVDIv0+m9CpcNr6MDgkhLORjDBm1H56Iq3ggUvBv++7IhnUFZfnGNt6b4fRtj5wxfYL9p+Sjw==)
 
 </div>
 
-A method handler automatically receives the native DOM Event object that triggers it - in the example above, we are able to access the element dispatching the event via `event.target`.
+Method handler tự động nhận đối tượng sự kiện DOM gốc đã kích hoạt nó — trong ví dụ trên, chúng ta có thể truy cập phần tử phát ra sự kiện thông qua `event.target`.
 
 <div class="composition-api">
 
-See also: [Typing Event Handlers](/guide/typescript/composition-api#typing-event-handlers) <sup class="vt-badge ts" />
+Xem thêm: [Typing Event Handlers](/guide/typescript/composition-api#typing-event-handlers) <sup class="vt-badge ts" />
 
 </div>
 <div class="options-api">
 
-See also: [Typing Event Handlers](/guide/typescript/options-api#typing-event-handlers) <sup class="vt-badge ts" />
+Xem thêm: [Typing Event Handlers](/guide/typescript/options-api#typing-event-handlers) <sup class="vt-badge ts" />
 
 </div>
 
-### Method vs. Inline Detection {#method-vs-inline-detection}
+### Phân Biệt Method Handler và Inline Handler {#method-vs-inline-detection}
 
-The template compiler detects method handlers by checking whether the `v-on` value string is a valid JavaScript identifier or property access path. For example, `foo`, `foo.bar` and `foo['bar']` are treated as method handlers, while `foo()` and `count++` are treated as inline handlers.
+Trình biên dịch template phân biệt method handler bằng cách kiểm tra xem chuỗi giá trị của `v-on` có phải là một định danh JavaScript hợp lệ hay một đường dẫn truy cập thuộc tính hay không. Chẳng hạn, `foo`, `foo.bar` và `foo['bar']` được coi là method handler, trong khi `foo()` và `count++` được coi là inline handler.
 
-## Calling Methods in Inline Handlers {#calling-methods-in-inline-handlers}
+## Gọi Phương Thức Trong Inline Handler {#calling-methods-in-inline-handlers}
 
-Instead of binding directly to a method name, we can also call methods in an inline handler. This allows us to pass the method custom arguments instead of the native event:
+Thay vì gắn trực tiếp vào tên phương thức, chúng ta cũng có thể gọi phương thức trong một inline handler. Cách này cho phép chúng ta truyền đối số tùy chỉnh vào phương thức thay vì chỉ dùng đối tượng sự kiện gốc:
 
 <div class="composition-api">
 
@@ -165,18 +165,18 @@ methods: {
 
 <div class="composition-api">
 
-[Try it in the Playground](https://play.vuejs.org/#eNp9jTEOwjAMRa8SeSld6I5CBWdg9ZJGBiJSN2ocpKjq3UmpFDGx+Vn//b/ANYTjOxGcQEc7uyAqkqTQI98TW3ETq2jyYaQYzYNatSArZTzNUn/IK7Ludr2IBYTG4I3QRqKHJFJ6LtY7+zojbIXNk7yfmhahv5msvqS7PfnHGjJVp9w/hu7qKKwfEd1NSg==)
+[Thử trong Playground](https://play.vuejs.org/#eNp9jTEOwjAMRa8SeSld6I5CBWdg9ZJGBiJSN2ocpKjq3UmpFDGx+Vn//b/ANYTjOxGcQEc7uyAqkqTQI98TW3ETq2jyYaQYzYNatSArZTzNUn/IK7Ludr2IBYTG4I3QRqKHJFJ6LtY7+zojbIXNk7yfmhahv5msvqS7PfnHGjJVp9w/hu7qKKwfEd1NSg==)
 
 </div>
 <div class="options-api">
 
-[Try it in the Playground](https://play.vuejs.org/#eNptjUEKwjAQRa8yZFO7sfsSi57B7WzGdjTBtA3NVC2ldzehEFwIw8D7vM9f1cX742tmVSsd2sl6aXDgjx8ngY7vNDuBFQeAnsWMXagToQAEWg49h0APLncDAIUcT5LzlKJsqRBfPF3ljQjCvXcknEj0bRYZBzi3zrbPE6o0UBhblKiaKy1grK52J/oA//23IcmNBD8dXeVBtX0BF0pXsg==)
+[Thử trong Playground](https://play.vuejs.org/#eNptjUEKwjAQRa8yZFO7sfsSi57B7WzGdjTBtA3NVC2ldzehEFwIw8D7vM9f1cX742tmVSsd2sl6aXDgjx8ngY7vNDuBFQeAnsWMXagToQAEWg49h0APLncDAIUcT5LzlKJsqRBfPF3ljQjCvXcknEj0bRYZBzi3zrbPE6o0UBhblKiaKy1grK52J/oA//23IcmNBD8dXeVBtX0BF0pXsg==)
 
 </div>
 
-## Accessing Event Argument in Inline Handlers {#accessing-event-argument-in-inline-handlers}
+## Truy Cập Đối Số Sự Kiện Trong Inline Handler {#accessing-event-argument-in-inline-handlers}
 
-Sometimes we also need to access the original DOM event in an inline handler. You can pass it into a method using the special `$event` variable, or use an inline arrow function:
+Đôi khi chúng ta cũng cần truy cập sự kiện DOM gốc trong một inline handler. Bạn có thể truyền nó vào phương thức bằng biến đặc biệt `$event`, hoặc dùng một arrow function inline:
 
 ```vue-html
 <!-- using $event special variable -->
@@ -219,11 +219,11 @@ methods: {
 
 </div>
 
-## Event Modifiers {#event-modifiers}
+## Event Modifier {#event-modifiers}
 
-It is a very common need to call `event.preventDefault()` or `event.stopPropagation()` inside event handlers. Although we can do this easily inside methods, it would be better if the methods can be purely about data logic rather than having to deal with DOM event details.
+Một nhu cầu rất phổ biến là gọi `event.preventDefault()` hoặc `event.stopPropagation()` bên trong event handler. Mặc dù chúng ta có thể thực hiện điều này dễ dàng trong các phương thức, nhưng sẽ tốt hơn nếu các phương thức chỉ tập trung vào logic dữ liệu mà không cần xử lý các chi tiết sự kiện DOM.
 
-To address this problem, Vue provides **event modifiers** for `v-on`. Recall that modifiers are directive postfixes denoted by a dot.
+Để giải quyết vấn đề này, Vue cung cấp **event modifier** cho `v-on`. Modifier là các hậu tố của directive, được biểu thị bằng dấu chấm.
 
 - `.stop`
 - `.prevent`
@@ -251,10 +251,10 @@ To address this problem, Vue provides **event modifiers** for `v-on`. Recall tha
 ```
 
 ::: tip
-Order matters when using modifiers because the relevant code is generated in the same order. Therefore using `@click.prevent.self` will prevent **click's default action on the element itself and its children**, while `@click.self.prevent` will only prevent click's default action on the element itself.
+Thứ tự rất quan trọng khi dùng modifier vì code tương ứng được tạo ra theo đúng thứ tự đó. Do đó, `@click.prevent.self` sẽ chặn **hành vi mặc định của click trên cả phần tử lẫn các phần tử con**, trong khi `@click.self.prevent` chỉ chặn hành vi mặc định của click trên chính phần tử đó.
 :::
 
-The `.capture`, `.once`, and `.passive` modifiers mirror the [options of the native `addEventListener` method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#options):
+Các modifier `.capture`, `.once` và `.passive` tương ứng với [các tùy chọn của phương thức `addEventListener` gốc](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#options):
 
 ```vue-html
 <!-- use capture mode when adding the event listener     -->
@@ -271,36 +271,36 @@ The `.capture`, `.once`, and `.passive` modifiers mirror the [options of the nat
 <div @scroll.passive="onScroll">...</div>
 ```
 
-The `.passive` modifier is typically used with touch event listeners for [improving performance on mobile devices](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#improving_scroll_performance_using_passive_listeners).
+Modifier `.passive` thường được dùng với các event listener cảm ứng để [cải thiện hiệu suất trên thiết bị di động](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#improving_scroll_performance_using_passive_listeners).
 
 ::: tip
-Do not use `.passive` and `.prevent` together, because `.passive` already indicates to the browser that you _do not_ intend to prevent the event's default behavior, and you will likely see a warning from the browser if you do so.
+Không dùng `.passive` và `.prevent` cùng nhau, vì `.passive` đã báo hiệu cho trình duyệt rằng bạn _không_ có ý định chặn hành vi mặc định của sự kiện. Nếu dùng đồng thời, bạn có thể nhận được cảnh báo từ trình duyệt.
 :::
 
-## Key Modifiers {#key-modifiers}
+## Key Modifier {#key-modifiers}
 
-When listening for keyboard events, we often need to check for specific keys. Vue allows adding key modifiers for `v-on` or `@` when listening for key events:
+Khi lắng nghe các sự kiện bàn phím, chúng ta thường cần kiểm tra phím cụ thể nào được nhấn. Vue cho phép thêm key modifier cho `v-on` hoặc `@` khi lắng nghe sự kiện phím:
 
 ```vue-html
 <!-- only call `submit` when the `key` is `Enter` -->
 <input @keyup.enter="submit" />
 ```
 
-You can directly use any valid key names exposed via [`KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values) as modifiers by converting them to kebab-case.
+Bạn có thể dùng trực tiếp bất kỳ tên phím hợp lệ nào được cung cấp qua [`KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values) làm modifier bằng cách chuyển chúng sang dạng kebab-case.
 
 ```vue-html
 <input @keyup.page-down="onPageDown" />
 ```
 
-In the above example, the handler will only be called if `$event.key` is equal to `'PageDown'`.
+Trong ví dụ trên, handler chỉ được gọi khi `$event.key` bằng `'PageDown'`.
 
-### Key Aliases {#key-aliases}
+### Alias Phím {#key-aliases}
 
-Vue provides aliases for the most commonly used keys:
+Vue cung cấp alias cho các phím được dùng phổ biến nhất:
 
 - `.enter`
 - `.tab`
-- `.delete` (captures both "Delete" and "Backspace" keys)
+- `.delete` (bắt cả phím "Delete" lẫn "Backspace")
 - `.esc`
 - `.space`
 - `.up`
@@ -308,20 +308,20 @@ Vue provides aliases for the most commonly used keys:
 - `.left`
 - `.right`
 
-### System Modifier Keys {#system-modifier-keys}
+### Modifier Phím Hệ Thống {#system-modifier-keys}
 
-You can use the following modifiers to trigger mouse or keyboard event listeners only when the corresponding modifier key is pressed:
+Bạn có thể dùng các modifier sau để chỉ kích hoạt event listener cho chuột hoặc bàn phím khi phím modifier tương ứng đang được giữ:
 
 - `.ctrl`
 - `.alt`
 - `.shift`
 - `.meta`
 
-::: tip Note
-On Macintosh keyboards, meta is the command key (⌘). On Windows keyboards, meta is the Windows key (⊞). On Sun Microsystems keyboards, meta is marked as a solid diamond (◆). On certain keyboards, specifically MIT and Lisp machine keyboards and successors, such as the Knight keyboard, space-cadet keyboard, meta is labeled “META”. On Symbolics keyboards, meta is labeled “META” or “Meta”.
+::: tip Lưu ý
+Trên bàn phím Macintosh, meta là phím command (⌘). Trên bàn phím Windows, meta là phím Windows (⊞). Trên bàn phím Sun Microsystems, meta được đánh dấu bằng hình thoi đặc (◆). Trên một số bàn phím nhất định, đặc biệt là bàn phím MIT và Lisp machine cùng các phiên bản kế thừa như Knight keyboard, space-cadet keyboard, meta được ghi nhãn là "META". Trên bàn phím Symbolics, meta được ghi nhãn là "META" hoặc "Meta".
 :::
 
-For example:
+Ví dụ:
 
 ```vue-html
 <!-- Alt + Enter -->
@@ -332,12 +332,12 @@ For example:
 ```
 
 ::: tip
-Note that modifier keys are different from regular keys and when used with `keyup` events, they have to be pressed when the event is emitted. In other words, `keyup.ctrl` will only trigger if you release a key while holding down `ctrl`. It won't trigger if you release the `ctrl` key alone.
+Lưu ý rằng các phím modifier khác với các phím thông thường, và khi dùng với sự kiện `keyup`, chúng phải đang được giữ khi sự kiện phát ra. Nói cách khác, `keyup.ctrl` chỉ kích hoạt khi bạn nhả một phím khác trong khi đang giữ `ctrl`. Nó sẽ không kích hoạt nếu bạn chỉ nhả đúng phím `ctrl`.
 :::
 
-### `.exact` Modifier {#exact-modifier}
+### Modifier `.exact` {#exact-modifier}
 
-The `.exact` modifier allows control of the exact combination of system modifiers needed to trigger an event.
+Modifier `.exact` cho phép kiểm soát tổ hợp modifier hệ thống chính xác cần thiết để kích hoạt sự kiện.
 
 ```vue-html
 <!-- this will fire even if Alt or Shift is also pressed -->
@@ -350,12 +350,12 @@ The `.exact` modifier allows control of the exact combination of system modifier
 <button @click.exact="onClick">A</button>
 ```
 
-## Mouse Button Modifiers {#mouse-button-modifiers}
+## Modifier cho Nút Chuột {#mouse-button-modifiers}
 
 - `.left`
 - `.right`
 - `.middle`
 
-These modifiers restrict the handler to events triggered by a specific mouse button.
+Các modifier này giới hạn handler chỉ phản hồi với sự kiện được kích hoạt bởi một nút chuột cụ thể.
 
-Note, however, that `.left`, `.right`, and `.middle` modifier names are based on the typical right-handed mouse layout, but in fact represent "main", "secondary", and "auxiliary" pointing device event triggers, respectively, and not the actual physical buttons. So that for a left-handed mouse layout the "main" button might physically be the right one but would trigger the `.left` modifier handler. Or a trackpad might trigger the `.left` handler with a one-finger tap, the `.right` handler with a two-finger tap, and the `.middle` handler with a three-finger tap. Similarly, other devices and event sources generating "mouse" events might have trigger modes that are not related to "left" and "right" whatsoever.
+Tuy nhiên cần lưu ý, tên các modifier `.left`, `.right` và `.middle` dựa trên bố cục chuột thuận tay phải thông thường, nhưng thực ra chúng lần lượt đại diện cho các loại trigger sự kiện thiết bị trỏ là "chính", "phụ" và "bổ trợ" — chứ không phải các nút vật lý cụ thể. Vì vậy, với chuột dành cho tay trái, nút "chính" có thể về mặt vật lý nằm ở bên phải nhưng vẫn kích hoạt handler của modifier `.left`. Hoặc một trackpad có thể kích hoạt handler `.left` bằng một ngón tay, handler `.right` bằng hai ngón và handler `.middle` bằng ba ngón. Tương tự, các thiết bị khác và nguồn sự kiện tạo ra sự kiện "chuột" có thể có các chế độ kích hoạt không liên quan gì đến "trái" hay "phải".
